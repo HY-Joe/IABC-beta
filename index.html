@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IABC</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+	<script type="text/javascript" src="./java/default.js"></script>
+	<!-- <script type="text/javascript" src="./java/loadMode.js"></script> -->
+</head>
+
+<body>	
+	<!-- 네이게이션 바 -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"
+        >IABC
+      </a>
+            <a class="nav-link" href="index.html"
+              style="color: #000;">Home<span class="sr-only">(current)</span></a
+            >
+            <button class="btn" data-toggle="modal" data-target="#myModal">
+              <svg
+                width="2em"
+                height="2em"
+                viewBox="0 0 16 16"
+                class="bi bi-gear-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                style="margin-top: 0.2em;"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
+                />
+              </svg>
+            </button>
+    </nav>
+
+ 	<!--만화 선택-->
+   <section class="gallery-block cards-gallery">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	 <a href="./intro_1.html" onclick="setComicNum(1)">
+	                		<img src="./data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg" alt="두번 탭하시면 Chilling Tales 만화 소개페이지로 이동합니다." 
+	                		class="card-img-top">
+	                	 </a>
+	                    <div class="card-body">
+	             
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+						<a href="./intro_2.html" onclick="setComicNum(2)">
+		                	<img src="./data/image/page/love/PIKE_BOYLOVEGIRLS_T41_012.jpg" alt="두번 탭하시면 Boy loves girl 만화 소개페이지로 이동합니다."
+		                	 class="card-img-top">
+		                </a>
+	                    <div class="card-body">
+	                  
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Setting</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"
+						onclick="location.reload()"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div>
+						<button onclick="location.href='./index.html'">Go to home</button>
+						<!-- <button onclick="location.href='./intro_1.html'">Go to intoroduction</button> -->
+					</div>
+					<div>
+						<p>Mode</p>
+						<ul>
+							<li style="list-style: none;">
+								<label>
+									<input type="radio" name="readMode" value="page" style="margin-right: 5px;"
+										onclick="chAllComicMode('page')">
+									Page
+								</label>
+							</li>
+							<li style="list-style: none;">
+								<label>
+									<input type="radio" name="readMode" value="scrip" style="margin-right: 5px;"
+										onclick="chAllComicMode('scrip')">
+									Scrip
+								</label>
+							</li>
+							<li style="list-style: none;">
+								<label>
+									<input type="radio" name="readMode" value="panel" style="margin-right: 5px;"
+										onclick="chAllComicMode('panel')">
+									Panel
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<p>Elements</p>
+						<ul>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" name="readToggle" value="elements1"
+									id="customSwitch1" onclick="readToggleKey(1, this, 'panel')">
+								<label class="custom-control-label" for="customSwitch1">Panel</label>
+							</div>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" name="readToggle" value="elements2"
+									id="customSwitch2" onclick="readToggleKey(2, this, 'balloon')">
+								<label class="custom-control-label" for="customSwitch2">Balloon</label>
+							</div>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" name="readToggle" value="elements3"
+									id="customSwitch3" onclick="readToggleKey(3, this, 'character')">
+								<label class="custom-control-label" for="customSwitch3">Character</label>
+							</div>
+						</ul>
+					</div>
+					<div>
+						<p>Filtering</p>
+						<ul>
+							<li>
+								Panel
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle2"
+										value="panelFilter0" id="customSwitch4" onclick="readPanelFilter(1, this)">
+									<label class="custom-control-label" for="customSwitch4">Panel Number</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle2"
+										value="panelFilter1" id="customSwitch5" onclick="readPanelFilter(2, this)">
+									<label class="custom-control-label" for="customSwitch5">Location</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle2"
+										value="panelFilter2" id="customSwitch6" onclick="readPanelFilter(3, this)">
+									<label class="custom-control-label" for="customSwitch6">Composition</label>
+								</div>
+							</li>
+							<li>
+								Balloon
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle3"
+										value="BalloonFilter1" id="customSwitch7" onclick="readBalloonFilter(1, this)">
+									<label class="custom-control-label" for="customSwitch7">Script</label>
+								</div>
+							</li>
+							<li>
+								Character
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle"
+										value="characterFilter1" id="customSwitch8"
+										onclick="readCharacterFilter(1, this)">
+									<label class="custom-control-label" for="customSwitch8">Name</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle"
+										value="haracterFilter2" id="customSwitch9"
+										onclick="readCharacterFilter(2, this)">
+									<label class="custom-control-label" for="customSwitch9">Action</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle"
+										value="characterFilter3" id="customSwitch10"
+										onclick="readCharacterFilter(3, this)">
+									<label class="custom-control-label" for="customSwitch10">Emotion</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle"
+										value="characterFilter4" id="customSwitch11"
+										onclick="readCharacterFilter(4, this)">
+									<label class="custom-control-label" for="customSwitch11">Appearance</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"
+						onclick="location.reload()">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    </section>
+
+
+	
+
+	<!--SCRIPT-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+	<script>
+		baguetteBox.run('.cards-gallery', { animation: 'slideIn' });
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./java/getComicNum.js"></script>
+	<script type="text/javascript" src="./java/allMode.js"></script>
+	<script type="text/javascript" src="./java/toggleEvent.js"></script>
+	<script type="text/javascript" src="./java/toggle.js"></script>
+	</script>
+</body>
+
+</html>
