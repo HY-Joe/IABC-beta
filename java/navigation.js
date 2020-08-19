@@ -22,6 +22,8 @@ function firstNavi(num) {
   sessiongetItem(name);
   modeName = data;
 
+  alert(modeName)
+
   var a = document.getElementById("inputSvg");
 
   if (modeName == "page") {
@@ -47,10 +49,12 @@ function firstNavi(num) {
 
     sessionsetItem("panel1", page);
     sessiongetItem("panel1");
-    $("#comics_img").attr(
-      "data",
-      "./data/svg/panel/fox/FOX_CHILLINTALES_T17_Panel_" + page + ".svg"
-    );
+    alert(page + " >> " + data);
+    // $("#comics_img").attr(
+    //   "data",
+    //   "./data/svg/panel/fox/FOX_CHILLINTALES_T17_Panel_" + page + ".svg"
+    // );
+    location.href="./panel_" + page +".html";
   }
 
   // $(window).ready(function(){

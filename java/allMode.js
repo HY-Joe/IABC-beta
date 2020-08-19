@@ -67,18 +67,59 @@ function continuesComic() {
   funcGetItem(name);
   var modeName = getData;
 
+  var str = modeName + comicNum;
+  // alert(str);
+  funcGetItem(str);
+  var flag = getData;
   if (comicNum == "1") {
-    if (modeName == "page") location.href = modeName + "_" + comicNum + ".html";
+    if (modeName == "page") 
+      location.href = "./html_reader/page/fox/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
     else if (modeName == "strip")
-      location.href = modeName + "_" + comicNum + ".html";
-    else if (modeName == "panel")
-      location.href = modeName + "_" + comicNum + ".html";
+      location.href = "./html_reader/strip/fox/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
+    else if (modeName == "panel") 
+      location.href = "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
   } else if (comicNum == "2") {
-    if (modeName == "page") location.href = modeName + "_" + comicNum + ".html";
+    if (modeName == "page") location.href = modeName + "_" + flag + ".html";
     else if (modeName == "strip")
-      location.href = modeName + "_" + comicNum + ".html";
+      location.href = modeName + "_" + flag + ".html";
     else if (modeName == "panel")
-      location.href = modeName + "_" + comicNum + ".html";
+      location.href = modeName + "_" + flag + ".html";
+  }
+}
+
+function continuesComic2() {
+  funcGetItem("comicNum");
+  comicNum = getData;
+
+  var name = "mode1";
+  funcGetItem(name);
+  var modeName = getData;
+
+  var str = modeName + comicNum;
+  // alert(str);
+  funcGetItem(str);
+  var flag = getData;
+  if (comicNum == "1") {
+    if (modeName == "page") 
+      location.href = "../../page/fox/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
+    else if (modeName == "strip")
+      location.href = "../../strip/fox/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
+    else if (modeName == "panel") 
+      location.href = "../../panel/fox/" + modeName + "_" + flag + ".html";
+  } else if (comicNum == "2") {
+    if (modeName == "page") 
+      location.href = "../../page/love/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
+    else if (modeName == "strip")
+      location.href = "../../strip/love/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
+    else if (modeName == "panel")
+      location.href = "../../panel/love/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
   }
 }
 

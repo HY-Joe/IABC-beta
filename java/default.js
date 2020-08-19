@@ -5,6 +5,7 @@ for (var i = 1; i <= 2; i++) {
   var fileName = data;
 
   if (i == 1) {
+    alert(fileName)
     fileName += 1;
     sessiongetItem(fileName);
     console.log(data);
