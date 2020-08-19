@@ -13,9 +13,9 @@ for (var i = 1; i <= 2; i++) {
       if (modeName == "panel") {
         sessionsetItem("panel1", 1);
         sessiongetItem("panel1");
-      } else if ( modeName == "scrip") {
-        sessionsetItem("scrip1", 1);
-        sessiongetItem("scrip1");
+      } else if ( modeName == "strip") {
+        sessionsetItem("strip1", 1);
+        sessiongetItem("strip1");
       } else if (modeName == "page") {
         sessionsetItem("page1", 1);
         sessiongetItem("page1");
@@ -23,8 +23,8 @@ for (var i = 1; i <= 2; i++) {
     } else {
       if (modeName == "panel")
         sessiongetItem("panel1");
-      else if (modeName == "scrip")
-        sessiongetItem("scrip1");
+      else if (modeName == "strip")
+        sessiongetItem("strip1");
       else if (modeName == "page")
         sessiongetItem("page1");
     }
@@ -37,9 +37,9 @@ for (var i = 1; i <= 2; i++) {
       if (modeName == "panel") {
         sessionsetItem("panel2", 1);
         sessiongetItem("panel2");
-      } else if ( modeName == "scrip") {
-        sessionsetItem("scrip2", 1);
-        sessiongetItem("scrip2");
+      } else if ( modeName == "strip") {
+        sessionsetItem("strip2", 1);
+        sessiongetItem("strip2");
       } else if (modeName == "page") {
         sessionsetItem("page2", 1);
         sessiongetItem("page2");
@@ -47,8 +47,8 @@ for (var i = 1; i <= 2; i++) {
     } else {
       if (modeName == "panel")
         sessiongetItem("panel2");
-      else if (modeName == "scrip")
-        sessiongetItem("scrip2");
+      else if (modeName == "strip")
+        sessiongetItem("strip2");
       else if (modeName == "page")
         sessiongetItem("page2");
     }

@@ -36,8 +36,8 @@ function firstNavi(num) {
   } else if (modeName == "scrip") {
     page = num;
 
-    sessionsetItem("scrip1", page);
-    sessiongetItem("scrip1");
+    sessionsetItem("strip1", page);
+    sessiongetItem("strip1");
     $("#comics_img").attr(
       "data",
       "./data/svg/strip/fox/FOX_CHILLINTALES_T17_Scrip_" + page + ".svg"
@@ -78,8 +78,8 @@ function secondNavi(num) {
   } else if (modeName == "scrip") {
     page = num;
 
-    sessionsetItem("scrip2", page);
-    sessiongetItem("scrip2");
+    sessionsetItem("strip2", page);
+    sessiongetItem("strip2");
     $("#comics_img").attr(
       "data",
       "./data/svg/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_" + page + ".svg"

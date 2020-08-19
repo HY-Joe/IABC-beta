@@ -46,14 +46,14 @@ function startComic() {
       funcSetItem("page1", 1);
       location.href = "./html_reader/page/fox/" + readingMode + "_" + comicNum + ".html";  
     }
-    else if (modeName == "scrip") funcSetItem("scrip1", 1);
+    else if (modeName == "strip") funcSetItem("strip1", 1);
     else if (modeName == "panel") {
       funcSetItem("panel1", 1);
       location.href = "./html_reader/panel/fox/" + readingMode + "_" + comicNum + ".html";  
     }
   } else if (comicNum == "2") {
     if (modeName == "page") funcSetItem("page2", 1);
-    else if (modeName == "scrip") funcSetItem("scrip2", 1);
+    else if (modeName == "strip") funcSetItem("strip2", 1);
     else if (modeName == "panel") funcSetItem("panel2", 1);
   }
   // location.href = readingMode + "_" + comicNum + ".html";
@@ -69,13 +69,13 @@ function continuesComic() {
 
   if (comicNum == "1") {
     if (modeName == "page") location.href = modeName + "_" + comicNum + ".html";
-    else if (modeName == "scrip")
+    else if (modeName == "strip")
       location.href = modeName + "_" + comicNum + ".html";
     else if (modeName == "panel")
       location.href = modeName + "_" + comicNum + ".html";
   } else if (comicNum == "2") {
     if (modeName == "page") location.href = modeName + "_" + comicNum + ".html";
-    else if (modeName == "scrip")
+    else if (modeName == "strip")
       location.href = modeName + "_" + comicNum + ".html";
     else if (modeName == "panel")
       location.href = modeName + "_" + comicNum + ".html";
