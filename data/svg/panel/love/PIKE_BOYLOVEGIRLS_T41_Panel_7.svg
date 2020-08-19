@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg onload="changeData()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="auto" zoomAndPan="magnify" contentStyleType="text/css" height="25em" viewBox="0 0 500 700" preserveAspectRatio="xMidYMid meet" version="1.0">
+    <title>PIKE_BOYLOVEGIRLS_T41_012</title>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Page" preserveAspectRatio="xMidYMid meet" version="1.0">
+        <image x="0" y="0" width="517" xlink:href="../../../image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg" xlink:type="simple" xlink:actuate="onLoad" height="700" preserveAspectRatio="xMidYMid meet" xlink:show="embed"/>
+        <metadata collectionTitle="Boy Love Girls" editorName="Lev Gleason" doublePage="false" website="http://comicbookplus.com/?dlid=31803" albumTitle="Boy Love Girls 41" drawerName="Jay Scott Pike" language="english" resolution="" ISBN="" readingDirection="leftToRight" writerName="Jay Scott Pike" releaseDate="" pageNumber="12"/>
+    </svg>
+	<style type="text/css" xml:space="preserve">
+        * { stroke-width: 0; stroke-linejoin: round; }
+        .Unclassified { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Noise { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Panel { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Line { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .TextArea { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Balloon { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Letter { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Character { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Page { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        polygon:hover { stroke:red;stroke-width:2; } 
+    </style>
+     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="783 1480 700 710" version="1.0" id="panel">
+        <polygon points="836,1493 1426,1488 1431,2170 839,2180 836,1493" id="PIKE_BOYLOVEGIRLS_T41_012_panel_6"
+            tabindex="6" onclick="setPanelData(4, 'Panel Six','The place is in front of a window inside the house.','CYNTHY’s profile is on the center facing right.')">
+            <metadata viewAngle="" uri="" shot="" area="" rank="7" fillingPcent=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="783 1480 700 710" version="1.0" id="character">
+        <polygon points="993,1685 1256,1685 1256,2178 993,2178 993,1685" id="PIKE_BOYLOVEGIRLS_T41_012_character_11"
+            tabindex="6" onclick="setCharacterData(4,'CYNTHY','She is standing looking at the window.','She seems to be outraged')">
+            <metadata uri="" area="" fillingPcent=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="783 1480 700 710" version="1.0" id="balloon">
+        <polygon points="836,1656 834,1491 1085,1487 1107,1501 1125,1529 1132,1559 1126,1591 1112,1613 1096,1622 1085,1622 1091,1633 1080,1662 1048,1682 1003,1691 955,1692 919,1689 889,1721 855,1749 837,1757 837,1743 865,1717 882,1692 889,1682 854,1670 836,1656" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_14"
+             tabindex="6" onclick="setBalloonData(0, 'LUCKY? MY OLD MAN’S GOT ENOUGH DOUGH TO SUPPORT HALF THIS TOWN! WHY SHOULD I WANT TO WORK?')">
+            <metadata borderStyle="smooth" tailTip="837,1757" boundingBox="" tailDirection="SW" rank="15"/>
+        </polygon>
+        <polygon points="1121,1517 1132,1501 1154,1487 1350,1487 1371,1499 1386,1522 1390,1542 1381,1566 1359,1586 1341,1598 1307,1614 1275,1616 1245,1614 1239,1622 1225,1623 1216,1631 1188,1679 1192,1647 1190,1628 1158,1619 1135,1607 1121,1597 1121,1517" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_15"
+            tabindex="6" onclick="setBalloonData(5, 'IF YOU DON’T KNOW, I’M NOT GOING TO TELL YOU!')">
+            <metadata borderStyle="smooth" tailTip="1188,1679" boundingBox="" tailDirection="S" rank="16"/>
+        </polygon>
+        <polygon points="1362,1592 1410,1605 1429,1618 1430,1691 1408,1707 1375,1713 1351,1715 1340,1717 1341,1734 1351,1757 1368,1782 1346,1768 1326,1744 1315,1718 1278,1712 1244,1683 1236,1650 1243,1624 1252,1615 1362,1592 1362,1592 1362,1592" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_16"
+            tabindex="6" onclick="setBalloonData(2, 'ARE YOU SPEAKING TO ME?')">
+            <metadata borderStyle="smooth" tailTip="1368,1782" boundingBox="" tailDirection="SW" rank="17"/>
+        </polygon>
+    </svg>
+<metadata method="GroundTruth" lastModificationDate="Sun Feb 09 11:16:15 CET 2014" lastStepModified="Balloon_Rank"/>
+<script type="text/javascript" xlink:href="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"></script>
+<script type="text/javascript" xlink:href="../../../../java/polly.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/pollyData.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/toggleEvent.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+</svg>

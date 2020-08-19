@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg onload="changeData()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="auto" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" height="25em" viewBox="-5 0 480 940" version="1.0">
+    <title>FOX_CHILLINTALES_T17_006</title>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Page" preserveAspectRatio="xMidYMid meet" version="1.0">
+        <image x="0" y="48" width="450" xlink:href="../../../image/panel/fox/FOX_CHILLINTALES_T17_Panel_06.jpg" xlink:type="simple" xlink:actuate="onLoad" height="860" preserveAspectRatio="xMidYMid meet" xlink:show="embed"/>
+        <metadata collectionTitle="Chilling Tales" editorName="Youthful Magazines" doublePage="false" website="http://comicbookplus.com/?dlid=23923" albumTitle="Chilling Tales 17 Geo" drawerName="Matt Fox" language="english" resolution="" ISBN="" readingDirection="leftToRight" writerName="Matt Fox" releaseDate="" pageNumber="6"/>
+    </svg>
+	<style type="text/css" xml:space="preserve">
+        * { stroke-width: 0; stroke-linejoin: round; }
+        .Unclassified { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Noise { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Panel { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Line { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .TextArea { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Balloon { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Letter { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Character { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Page { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        polygon:hover { stroke:red;stroke-width:2; } 
+    </style>
+     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="800 850 480 950" version="1.0" id="panel">
+        <polygon points="857,1009 1235,1010 1238,1763 857,1763 857,1009" id="FOX_CHILLINTALES_T17_006_panel_5"
+             tabindex="5" onclick="setPanelData(3, 'Panel Six','The place is in front of a door.','STEENIE’s back is on the left,  Stranger’s back is on the right, and DOUGAL’s front body is in the middle.')">
+            <metadata viewAngle="" uri="" shot="" area="" rank="6" fillingPcent=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="800 850 480 950" version="1.0" id="character">
+        <polygon points="858,1247 1006,1247 1006,1764 858,1764 858,1247" id="FOX_CHILLINTALES_T17_006_character_9"
+            tabindex="5" onclick="setCharacterData(3,'STEENIE','He indicates the man with his index finger, talking to a man in front.','Unknown')">
+            <metadata ID="" rank=""/>
+        </polygon>
+        <polygon points="1008,1340 1138,1340 1138,1765 1008,1765 1008,1340" id="FOX_CHILLINTALES_T17_006_character_10"
+            tabindex="5" onclick="setCharacterData(3,'DOUGAL','He is talking to a man in front.','He frowns and speaks seriously.')">
+            <metadata ID="" rank=""/>
+        </polygon>
+        <polygon points="1131,1173 1241,1173 1241,1767 1131,1767 1131,1173" id="FOX_CHILLINTALES_T17_006_character_11"
+            tabindex="5" onclick="setCharacterData(3,'A Stranger','He is standing next to STEENIE.','Unknown')">
+            <metadata ID="" rank=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="805 850 480 950" version="1.0" id="balloon">
+        <polygon points="867,928 1158,923 1220,931 1222,944 1222,950 1220,957 1218,977 1218,988 1218,993 1218,1004 1216,1005 1212,1006 880,1012 872,1008 867,928" id="FOX_CHILLINTALES_T17_006_balloon_11"
+            tabindex="5" onclick="setBalloonData(3,'THE DOOR OPENED AND THEY WERE GREETED BY NONE OTHER THAN DOUGAL...')">
+            <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="12"/>
+        </polygon>
+        <polygon points="879,1014 1004,1010 1016,1015 1023,1019 1029,1024 1035,1035 1034,1041 1036,1054 1040,1067 1042,1081 1038,1092 1036,1105 1033,1108 1031,1114 1024,1121 1016,1132 1009,1137 1004,1141 999,1145 996,1148 989,1150 985,1152 978,1154 970,1156 968,1156 966,1157 962,1159 960,1159 958,1170 957,1173 954,1184 952,1190 951,1193 947,1211 940,1222 939,1206 941,1194 943,1184 941,1165 921,1161 909,1161 896,1158 890,1154 886,1152 879,1150 874,1148 865,1142 862,1132 858,1121 857,1038 862,1029 868,1023 879,1014" id="FOX_CHILLINTALES_T17_006_balloon_12"
+            tabindex="5" onclick="setBalloonData(0,'DOUGAL MAC CALLUM, I THOUGHT YE BE DEAD!')">
+            <metadata borderStyle="smooth" tailTip="940,1222" boundingBox="" tailDirection="S" rank="13"/>
+        </polygon>
+        <polygon points="1051,1012 1224,1009 1232,1015 1238,1017 1241,1027 1240,1059 1239,1068 1238,1078 1236,1089 1233,1096 1228,1101 1223,1106 1218,1110 1229,1112 1230,1117 1230,1120 1226,1134 1224,1138 1212,1147 1204,1151 1196,1155 1189,1158 1178,1163 1172,1166 1162,1170 1150,1173 1144,1175 1129,1178 1120,1178 1113,1196 1103,1231 1096,1257 1080,1298 1088,1252 1092,1224 1095,1200 1097,1177 1073,1176 1055,1172 1041,1164 1032,1159 1027,1150 1033,1134 1043,1112 1032,1105 1038,1076 1035,1052 1030,1037 1035,1028 1051,1012" id="FOX_CHILLINTALES_T17_006_balloon_13"
+            tabindex="5" onclick="setBalloonData(2,'FORGET ABOUT ME AND LISTEN WELL TO WHAT I HAVE TO SAY.')">
+            <metadata borderStyle="smooth" tailTip="1080,1298" boundingBox="" tailDirection="S" rank="14"/>
+        </polygon>
+    </svg>
+<metadata method="GroundTruth" lastModificationDate="Wed Apr 09 00:00:24 CEST 2014" lastStepModified="Page_Ended"/>
+<script type="text/javascript" xlink:href="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"></script>
+<script type="text/javascript" xlink:href="../../../../java/polly.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/pollyData.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/toggleEvent.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+</svg>

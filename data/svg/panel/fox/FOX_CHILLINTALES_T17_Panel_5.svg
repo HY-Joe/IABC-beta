@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg onload="changeData()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="auto" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" height="25em" viewBox="-5 0 480 940" version="1.0">
+    <title>FOX_CHILLINTALES_T17_006</title>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Page" preserveAspectRatio="xMidYMid meet" version="1.0">
+        <image x="0" y="48" width="450" xlink:href="../../../image/panel/fox/FOX_CHILLINTALES_T17_Panel_05.jpg" xlink:type="simple" xlink:actuate="onLoad" height="860" preserveAspectRatio="xMidYMid meet" xlink:show="embed"/>
+        <metadata collectionTitle="Chilling Tales" editorName="Youthful Magazines" doublePage="false" website="http://comicbookplus.com/?dlid=23923" albumTitle="Chilling Tales 17 Geo" drawerName="Matt Fox" language="english" resolution="" ISBN="" readingDirection="leftToRight" writerName="Matt Fox" releaseDate="" pageNumber="6"/>
+    </svg>
+	<style type="text/css" xml:space="preserve">
+        * { stroke-width: 0; stroke-linejoin: round; }
+        .Unclassified { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Noise { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Panel { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Line { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .TextArea { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Balloon { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Letter { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Character { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Page { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        polygon:hover { stroke:red;stroke-width:2; } 
+    </style>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="418 850 480 950" version="1.0" id="panel">
+        <polygon points="443,1010 831,1010 831,1766 443,1766 443,1010" id="FOX_CHILLINTALES_T17_006_panel_4" 
+            tabindex="4" onclick="setPanelData(3, 'Panel Five','The place is in front of a castle gate.','STTEENIE’s and a Stranger’s backs are in the center.')">
+            <metadata viewAngle="" uri="" shot="" area="" rank="5" fillingPcent=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="418 850 480 950"  version="1.0" id="character">
+        <polygon points="611,1382 701,1382 701,1653 611,1653 611,1382" id="FOX_CHILLINTALES_T17_006_character_7"
+        tabindex="4" onclick="setCharacterData(3,'STEENIE','He is walking alongside the man next to him.','Unknown')">
+            <metadata ID="" rank=""/>
+        </polygon>
+        <polygon points="708,1355 781,1355 781,1623 708,1623 708,1355" id="FOX_CHILLINTALES_T17_006_character_8"
+        tabindex="4" onclick="setCharacterData(3,'A Stranger','He is walking alongside the man next to him.','Unknown')">
+            <metadata ID="" rank=""/>
+        </polygon>
+    </svg>
+
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="418 850 480 950" version="1.0" id="balloon">
+        <polygon points="448,930 523,929 697,925 787,929 823,931 829,946 831,963 831,979 831,993 829,1007 443,1012 445,954 448,930" id="FOX_CHILLINTALES_T17_006_balloon_9"
+             tabindex="4" onclick="setBalloonData(3,'AND SO STEENIE WENT WITH THE MAN AND THEY SOON CAME TO THE DOOR OF A GRIM CASTLE...')">
+            <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="10"/>
+        </polygon>
+        <polygon points="461,1017 478,1011 620,1012 774,1009 801,1012 807,1017 809,1026 805,1034 809,1038 810,1046 806,1050 813,1050 824,1050 834,1054 838,1062 838,1070 834,1079 842,1081 843,1088 845,1090 846,1095 850,1104 850,1108 850,1112 850,1116 846,1120 844,1123 840,1126 842,1133 841,1142 835,1145 828,1148 826,1149 820,1151 813,1157 812,1157 810,1167 804,1169 799,1169 792,1166 784,1164 784,1165 782,1168 778,1171 776,1171 769,1169 769,1171 768,1176 763,1182 758,1184 755,1185 750,1185 747,1185 740,1181 737,1175 735,1177 730,1177 726,1173 723,1177 719,1179 718,1179 715,1176 714,1181 706,1189 703,1191 700,1192 697,1192 694,1191 693,1191 690,1197 692,1209 694,1210 696,1235 696,1248 695,1254 691,1265 686,1280 683,1314 678,1334 673,1341 669,1349 663,1352 658,1341 660,1333 661,1324 662,1318 662,1309 664,1298 664,1289 664,1285 665,1277 667,1264 667,1257 668,1247 670,1238 671,1227 665,1215 662,1208 657,1200 654,1196 653,1190 636,1186 634,1180 621,1184 616,1179 600,1183 593,1173 583,1183 577,1185 571,1186 565,1184 557,1181 555,1180 552,1182 545,1180 544,1179 540,1182 533,1182 527,1181 526,1178 525,1186 519,1191 515,1193 503,1195 497,1195 482,1193 471,1182 468,1174 468,1170 467,1169 464,1168 463,1168 463,1162 457,1165 453,1166 447,1162 443,1149 445,1107 447,1107 453,1105 456,1103 456,1102 453,1097 447,1093 446,1090 444,1065 447,1041 461,1017 461,1017 461,1017 461,1017" id="FOX_CHILLINTALES_T17_006_balloon_10"
+            tabindex="4" onclick="setBalloonData(0,'STRANGE... IF I DIDN’T KNOW IT WAS A FULL TWELVE MILES AWAY, I’D SWEAR IT WAS THE OLD PORTICOES OF REDGAUNTLET CASTLE... CAN I BE DREAMING?')">
+            <metadata borderStyle="wavy" tailTip="663,1352" boundingBox="" tailDirection="S" rank="11"/>
+        </polygon>
+    </svg>
+<metadata method="GroundTruth" lastModificationDate="Wed Apr 09 00:00:24 CEST 2014" lastStepModified="Page_Ended"/>
+<script type="text/javascript" xlink:href="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"></script>
+<script type="text/javascript" xlink:href="../../../../java/polly.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/pollyData.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/toggleEvent.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+</svg>

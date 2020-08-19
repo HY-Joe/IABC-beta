@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg onload="changeData()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="auto" zoomAndPan="magnify" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" height="25em" viewBox="-5 0 480 940" version="1.0">
+    <title>FOX_CHILLINTALES_T17_006</title>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Page" preserveAspectRatio="xMidYMid meet" version="1.0">
+        <image x="0" y="48" width="450" xlink:href="../../../image/panel/fox/FOX_CHILLINTALES_T17_Panel_04.jpg" xlink:type="simple" xlink:actuate="onLoad" height="860" preserveAspectRatio="xMidYMid meet" xlink:show="embed"/>
+        <metadata collectionTitle="Chilling Tales" editorName="Youthful Magazines" doublePage="false" website="http://comicbookplus.com/?dlid=23923" albumTitle="Chilling Tales 17 Geo" drawerName="Matt Fox" language="english" resolution="" ISBN="" readingDirection="leftToRight" writerName="Matt Fox" releaseDate="" pageNumber="6"/>
+    </svg>
+	<style type="text/css" xml:space="preserve">
+        * { stroke-width: 0; stroke-linejoin: round; }
+        .Unclassified { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Noise { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Panel { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Line { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .TextArea { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Balloon { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Letter { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: hidden; }
+        .Character { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; image-rendering: optimizeSpeed; }
+        .Page { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
+        polygon:hover { stroke:red;stroke-width:2; } 
+    </style>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="0 850 480 950" version="1.0" id="panel">
+        <polygon points="33,923 422,923 422,1766 33,1766 33,923" id="FOX_CHILLINTALES_T17_006_panel_3" 
+            tabindex="3" onclick="setPanelData(3, 'Panel Four','Black background with yellow light on a Stranger.','STEENIE is on the left and A Stranger is on the right.')">
+            <metadata viewAngle="" uri="" shot="" area="" rank="4" fillingPcent=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet"  viewBox="0 850 480 950" version="1.0" id="character">
+        <polygon points="195,1165 423,1165 423,1765 195,1765 195,1165" id="FOX_CHILLINTALES_T17_006_character_5"
+        tabindex="3" onclick="setCharacterData(3,'A Stranger','He is talking to a man in front.','He is laughing horribly.')">
+            <metadata ID="" rank=""/>
+        </polygon>
+        <polygon points="36,1173 216,1173 216,1764 36,1764 36,1173" id="FOX_CHILLINTALES_T17_006_character_6"
+        tabindex="3" onclick="setCharacterData(3,'STEENIE','He is talking to a man in front.','Unknown')">
+            <metadata ID="" rank=""/>
+        </polygon>
+    </svg>
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet"  viewBox="0 850 480 950"  version="1.0" id="balloon">
+       <polygon points="39,932 80,924 106,925 142,923 186,925 201,931 209,944 212,957 210,978 206,989 201,996 197,1002 190,1010 182,1017 193,1026 202,1036 212,1053 217,1068 220,1078 221,1087 218,1101 214,1112 209,1122 202,1129 193,1136 193,1149 191,1165 189,1179 183,1193 183,1176 178,1163 174,1149 160,1156 151,1159 139,1162 125,1165 110,1167 93,1167 78,1168 66,1167 51,1164 34,1159 33,945 39,932" id="FOX_CHILLINTALES_T17_006_balloon_7" tabindex="3" onclick="setBalloonData(0,'I HAVE THE COURAGE TO GO TO THE GATES OF HELL, AND A STEPFARTHER, FOR THAT RECEIPT.')">
+            <metadata borderStyle="smooth" tailTip="183,1193" boundingBox="" tailDirection="S" rank="8"/>
+        </polygon>
+        <polygon points="231,925 378,925 391,932 400,941 407,952 413,961 414,974 405,988 408,988 414,987 420,988 422,998 421,1015 421,1026 421,1036 422,1048 420,1057 417,1066 413,1076 405,1086 400,1091 395,1096 390,1100 385,1104 380,1106 376,1108 365,1111 366,1117 368,1126 368,1133 367,1139 366,1145 365,1148 362,1158 360,1161 348,1167 351,1156 353,1152 354,1147 356,1140 356,1133 357,1129 355,1123 352,1117 341,1119 328,1124 321,1125 309,1125 286,1124 275,1124 255,1123 237,1122 229,1118 218,1112 219,1085 214,1058 205,1046 198,1036 191,1025 197,1017 206,1012 212,1007 210,1002 202,995 208,979 210,963 209,950 216,938 231,925" id="FOX_CHILLINTALES_T17_006_balloon_8"
+            tabindex="3" onclick="setBalloonData(1,'HA HA HA THEN COME WITH ME, STEENIE STEENSON!')">
+            <metadata borderStyle="smooth" tailTip="348,1167" boundingBox="" tailDirection="S" rank="9"/>
+        </polygon>
+   </svg>
+<metadata method="GroundTruth" lastModificationDate="Wed Apr 09 00:00:24 CEST 2014" lastStepModified="Page_Ended"/>
+<script type="text/javascript" xlink:href="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"></script>
+<script type="text/javascript" xlink:href="../../../../java/polly.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/pollyData.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+<script type="text/javascript" xlink:href="../../../../java/toggleEvent.js" xlink:actuate="onLoad" xlink:show="other" xlink:type="simple"> </script>
+</svg>
