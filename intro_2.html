@@ -186,100 +186,69 @@
       </div>
     </nav>
 
-  <!--본문-->
+<!--본문-->
   <!-- 선택한 만화 전채 소개 -->
   <center>
     <div class="list">
       <div class="row">
-        <div class="card" style="width:100%;">
+        <div class="card">
           <div class="row no-gutters">
-            <div class="col-md-6">
-              <div class="thumbnail-wrapper">
-                <h1>
-                  <img alt="Boy loves girl 만화 이미지" src="./data/image/page/love/PIKE_BOYLOVEGIRLS_T41_012.jpg">
-                </h1>
+            <!-- <div class="card-title"> -->
+            <div class="col-md-6" style="margin: 15px 0;">
+                  <div class="thumbnail-wrapper">
+                    <h1>
+                      <img alt="Boy loves girl 만화 이미지" src="./data/image/page/love/PIKE_BOYLOVEGIRLS_T41_012.jpg">
+                    </h1>
+                  </div>
+                 <button id="startComic" onClick="startComic()" style="width: 100px; height: auto; color: #fff; background-color: #000; padding: 10px;">Start</button>
+                <button id="continues" onClick="continuesComic()" style="width: 100px; height: auto; color: #fff;background-color: #000; padding: 10px;">Continue</button>
               </div>
-                 <button
-                  id="startComic"
-                  onClick="startComic()"
-                  style="
-                    width: 100px;
-                    height: auto;
-                    color: #fff;
-                    background-color: #000;
-                    padding: 10px;
-                  "
-                >
-                  Start
-                </button>
-                <button
-                  id="continues"
-                  onClick="continuesComic()"
-                  style="
-                    width: 100px;
-                    height: auto;
-                    color: #fff;
-                    background-color: #000;
-                    padding: 10px;
-                  "
-                >
-                  Continue
-                </button>
- </div>
-              <div class="card-body" id="1">
-                제목 : Boy loves girlS<br>
-                장르 : 로맨스<br>
-                등급 : 선정적, 폭력성<br>
-                Introduction: CYNTHY와 CURT는 점점 분위기가 나빠지게 되는데...<br>
-                등장인물<br>
-              
-
-                CYNTHY<br>
-                외모 : A woman with black hair is wearing a long red dress.<br>
-                <div id="textToSynth">
-                  <button class="btn default" onclick="speakTextIntro(5, 'HELLO I AM CYNTHY.')">목소리 듣기 버튼</button>
-    
-                </div>
-
-
-                CURT<br>
-                외모 : A man with yellow hair is wearing a white shirt, beige short pants.<br>
-                <div id="textToSynth">
-                  <button class="btn default" onclick="speakTextIntro(0, 'HELLO I AM CURT.')">목소리 듣기 버튼</button>
-      
-                </div>
-
             
-          
-                GLORIA<br>
-                외모 : A woman with gold hair is wearing a green dress.<br>
-                <div id="textToSynth">
-                  <button class="btn default" onclick="speakTextIntro(3, 'HELLO I AM GLORIA.')">목소리 듣기 버튼</button>
-        
-                </div>                
-
-                GLORIA’s HUSBAND<br>
-                외모 : A man with brown hair is wearing a grey suit with blue tie.<br>
-                <div id="textToSynth">
-                  <button class="btn default" onclick="speakTextIntro(2, 'HELLO I AM GLORIA’s HUSBAND.')">목소리 듣기 버튼</button>
-        
-                </div>
-
-                Narrator<br>
-                <!--텍스트 상자-->
-                <div id="textToSynth">
-                  <button class="btn default" onclick="speakTextIntro(4, 'HELLO I AM NARRATOR.')">목소리 듣기 버튼</button>
-        
-                </div>
-  
+                <!-- <div class="card-body" id="1"> -->
+              <div class="col-md-6" id="1" style="margin: 15px 0;">
+                  
+                  <ul style="padding-inline-start:0;">
+                    <h4>Title : Boy loves girls</h4>
+                    <li style="list-style: none;">Genre : Romance</li>
+                    <li style="list-style: none;">Rate : Sexual contents, Violence</li>
+                    <li style="list-style: none;">Introduction: The atmosphere between CYNTHY and CURT gets worse...</li>
+                  </ul>
+                  <ul style="padding-inline-start:0;">
+                    <li style="list-style: none; margin: 10px 0; font-size: 1.3em;"><strong>[Characters]</strong></li>
+                    <h5>Cynthy</h5>
+                    <li style="list-style: none; margin-bottom: 5px">Appearance  : A woman with black hair is wearing a long red dress.</li>
+                    <div id="textToSynth" style="margin-bottom: 10px;">
+                      <button title="Cynthy's voice" class="btn default" onclick="speakTextIntro(5, 'HELLO I AM CYNTHY.')"style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    </div>
+                    <h5>Curt</h5>
+                    <li style="list-style: none; margin-bottom: 5px">Appearance : A man with yellow hair is wearing a white shirt, beige short pants.</li>
+                    <div id="textToSynth" style="margin-bottom: 10px;">
+                      <button title="A Curt's voice" class="btn default" onclick="speakTextIntro(0, 'HELLO I AM CURT.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    </div>
+                    <h5>Gloria</h5>
+                    <li style="list-style: none; margin-bottom: 5px">Appearance  : A woman with gold hair is wearing a green dress.</li>
+                    <div id="textToSynth" style="margin-bottom: 10px;">
+                      <button title="Gloria's voice" class="btn default" onclick="speakTextIntro(3, 'HELLO I AM GLORIA.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    </div>
+                    <h5>Gloria's husband</h5>
+                    <li style="list-style: none; margin-bottom: 5px">Appearance  : A man with brown hair is wearing a grey suit with blue tie.</li>
+                    <div id="textToSynth" style="margin-bottom: 10px;">
+                      <button title="Gloria's husband's voice" class="btn default" onclick="speakTextIntro(2, 'HELLO I AM GLORIA’s HUSBAND.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    </div>
+                    <h5>Narrator</h5>
+                    <div id="textToSynth" style="margin-bottom: 10px;">
+                      <button title="Narrator's voice" class="btn default" onclick="speakTextIntro(4, 'HELLO I AM NARRATOR.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    </div>
+                  </ul>
+                  </div>
               </div>
+            </div>
+      </div>
+
 
           </div>
         </div>
-      </div>
-    </div>
-  </center>
-
+      </center>
     <div
       class="modal fade"
       id="myModal"
