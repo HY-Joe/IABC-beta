@@ -74,8 +74,11 @@ function speakTextBalloon(num, script) {
 
 }
 function speakTextCharacter(num, name, action, emotion, appearance) {
-
+  this.appearance = appearance;
+  // console.log(this.appearance)
+  if(this.appearance == 'undefined')
+    this.appearance = "";
   var blank = ".... .... ....";
-  preAudio(num,name + blank + action + blank + emotion + blank + appearance);
+  preAudio(num,name + blank + action + blank + emotion + blank + this.appearance);
 
 }
