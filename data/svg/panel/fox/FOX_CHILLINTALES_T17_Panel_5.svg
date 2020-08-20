@@ -19,13 +19,13 @@
         .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="418 850 480 950" version="1.0" id="panel">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="418 860 480 950" version="1.0" id="panel">
         <polygon points="443,1010 831,1010 831,1766 443,1766 443,1010" id="FOX_CHILLINTALES_T17_006_panel_4" 
             tabindex="4" onclick="setPanelData(3, 'Panel Five','The place is in front of a castle gate.','STTEENIE’s and a Stranger’s backs are in the center.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="5" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="418 850 480 950"  version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="418 860 480 950"  version="1.0" id="character">
         <polygon points="611,1382 701,1382 701,1653 611,1653 611,1382" id="FOX_CHILLINTALES_T17_006_character_7"
         tabindex="4" onclick="setCharacterData(3,'STEENIE','He is walking alongside the man next to him.','Unknown')">
             <metadata ID="" rank=""/>
@@ -36,7 +36,7 @@
         </polygon>
     </svg>
 
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="418 850 480 950" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="418 860 480 950" version="1.0" id="balloon">
         <polygon points="448,930 523,929 697,925 787,929 823,931 829,946 831,963 831,979 831,993 829,1007 443,1012 445,954 448,930" id="FOX_CHILLINTALES_T17_006_balloon_9"
              tabindex="4" onclick="setBalloonData(3,'AND SO STEENIE WENT WITH THE MAN AND THEY SOON CAME TO THE DOOR OF A GRIM CASTLE...')">
             <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="10"/>

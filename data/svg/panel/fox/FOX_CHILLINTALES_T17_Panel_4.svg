@@ -19,13 +19,13 @@
         .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="0 850 480 950" version="1.0" id="panel">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="0 860 480 950" version="1.0" id="panel">
         <polygon points="33,923 422,923 422,1766 33,1766 33,923" id="FOX_CHILLINTALES_T17_006_panel_3" 
             tabindex="3" onclick="setPanelData(3, 'Panel Four','Black background with yellow light on a Stranger.','STEENIE is on the left and A Stranger is on the right.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="4" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet"  viewBox="0 850 480 950" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet"  viewBox="0 860 480 950" version="1.0" id="character">
         <polygon points="195,1165 423,1165 423,1765 195,1765 195,1165" id="FOX_CHILLINTALES_T17_006_character_5"
         tabindex="3" onclick="setCharacterData(3,'A Stranger','He is talking to a man in front.','He is laughing horribly.')">
             <metadata ID="" rank=""/>
@@ -35,7 +35,7 @@
             <metadata ID="" rank=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet"  viewBox="0 850 480 950"  version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet"  viewBox="0 860 480 950"  version="1.0" id="balloon">
        <polygon points="39,932 80,924 106,925 142,923 186,925 201,931 209,944 212,957 210,978 206,989 201,996 197,1002 190,1010 182,1017 193,1026 202,1036 212,1053 217,1068 220,1078 221,1087 218,1101 214,1112 209,1122 202,1129 193,1136 193,1149 191,1165 189,1179 183,1193 183,1176 178,1163 174,1149 160,1156 151,1159 139,1162 125,1165 110,1167 93,1167 78,1168 66,1167 51,1164 34,1159 33,945 39,932" id="FOX_CHILLINTALES_T17_006_balloon_7" tabindex="3" onclick="setBalloonData(0,'I HAVE THE COURAGE TO GO TO THE GATES OF HELL, AND A STEPFARTHER, FOR THAT RECEIPT.')">
             <metadata borderStyle="smooth" tailTip="183,1193" boundingBox="" tailDirection="S" rank="8"/>
         </polygon>

@@ -19,13 +19,13 @@
         .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
-     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="800 850 480 950" version="1.0" id="panel">
+     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="830 860 480 950" version="1.0" id="panel">
         <polygon points="857,1009 1235,1010 1238,1763 857,1763 857,1009" id="FOX_CHILLINTALES_T17_006_panel_5"
              tabindex="5" onclick="setPanelData(3, 'Panel Six','The place is in front of a door.','STEENIE’s back is on the left,  Stranger’s back is on the right, and DOUGAL’s front body is in the middle.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="6" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="800 850 480 950" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="830 860 480 950" version="1.0" id="character">
         <polygon points="858,1247 1006,1247 1006,1764 858,1764 858,1247" id="FOX_CHILLINTALES_T17_006_character_9"
             tabindex="5" onclick="setCharacterData(3,'STEENIE','He indicates the man with his index finger, talking to a man in front.','Unknown')">
             <metadata ID="" rank=""/>
@@ -39,7 +39,7 @@
             <metadata ID="" rank=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="805 850 480 950" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="830 860 480 950" version="1.0" id="balloon">
         <polygon points="867,928 1158,923 1220,931 1222,944 1222,950 1220,957 1218,977 1218,988 1218,993 1218,1004 1216,1005 1212,1006 880,1012 872,1008 867,928" id="FOX_CHILLINTALES_T17_006_balloon_11"
             tabindex="5" onclick="setBalloonData(3,'THE DOOR OPENED AND THEY WERE GREETED BY NONE OTHER THAN DOUGAL...')">
             <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="12"/>
