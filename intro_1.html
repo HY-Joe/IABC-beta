@@ -97,7 +97,8 @@
       }
 
       .card {
-        width: 150%;
+        /*width: 150%;*/
+        width: 100%;
       }
 
       .col-md-8 {
@@ -170,9 +171,9 @@
     <div class="list">
       <div class="row">
         <div class="card">
-          <!-- <div class="row no-gutters"> -->
-            <div class="card-title">
-            <!-- <div class="col-md-6"> -->
+          <div class="row no-gutters">
+            <!-- <div class="card-title"> -->
+            <div class="col-md-6" style="margin: 15px 0;">
                   <div class="thumbnail-wrapper">
                     <h1>
                       <img alt="Chilling Tales 만화 이미지" src="./data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg">
@@ -182,7 +183,8 @@
                 <button id="continues" onClick="continuesComic()" style="width: 100px; height: auto; color: #fff;background-color: #000; padding: 10px;">Continue</button>
               </div>
             
-                <div class="card-body" id="1">
+                <!-- <div class="card-body" id="1"> -->
+              <div class="col-md-6" id="1" style="margin: 15px 0;">
                   
                   <ul style="padding-inline-start:0;">
                     <h4>제목: Chilling Tales</h4>
@@ -191,7 +193,7 @@
                     <li style="list-style: none;">Introduction: Stennie는 숲 속에서 길을 헤메다가 어느 한 사내를 만나게 되는데...</li>
                   </ul>
                   <ul style="padding-inline-start:0;">
-                    <li style="list-style: none; margin: 5px 0; font-size: 1.2em;">등장인물</li>
+                    <li style="list-style: none; margin: 5px 0; font-size: 1.3em;">등장인물</li>
                     <h5>Stennie</h5>
                     <li style="list-style: none;">외모 : A man has brown hair, wearing a yellow shirt with a red cloak.</li>
                     <div id="textToSynth" style="margin-bottom: 5px;">
@@ -211,10 +213,11 @@
                     <div id="textToSynth" style="margin-bottom: 5px;">
                       <button title="Narrator's voice" class="btn default" onclick="speakTextIntro(3, 'HELLO I AM Narrator.')">목소리 듣기 버튼</button>
                     </div>
+                  </ul>
                   </div>
               </div>
             </div>
-      
+      </div>
 
 
           </div>
@@ -436,7 +439,7 @@
                       onclick="readCharacterFilter(3, this)"
                     />
                     <label class="custom-control-label" for="customSwitch10"
-                      >Emotion</label
+                      >Facial expression</label
                     >
                   </div>
                   <div class="custom-control custom-switch">
