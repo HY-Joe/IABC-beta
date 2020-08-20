@@ -20,13 +20,13 @@
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
      <!--panel1-->
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="-10 -42 1530 920" version="1.0" id="panel">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="panel">
         <polygon points="35,94 482,92 480,776 34,778 35,94" id="PIKE_BOYLOVEGIRLS_T41_012_panel_0"
             tabindex="0" onclick="setPanelData(4, 'Panel One','The place is the front yard of a house and in front of a car.','CYNTHY’s profile body is on the left, and the CURT’s front body is on the right.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="1" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="-5 -42 1530 920" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="character">
         <polygon points="27,284 193,284 193,782 27,782 27,284" id="PIKE_BOYLOVEGIRLS_T41_012_character_1"
            tabindex="0" onclick="setCharacterData(4,'CYNTHY','She turns her head and speaks to the man.','Unknown','A woman with black hair is wearing a long red dress.')">
             <metadata uri="" area="" fillingPcent=""/>
@@ -36,7 +36,7 @@
             <metadata uri="" area="" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="-5 -42 1530 920" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="balloon">
         <polygon points="33,114 54,92 229,92 239,107 253,128 258,147 258,166 251,194 229,220 205,236 174,244 167,245 156,286 150,257 146,250 93,244 57,232 32,211 33,114" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_0"
             tabindex="0" onclick="setBalloonData(5, 'CURT! OH... I FORGOT WE WERE GOING TO PLAY TENNIS!')">
             <metadata borderStyle="smooth" tailTip="156,286" boundingBox="" tailDirection="S" rank="1"/>
@@ -47,13 +47,13 @@
         </polygon>
     </svg>        
     <!--panel2-->
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="-10 -42 1530 920" version="1.0" id="panel">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="panel">
         <polygon points="506,146 943,144 945,775 506,776 506,146" id="PIKE_BOYLOVEGIRLS_T41_012_panel_1"
             tabindex="1" onclick="setPanelData(4, 'Panel Two','The place is inside a yellow convertible car.','CYNTHY’s profile is on the left, and the CURT’s face is on the right.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="2" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="-5 -42 1530 920" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="character">
         <polygon points="501,351 730,351 730,727 501,727 501,351" id="PIKE_BOYLOVEGIRLS_T41_012_character_2"
             tabindex="1" onclick="setCharacterData(4,'CYNTHY','She is leaning her arm against the car door.','She seems worried.','')">
             <metadata uri="" area="" fillingPcent=""/>
@@ -63,7 +63,7 @@
             <metadata uri="" area="" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="-5 -42 1530 920" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="balloon">
         <polygon points="515,89 924,89 921,132 516,138 515,89" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_2"
             tabindex="1" onclick="setBalloonData(5, 'I WAS IN A BAD MOOD, AND CURT SENSED IT IMMEDIATELY...')">
             <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="3"/>
@@ -74,13 +74,13 @@
         </polygon>
     </svg>   
     <!--panel3-->
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="-10 -42 1530 920" version="1.0" id="panel">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="panel">
         <polygon points="970,91 1416,89 1421,773 969,773 970,91" id="PIKE_BOYLOVEGIRLS_T41_012_panel_2"
             tabindex="2" onclick="setPanelData(4, 'Panel Three','The place is inside a yellow convertible car.','CYNTHY’s profile is on the right, and the CURT’s profile is on the left.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="3" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="-5 -42 1530 920" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="character">
         <polygon points="1027,355 1213,355 1213,532 1027,532 1027,355" id="PIKE_BOYLOVEGIRLS_T41_012_character_4"
             tabindex="2" onclick="setCharacterData(4,'CURT','He  is talking to the woman.','He seems worried.')">
             <metadata uri="" area="" fillingPcent=""/>
@@ -90,7 +90,7 @@
             <metadata uri="" area="" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="-5 -42 1530 920" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="285 62 990 822" version="1.0" id="balloon">
         <polygon points="971,89 1421,89 1420,206 969,207 971,89" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_4"
             tabindex="2" onclick="setBalloonData(5, 'I KNEW WHAT WAS COMING, BUT I DIDN’T WANT TO GIVE HIM AN ANSWER... NOT THEN. I TRIED TO CHANGE THE MOOD!')">
             <metadata borderStyle="smooth" tailTip="" boundingBox="" tailDirection="none" rank="5"/>

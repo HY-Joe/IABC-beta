@@ -51,7 +51,7 @@ function firstNavi(num) {
 
     sessionsetItem("panel1", page);
     sessiongetItem("panel1");
-    alert(page + " >> " + data);
+    // alert(page + " >> " + data);
     // $("#comics_img").attr(
     //   "data",
     //   "./data/svg/panel/fox/FOX_CHILLINTALES_T17_Panel_" + page + ".svg"
@@ -77,28 +77,31 @@ function secondNavi(num) {
 
     sessionsetItem("page2", page);
     sessiongetItem("page2");
-    $("#comics_img").attr(
-      "data",
-      "./data/svg/page/love/PIKE_BOYLOVEGIRLS_T41_Page.svg"
-    );
-  } else if (modeName == "scrip") {
+    // $("#comics_img").attr(
+    //   "data",
+    //   "./data/svg/page/love/PIKE_BOYLOVEGIRLS_T41_Page.svg"
+    // );
+    location.href="./page_" + page +".html";
+  } else if (modeName == "strip") {
     page = num;
 
     sessionsetItem("strip2", page);
     sessiongetItem("strip2");
-    $("#comics_img").attr(
-      "data",
-      "./data/svg/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_" + page + ".svg"
-    );
+    // $("#comics_img").attr(
+    //   "data",
+    //   "./data/svg/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_" + page + ".svg"
+    // );
+    location.href="./strip_" + page +".html";
   } else if (modeName == "panel") {
     page = num;
 
     sessionsetItem("panel2", page);
     sessiongetItem("panel2");
-    $("#comics_img").attr(
-      "data",
-      "./data/svg/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_" + page + ".svg"
-    );
+    // $("#comics_img").attr(
+    //   "data",
+    //   "./data/svg/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_" + page + ".svg"
+    // );
+    location.href="./panel_" + page +".html";
   }
 
   // $(window).ready(function(){

@@ -19,13 +19,13 @@
         .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
-     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="369 690 1010 890" version="1.0" id="panel">
+     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="470 725 890 790" version="1.0" id="panel">
         <polygon points="332,800 1421,795 1424,1462 333,1470 332,800" id="PIKE_BOYLOVEGIRLS_T41_012_panel_4"
              tabindex="4" onclick="setPanelData(4, 'Panel Five','The place is in front of the house where the party is held.','CURT and CYNTHY stand on the left, GLORIA sits on the right, and her husband stands on the middle.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="5" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="369 690 1010 890" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="470 725 890 790" version="1.0" id="character">
         <polygon points="324,800 585,800 585,1475 324,1475 324,800" id="PIKE_BOYLOVEGIRLS_T41_012_character_7"
             tabindex="4" onclick="setCharacterData(4,'CURT','He is in conversation with the people.','He is smirking.','A man with yellow hair  is wearing an orange suit with green tie.')">
             <metadata uri="" area="" fillingPcent=""/>
@@ -43,7 +43,7 @@
             <metadata uri="" area="" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="369 690 1010 890" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="470 725 890 790" version="1.0" id="balloon">
          <polygon points="697,821 714,793 874,794 888,803 896,818 897,837 888,863 868,879 841,887 818,891 789,891 775,889 735,936 746,902 751,883 718,874 699,849 697,821" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_7"
             tabindex="4" onclick="setBalloonData(5, 'HI, KIDS! WHAT’S UP?')">
             <metadata borderStyle="smooth" tailTip="735,936" boundingBox="" tailDirection="SW" rank="8"/>

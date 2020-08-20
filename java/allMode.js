@@ -40,24 +40,34 @@ function startComic() {
   var name = "mode1";
   funcGetItem(name);
   var modeName = getData;
-
+  // var str = modeName + comicNum;
+  // alert(str);
   if (comicNum == "1") {
     if (modeName == "page") {
       funcSetItem("page1", 1);
-      location.href = "./html_reader/page/fox/" + readingMode + "_" + comicNum + ".html";  
+      location.href = "./html_reader/page/fox/" + readingMode + "_1.html";  
     }
     else if (modeName == "strip") {
       funcSetItem("strip1", 1);
-      location.href = "./html_reader/strip/fox/" + readingMode + "_" + comicNum + ".html";  
+      location.href = "./html_reader/strip/fox/" + readingMode + "_1.html";  
     }
     else if (modeName == "panel") {
       funcSetItem("panel1", 1);
-      location.href = "./html_reader/panel/fox/" + readingMode + "_" + comicNum + ".html";  
+      location.href = "./html_reader/panel/fox/" + readingMode + "_1.html";  
     }
   } else if (comicNum == "2") {
-    if (modeName == "page") funcSetItem("page2", 1);
-    else if (modeName == "strip") funcSetItem("strip2", 1);
-    else if (modeName == "panel") funcSetItem("panel2", 1);
+    if (modeName == "page") {
+      funcSetItem("page2", 1);
+      location.href = "./html_reader/page/love/" + readingMode + "_1.html";  
+    }
+    else if (modeName == "strip") { 
+      funcSetItem("strip2", 1);
+      location.href = "./html_reader/strip/love/" + readingMode + "_1.html";   
+    }
+    else if (modeName == "panel") {
+      funcSetItem("panel2", 1);
+      location.href = "./html_reader/panel/love/" + readingMode + "_1.html";    
+    }
   }
   // location.href = readingMode + "_" + comicNum + ".html";
 }
@@ -84,11 +94,15 @@ function continuesComic() {
     else if (modeName == "panel") 
       location.href = "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
   } else if (comicNum == "2") {
-    if (modeName == "page") location.href = modeName + "_" + flag + ".html";
+    if (modeName == "page") 
+      location.href = "./html_reader/page/love/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
     else if (modeName == "strip")
-      location.href = modeName + "_" + flag + ".html";
+      location.href = "./html_reader/strip/love/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
     else if (modeName == "panel")
-      location.href = modeName + "_" + flag + ".html";
+      location.href = "./html_reader/panel/love/" + modeName + "_" + flag + ".html";
+      // location.href = modeName + "_" + flag + ".html";
   }
 }
 

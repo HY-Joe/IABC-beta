@@ -19,13 +19,13 @@
         .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
- <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="465 0 500 800" version="1.0" id="panel">
+ <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="465 40 500 800" version="1.0" id="panel">
         <polygon points="506,146 943,144 945,775 506,776 506,146" id="PIKE_BOYLOVEGIRLS_T41_012_panel_1"
             tabindex="1" onclick="setPanelData(4, 'Panel Two','The place is inside a yellow convertible car.','CYNTHY’s profile is on the left, and the CURT’s face is on the right.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="2" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="465 0 500 800" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="465 40 500 800" version="1.0" id="character">
         <polygon points="501,351 730,351 730,727 501,727 501,351" id="PIKE_BOYLOVEGIRLS_T41_012_character_2"
             tabindex="1" onclick="setCharacterData(4,'CYNTHY','She is leaning her arm against the car door.','She seems worried.','')">
             <metadata uri="" area="" fillingPcent=""/>
@@ -35,7 +35,7 @@
             <metadata uri="" area="" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="465 0 500 800" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="465 40 500 800" version="1.0" id="balloon">
         <polygon points="515,89 924,89 921,132 516,138 515,89" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_2"
             tabindex="1" onclick="setBalloonData(5, 'I WAS IN A BAD MOOD, AND CURT SENSED IT IMMEDIATELY...')">
             <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="3"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg onload="changeData()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="auto" zoomAndPan="magnify" contentStyleType="text/css" height="25em" viewBox="0 0 500 700" preserveAspectRatio="xMidYMid meet" version="1.0">
+<svg onload="changeData()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="text/ecmascript" width="auto" zoomAndPan="magnify" contentStyleType="text/css" height="25em" viewBox="0 0 520 700" preserveAspectRatio="xMidYMid meet" version="1.0">
     <title>PIKE_BOYLOVEGIRLS_T41_012</title>
     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Page" preserveAspectRatio="xMidYMid meet" version="1.0">
         <image x="0" y="0" width="517" xlink:href="../../../image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg" xlink:type="simple" xlink:actuate="onLoad" height="700" preserveAspectRatio="xMidYMid meet" xlink:show="embed"/>
@@ -19,19 +19,19 @@
         .linkSBSC { fill: rgba(0,0,0,0); stroke: none; opacity: .8; visibility: visible; }
         polygon:hover { stroke:red;stroke-width:2; } 
     </style>
-     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="783 1480 700 710" version="1.0" id="panel">
+     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="820 1515 630 650" version="1.0" id="panel">
         <polygon points="836,1493 1426,1488 1431,2170 839,2180 836,1493" id="PIKE_BOYLOVEGIRLS_T41_012_panel_6"
             tabindex="6" onclick="setPanelData(4, 'Panel Six','The place is in front of a window inside the house.','CYNTHY’s profile is on the center facing right.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="7" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="783 1480 700 710" version="1.0" id="character">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" viewBox="820 1515 630 650" version="1.0" id="character">
         <polygon points="993,1685 1256,1685 1256,2178 993,2178 993,1685" id="PIKE_BOYLOVEGIRLS_T41_012_character_11"
             tabindex="6" onclick="setCharacterData(4,'CYNTHY','She is standing looking at the window.','She seems to be outraged')">
             <metadata uri="" area="" fillingPcent=""/>
         </polygon>
     </svg>
-    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="783 1480 700 710" version="1.0" id="balloon">
+    <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Balloon" preserveAspectRatio="xMidYMid meet" viewBox="820 1515 630 650" version="1.0" id="balloon">
         <polygon points="836,1656 834,1491 1085,1487 1107,1501 1125,1529 1132,1559 1126,1591 1112,1613 1096,1622 1085,1622 1091,1633 1080,1662 1048,1682 1003,1691 955,1692 919,1689 889,1721 855,1749 837,1757 837,1743 865,1717 882,1692 889,1682 854,1670 836,1656" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_14"
              tabindex="6" onclick="setBalloonData(0, 'LUCKY? MY OLD MAN’S GOT ENOUGH DOUGH TO SUPPORT HALF THIS TOWN! WHY SHOULD I WANT TO WORK?')">
             <metadata borderStyle="smooth" tailTip="837,1757" boundingBox="" tailDirection="SW" rank="15"/>
