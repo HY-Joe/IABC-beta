@@ -1,8 +1,10 @@
 var keyName, chk, getData;
 var chk1, chk2;
 var comicNum;
+var rateValue;
 
 readMode();
+readRate();
 
 function readMode() {
   keyName = "mode1";
@@ -18,6 +20,32 @@ function readMode() {
     "checked",
     true
   );
+}
+
+function readRate() {
+  rateValue = "rate";
+  funcGetItem(rateValue);
+
+  chk = getData;
+  if (chk == null || chk == "undefined") funcSetItem(rateValue, "medium");
+
+  funcGetItem(rateValue);
+  chk = getData;
+
+  $("input:radio[name=speakingRate]:input[value=" + chk + "]").attr(
+    "checked",
+    true
+  );
+}
+
+function chSpeakingRate(value) {
+  this.value = value;
+
+  funcSetItem("rate", this.value);
+
+  funcGetItem("rate");
+
+  readRate();
 }
 
 function chAllComicMode(value) {

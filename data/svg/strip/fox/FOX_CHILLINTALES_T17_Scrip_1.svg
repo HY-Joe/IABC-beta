@@ -44,9 +44,9 @@
     </svg>
     <!--panel2-->
      <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" height="940" width="900" viewBox="0 0 1250 940" version="1.0" id="panel">
-        <polygon points="32,53 416,52 429,901 40,902 32,53" id="FOX_CHILLINTALES_T17_006_panel_0" 
-            tabindex="0" onclick="setPanelData(3, 'Panel One','In a wood with trees.','STEENIE’s full body is at the center')">
-            <metadata viewAngle="" uri="" shot="" area="" rank="1" fillingPcent=""/>
+        <polygon points="442,58 829,58 829,903 442,903 442,58" id="FOX_CHILLINTALES_T17_006_panel_1" 
+            tabindex="1" onclick="setPanelData(3, 'Panel Two','In a wood with trees.','STEENIE is on the left and A Stranger is on the right.')">
+            <metadata viewAngle="" uri="" shot="" area="" rank="2" fillingPcent=""/>
         </polygon>
     </svg>
     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Character" preserveAspectRatio="xMidYMid meet" height="940" width="900" viewBox="0 0 1250 940" version="1.0" id="character">

@@ -21,8 +21,12 @@ function preAudio(num, text){
   }
 
   //속도 
-  speed = "'fast'"; //x-slow, slow, medium, fast,x-fast
-
+  var getSpeed = sessionStorage.getItem("rate"); //"'fast'"; //x-slow, slow, medium, fast,x-fast
+  // console.log("rate : " + typeof(getSpeed));
+  speed = "";
+  speed += "'";
+  speed += getSpeed;
+  speed += "'";
 
   var speechParams = {
     OutputFormat: "mp3",
