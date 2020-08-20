@@ -22,7 +22,7 @@ function firstNavi(num) {
   sessiongetItem(name);
   modeName = data;
 
-  alert(modeName)
+  // alert(modeName)
 
   var a = document.getElementById("inputSvg");
 
@@ -31,19 +31,21 @@ function firstNavi(num) {
 
     sessionsetItem("page1", page);
     sessiongetItem("page1");
-    $("#comics_img").attr(
-      "data",
-      "./data/svg/page/fox/FOX_CHILLINTALES_T17_Page.svg"
-    );
-  } else if (modeName == "scrip") {
+    // $("#comics_img").attr(
+    //   "data",
+    //   "./data/svg/page/fox/FOX_CHILLINTALES_T17_Page.svg"
+    // );
+    location.href="./page_" + page +".html";
+  } else if (modeName == "strip") {
     page = num;
 
     sessionsetItem("strip1", page);
     sessiongetItem("strip1");
-    $("#comics_img").attr(
-      "data",
-      "./data/svg/strip/fox/FOX_CHILLINTALES_T17_Scrip_" + page + ".svg"
-    );
+    // $("#comics_img").attr(
+    //   "data",
+    //   "./data/svg/strip/fox/FOX_CHILLINTALES_T17_Scrip_" + page + ".svg"
+    // );
+    location.href="./strip_" + page +".html";
   } else if (modeName == "panel") {
     page = num;
 

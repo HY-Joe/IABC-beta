@@ -1,60 +1,99 @@
 var modeName = sessiongetItem("mode1");
 var data;
+console.log("de >>> " + data);
 
-for (var i = 1; i <= 2; i++) {
-  var fileName = data;
 
-  if (i == 1) {
-    alert(fileName)
-    fileName += 1;
-    sessiongetItem(fileName);
-    console.log(data);
-    
-    if (data == null || data == "undefined") {
-      if (modeName == "panel") {
-        sessionsetItem("panel1", 1);
-        sessiongetItem("panel1");
-      } else if ( modeName == "strip") {
-        sessionsetItem("strip1", 1);
-        sessiongetItem("strip1");
-      } else if (modeName == "page") {
-        sessionsetItem("page1", 1);
-        sessiongetItem("page1");
-      }
-    } else {
-      if (modeName == "panel")
-        sessiongetItem("panel1");
-      else if (modeName == "strip")
-        sessiongetItem("strip1");
-      else if (modeName == "page")
-        sessiongetItem("page1");
-    }
-  } else if (i == 2) {
-    fileName += 2;
-    sessiongetItem(fileName);
-    console.log(data);
-    
-    if (data == null || data == "undefined") {
-      if (modeName == "panel") {
-        sessionsetItem("panel2", 1);
-        sessiongetItem("panel2");
-      } else if ( modeName == "strip") {
-        sessionsetItem("strip2", 1);
-        sessiongetItem("strip2");
-      } else if (modeName == "page") {
-        sessionsetItem("page2", 1);
-        sessiongetItem("page2");
-      }
-    } else {
-      if (modeName == "panel")
-        sessiongetItem("panel2");
-      else if (modeName == "strip")
-        sessiongetItem("strip2");
-      else if (modeName == "page")
-        sessiongetItem("page2");
-    }
-  }
-}
+for (var i = 1; i <= 2; i++ ) { // comicnumber
+		var fileName = data;
+
+		if (i == 1) { 
+			for (var j = 1; j <= 3; j++ ) { // mode
+
+				if ( j == 1 ) {	// panel
+					sessiongetItem(fileName);
+					console.log(" j1 > " +data);
+
+					//var x = data;
+					//alert(x);
+					if(data == null || data == "undefined"){
+						sessionsetItem('panel1', 1);	
+						sessiongetItem('panel1');	
+						console.log(" j1 >> " +data);
+					} else {
+						sessiongetItem('panel1');
+						// return null;
+					}
+				} else if ( j == 2 ) { // scrip
+					sessiongetItem(fileName);
+					console.log(" j2 > " +data);
+
+					if(data == null || data == "undefined"){
+						sessionsetItem('strip1', 1);	
+						sessiongetItem('strip1');	
+						console.log(" j2 >> " +data);
+					} else{
+						sessiongetItem('strip1');	
+						//return null;
+					}
+				} else if ( j == 3 ) { // page
+					sessiongetItem(fileName);
+					console.log(" j3 > " +data);
+
+					if(data == null || data == "undefined"){
+						sessionsetItem('page1', 1);	
+						sessiongetItem('page1');	
+						console.log(" j3 >> " +data);
+					} else {
+						sessiongetItem('page1');	
+						// return null;
+					}
+				}
+			}
+		} else if (i == 2) { 
+			for (var j = 1; j <= 3; j++ ) { // mode
+
+				if ( j == 1 ) {	// panel
+					sessiongetItem(fileName);
+					console.log(" j1 > " +data);
+
+					//var x = data;
+					//alert(x);
+					if(data == null || data == "undefined"){
+						sessionsetItem('panel2', 1);	
+						sessiongetItem('panel2');	
+						console.log(" j1 >> " +data);
+					} else {
+						sessiongetItem('panel2');	
+						// return null;
+					}
+				} else if ( j == 2 ) { // scrip
+					sessiongetItem(fileName);
+					console.log(" j2 > " +data);
+
+					if(data == null || data == "undefined"){
+						sessionsetItem('strip2', 1);	
+						sessiongetItem('strip2');	
+						console.log(" j2 >> " +data);
+					} else {
+						sessiongetItem('strip2');	
+						// return null;
+					}
+				} else if ( j == 3 ) { // page
+					sessiongetItem(fileName);
+					console.log(" j3 > " +data);
+
+					if(data == null || data == "undefined"){
+						sessionsetItem('page2', 1);	
+						sessiongetItem('page2');	
+						console.log(" j3 >> " +data);
+					} else {
+						sessiongetItem('page2');	
+						// return null;
+					}
+				}
+			}
+		}
+	}
 
 function sessiongetItem(key) {
   this.key = key;

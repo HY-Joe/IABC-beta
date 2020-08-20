@@ -46,7 +46,10 @@ function startComic() {
       funcSetItem("page1", 1);
       location.href = "./html_reader/page/fox/" + readingMode + "_" + comicNum + ".html";  
     }
-    else if (modeName == "strip") funcSetItem("strip1", 1);
+    else if (modeName == "strip") {
+      funcSetItem("strip1", 1);
+      location.href = "./html_reader/strip/fox/" + readingMode + "_" + comicNum + ".html";  
+    }
     else if (modeName == "panel") {
       funcSetItem("panel1", 1);
       location.href = "./html_reader/panel/fox/" + readingMode + "_" + comicNum + ".html";  
