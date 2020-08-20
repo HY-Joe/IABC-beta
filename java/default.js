@@ -1,17 +1,22 @@
-var modeName = sessiongetItem("mode1");
+
 var data;
-console.log("de >>> " + data);
+
 
 
 for (var i = 1; i <= 2; i++ ) { // comicnumber
+	var modeName = sessiongetItem("mode1");
+	console.log("de >>> " + data);
 		var fileName = data;
-
+		fileName += i;
+		console.log(fileName);
 		if (i == 1) { 
 			for (var j = 1; j <= 3; j++ ) { // mode
 
 				if ( j == 1 ) {	// panel
 					sessiongetItem(fileName);
-					console.log(" j1 > " +data);
+					console.log(fileName);
+					var getName = data;
+					console.log(" j1 > " +getName);
 
 					//var x = data;
 					//alert(x);
