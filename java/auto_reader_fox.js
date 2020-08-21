@@ -1,0 +1,66 @@
+function fox_page_1(){
+	fox_strip_1();
+	fox_strip_2();
+}
+
+function fox_strip_1(){
+	fox_panel_1();
+	fox_panel_2();
+	fox_panel_3();
+}
+
+function fox_strip_2(){
+	fox_panel_4();
+	fox_panel_5();
+	fox_panel_6();
+}
+
+function fox_panel_1(){
+	setPanelData(3, 'Panel One','In a wood with trees.','STEENIE’s full body is at the center');
+	setCharacterData(1, 3,'STEENIE','He is walking in the wood while touching his forehead with his left hand.','He seems like he has a headache.','A man has brown hair, wearing a yellow shirt with a red cloak.');
+	setBalloonData(3,'MY GRANDFATHER, STEENIE, FOR-TIFIED HIMSELF WITH BRANDY AND MAKE HIS WAY HOME THROUGH THE DARK WOODS OF HAUNTED PITMURKIE...');
+	setBalloonData(0,'AYE! I AM LOST! MY HOME WILL BE TAKEN--IS ME!');
+}
+
+function fox_panel_2(){
+	setPanelData(3, 'Panel Two','In a wood with trees.','STEENIE is on the left and A Stranger is on the right.');
+	setCharacterData(3,'STEENIE','He is asking a question to a man.','Unknown');
+	setCharacterData(3,'A Stranger','He stretches his right hand forward towards the man and answers his question.','He is serious.','A man is wearing a blue long hooded cloak.');
+	setBalloonData(3,'SUDDENLY, FROM A DARK THICKET, A STRANGER STEPPED BEFORE HIM...');
+	setBalloonData(0,'HUH! WHO ARE YOU?');
+	setBalloonData(1,'STEENIE, I HAVE BEEN LOOKING FOR YOU.');
+}
+
+function fox_panel_3(){
+	setPanelData(3, 'Panel Three','In a wood with trees.','STEENIE’s upper body  is on the left and A Stranger’s upper body  is on the right.');
+	setCharacterData(3,'STEENIE','He is talking to a man in front.','He looks puzzled.');
+	setCharacterData(3,'A Stranger','He is talking to a man in front.','He is serious.');
+	setBalloonData(0,'ME? WHAT ON AIRTH CAN YE WANT WITH ME?');
+	setBalloonData(1,'THE AULD LAIRD IS DISTURBED IN HIS GRAVE BY YOUR CURSES! IF YE DARE VEN-TURE TO GO AND SEE HIM, HE WILL GIVE YOU THE RECEIPT.');
+}
+
+function fox_panel_4(){
+	setPanelData(3, 'Panel Four','Black background with yellow light on a Stranger.','STEENIE is on the left and A Stranger is on the right.');
+	setCharacterData(3,'A Stranger','He is talking to a man in front.','He is laughing horribly.');
+	setCharacterData(3,'STEENIE','He is talking to a man in front.','Unknown');
+	setBalloonData(0,'I HAVE THE COURAGE TO GO TO THE GATES OF HELL, AND A STEPFARTHER, FOR THAT RECEIPT.');
+	setBalloonData(1,'HA HA HA THEN COME WITH ME, STEENIE STEENSON!');
+}
+
+function fox_panel_5(){
+	setPanelData(3, 'Panel Five','The place is in front of a castle gate.','STTEENIE’s and a Stranger’s backs are in the center.');
+	setCharacterData(3,'STEENIE','He is walking alongside the man next to him.','Unknown');
+	setCharacterData(3,'A Stranger','He is walking alongside the man next to him.','Unknown');
+	setBalloonData(3,'AND SO STEENIE WENT WITH THE MAN AND THEY SOON CAME TO THE DOOR OF A GRIM CASTLE...');
+	setBalloonData(0,'STRANGE... IF I DIDN’T KNOW IT WAS A FULL TWELVE MILES AWAY, I’D SWEAR IT WAS THE OLD PORTICOES OF REDGAUNTLET CASTLE... CAN I BE DREAMING?');
+}
+
+function fox_panel_6(){
+	setPanelData(3, 'Panel Six','The place is in front of a door.','STEENIE’s back is on the left,  Stranger’s back is on the right, and DOUGAL’s front body is in the middle.');
+	setCharacterData(3,'STEENIE','He indicates the man with his index finger, talking to a man in front.','Unknown');
+	setCharacterData(3,'DOUGAL','He is talking to a man in front.','He frowns and speaks seriously.');
+	setCharacterData(3,'A Stranger','He is standing next to STEENIE.','Unknown');
+	setBalloonData(3,'THE DOOR OPENED AND THEY WERE GREETED BY NONE OTHER THAN DOUGAL...');
+	setBalloonData(0,'DOUGAL MAC CALLUM, I THOUGHT YE BE DEAD!');
+	setBalloonData(2,'FORGET ABOUT ME AND LISTEN WELL TO WHAT I HAVE TO SAY.');
+}

@@ -1,3 +1,39 @@
+
+var channel_now = 0;
+var channel_cnt = 0;                   // number of channels
+audiochannels = new Array();
+ 
+//var x = document.getElementById("myAudio"); 
+
+function playAudio(url) {
+  //new Audio(url).play(); 
+  
+  //var a = new Audio(url);
+  //a.play(); 
+
+  channel_cnt = channel_cnt +1;
+
+  audiochannels[channel_cnt] = new Array();
+  audiochannels[channel_cnt]['channel'] = new Audio();
+  audiochannels[channel_cnt]['finished'] = -1;
+  
+  
+  if(channel_now > 0)
+    audiochannels[channel_now]['channel'].pause();
+  
+  audiochannels[channel_cnt]['channel'].src = url;
+  audiochannels[channel_cnt]['channel'].load();
+  audiochannels[channel_cnt]['channel'].play();
+  channel_now = channel_cnt;
+  
+}
+
+function pauseAudio() { 
+  //x.pause(); 
+} 
+
+
+
 function preAudio(num, text){
   
   AWS.config.region = "us-east-1"; // Region
@@ -47,7 +83,7 @@ function preAudio(num, text){
   signer.getSynthesizeSpeechUrl(speechParams, function (error, url) {
     if (error) {
     } else {
-      new Audio(url).play();
+      playAudio(url);
     }
   });
 }

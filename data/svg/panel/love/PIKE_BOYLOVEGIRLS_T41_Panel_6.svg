@@ -49,7 +49,7 @@
             <metadata borderStyle="other" tailTip="" boundingBox="" tailDirection="none" rank="11"/>
         </polygon>
         <polygon points="29,1552 58,1526 310,1526 324,1541 335,1567 338,1587 335,1618 319,1645 299,1661 274,1676 244,1683 239,1716 222,1779 223,1758 215,1688 161,1687 103,1681 54,1666 31,1648 29,1552" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_11"
-            tabindex="5" onclick="setBalloonData(2, 'MY OLD MAN SAYS I'M GOING TO HAVE TO TAKE THAT ADVERTISING JOB IN NEW YORK!')">
+            tabindex="5" onclick="setBalloonData(2, 'MY OLD MAN SAYS I’M GOING TO HAVE TO TAKE THAT ADVERTISING JOB IN NEW YORK!')">
             <metadata borderStyle="smooth" tailTip="222,1779" boundingBox="" tailDirection="S" rank="12"/>
         </polygon>        
         <polygon points="319,1536 333,1524 815,1521 813,1597 772,1622 709,1631 639,1631 582,1629 552,1624 548,1646 518,1673 478,1683 462,1685 465,1742 479,1798 469,1785 451,1754 438,1711 432,1687 392,1681 350,1670 323,1654 316,1644 319,1536" id="PIKE_BOYLOVEGIRLS_T41_012_balloon_12"

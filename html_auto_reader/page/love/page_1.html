@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -19,8 +20,8 @@
 
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
-  <!-- <script type="text/javascript" src="../../../java/loadMode.js"></script> -->
+  <!-- <script type="text/javascript" src="../../../java/toggleEvent.js"></script> -->
+  <script type="text/javascript" src="../../../java/loadMode.js"></script>
   <title>IABC</title>
 
 </head>
@@ -56,11 +57,6 @@
 
     }
   </script>
-
-  <script type="text/javascript">
-    sessionStorage.setItem('panel1', 1);
-  </script>
-
   <!-- 스타일 지정 -->
   <style type="text/css">
     img {
@@ -78,9 +74,7 @@
     }
 
     .card {
-      /*width: 150%;*/
-      /*width: auto;*/
-      width: 100%;
+      width: 150%;
     }
 
     .col-md-8 {
@@ -135,7 +129,7 @@
             </button>
     </nav>
 
-  </div>
+  <!-- </div> -->
   <center>
 
 
@@ -144,19 +138,20 @@
       <div class="row">
 
         <div class="card">
+          <!-- <div id="inputSvg" class="card-title" style=""> -->
           <div class="card-title">
-            <object data="../../../data/svg/panel/fox/FOX_CHILLINTALES_T17_Panel_1.svg" id="comics_img" type="image/svg+xml" ></object>
+            <object data="../../../data/svg/page/love/PIKE_BOYLOVEGIRLS_T41_Page.svg" id="comics_img" type="image/svg+xml" ></object>
           </div>
           <div class="card-body">
             <div>
-              <button title="Start panel" style="background-color: rgba(255, 255, 255, 0); border: none;">
+              <button title="Start page"  style="background-color: rgba(255, 255, 255, 0); border: none;">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z" />
                 </svg>    
               </button>
-              <button onclick="location.href='./panel_2.html'" title="Next" style="background-color: rgba(255, 255, 255, 0); border: none;">
+              <button title="End page" style="background-color: rgba(255, 255, 255, 0); border: none;">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
                   <path fill-rule="evenodd"
@@ -181,8 +176,6 @@
   </center>
 
 
-
-
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false"
     data-backdrop="static">
     <div class="modal-dialog" role="document">
@@ -195,7 +188,7 @@
         <div class="modal-body">
           <div>
             <button onclick="location.href='../../../index.html'">Go to home</button>
-            <button onclick="location.href='../../../intro_1.html'">Go to intoroduction</button>
+            <button onclick="location.href='../../../intro_2.html'">Go to intoroduction</button>
           </div>
                       <div>
               <p>Speaking rate</p>
@@ -320,7 +313,7 @@
                 <div class="custom-control custom-switch">
                   <input type="checkbox" class="custom-control-input" name="readToggle" value="characterFilter3"
                     id="customSwitch10" onclick="readCharacterFilter(3, this)">
-                  <label class="custom-control-label" for="customSwitch10">Facial expression</label>
+                  <label class="custom-control-label" for="customSwitch10">Emotion</label>
                 </div>
                 <div class="custom-control custom-switch">
                   <input type="checkbox" class="custom-control-input" name="readToggle" value="characterFilter4"
@@ -342,24 +335,12 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title" id="myModalLabel2">Panel</h4>
+          <h4 class="modal-title" id="myModalLabel2">Page</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
         </div>
         <div class="modal-body" style="">
-          <div style="margin: 10px;">
-            <center>
-              <img src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_01.jpg" style="width: 5.8em; height: auto;" onclick="changeNavImg(1)">
-              <img src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_02.jpg" style="width: 5.8em; height: auto;" onclick="changeNavImg(2)">         
-              <img src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_03.jpg" style="width: 5.8em; height: auto;" onclick="changeNavImg(3)">
-            </center>
-          <div style="margin: 10px;">
-            <center>
-              <img src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_04.jpg" style="width: 5.755em; height: auto;" onclick="changeNavImg(4)">
-              <img src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_05.jpg" style="width: 5.755em; height: auto;" onclick="changeNavImg(5)">
-              <img src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_06.jpg" style="width: 5.755em; height: auto;" onclick="changeNavImg(6)">
-            </center>
-          </div>
+          <center> <img src="../../../data/image/page/love/PIKE_BOYLOVEGIRLS_T41_012.jpg" style="width: auto; height: auto;" onclick="changeNavImg(1)"></center>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -379,8 +360,8 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="../../../java/allMode.js"></script>
 
-  <!-- <script type="text/javascript" src="./java/inputObject.js"></script> -->
   <script type="text/javascript" src="../../../java/navigation.js"></script>
+  <!-- <script type="text/javascript" src="./java/inputObject.js"></script> -->
   <!-- <script type="text/javascript" src="./java/prevPage.js"></script> -->
   <!-- <script type="text/javascript" src="./java/nextPage.js"></script> -->
 
