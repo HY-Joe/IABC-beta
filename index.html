@@ -33,7 +33,9 @@
     ></script>
 	<script type="text/javascript" src="./java/default.js"></script>
 	<!-- <script type="text/javascript" src="./java/loadMode.js"></script> -->
-
+	<link rel="stylesheet" type="text/css" href="./css/default.css">
+	<link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
+	<link rel="stylesheet" type="text/css" href="./css/modalStyle.css">
     <title>IABC</title>
 </head>
 
@@ -54,8 +56,7 @@
                 class="bi bi-gear-fill"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                style="margin-top: 0.2em;"
-              >
+              ><!-- style="margin-top: 0.2em;" -->
                 <path
                   fill-rule="evenodd"
                   d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
@@ -68,30 +69,30 @@
    <!-- <section class="gallery-block cards-gallery"> -->
 	    <div class="container">
 	        <div class="row">
-	            <div class="col-md-6 col-lg-4" style="margin: 15px auto;">
+	            <div class="col-md-6 col-lg-4" > <!-- style="margin: 15px auto;" -->
 	                <!-- <div class="card border-0 transform-on-hover"> -->
 
-	                    <div class="card-body" style="margin: 10px auto; padding: 0;">
+	                    <div class="card-body" > <!-- style="margin: 10px auto; padding: 0;" -->
 	             			<a href="./intro_1.html" onclick="setComicNum(1)">
 	                		<img src="./data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg" alt="If you double-tap, it will go to the introduction page about Chilling Tales" 
 	                		class="card-img-top">	
 	                		</a>
 						</div>
 						<div class="card-title">
-							<h3 style="text-align: center;">Chilling Tales</h3>
+							<h3>Chilling Tales</h3>
 						</div>
 	               </div>
-	            <div class="col-md-6 col-lg-4" style="margin: 15px auto;">
+	            <div class="col-md-6 col-lg-4">
 	                <!-- <div class="card border-0 transform-on-hover"> -->
 
-	                    <div class="card-body" style="margin: 10px auto; padding: 0;">
+	                    <div class="card-body">
 	                  		<a href="./intro_2.html" onclick="setComicNum(2)">
 		                	<img src="./data/image/page/love/PIKE_BOYLOVEGIRLS_T41_012.jpg" alt="If you double-tap, it will go to the introduction page about Boy Loves Girls"
 		                	 class="card-img-top">
 		                </a>
 						</div>
 						<div class="card-title">
-							<h3 style="text-align: center;">Boy Love Girls</h3>
+							<h3>Boy Love Girls</h3>
 						</div>
 	                
 	            </div>
@@ -118,31 +119,28 @@
 					<div>
 						<p>Speaking rate</p>
 						<ul>
-							<li style="list-style: none;">
+							<li> <!-- style="list-style: none;" -->
 								<label>
-									<input type="radio" name="speakingRate" value="slow" style="margin-right: 5px;"
-										onclick="chSpeakingRate('slow')">
+									<input class="radio" type="radio" name="speakingRate" value="slow"
+										onclick="chSpeakingRate('slow')"><!-- style="margin-right: 5px;" -->
 									Slow
 								</label>
 							</li>
-							<li style="list-style: none;">
+							<li>
 								<label>
-									<input type="radio" name="speakingRate" value="medium" style="margin-right: 5px;"
-										onclick="chSpeakingRate('medium')">
+									<input class="radio" type="radio" name="speakingRate" value="medium" onclick="chSpeakingRate('medium')">
 									Medium
 								</label>
 							</li>
-							<li style="list-style: none;">
+							<li>
 								<label>
-									<input type="radio" name="speakingRate" value="fast" style="margin-right: 5px;"
-										onclick="chSpeakingRate('fast')">
+									<input class="radio" type="radio" name="speakingRate" value="fast" onclick="chSpeakingRate('fast')">
 									Fast
 								</label>
 							</li>
-							<li style="list-style: none;">
+							<li>
 								<label>
-									<input type="radio" name="speakingRate" value="x-fast" style="margin-right: 5px;"
-										onclick="chSpeakingRate('x-fast')">
+									<input class="radio" type="radio" name="speakingRate" value="x-fast" onclick="chSpeakingRate('x-fast')">
 									Very fast
 								</label>
 							</li>
@@ -161,24 +159,21 @@
 					<div>
 						<p>Mode</p>
 						<ul>
-							<li style="list-style: none;">
+							<li>
 								<label>
-									<input type="radio" name="readMode" value="page" style="margin-right: 5px;"
-										onclick="chAllComicMode('page')">
+									<input class="radio" type="radio" name="readMode" value="page" onclick="chAllComicMode('page')">
 									Page
 								</label>
 							</li>
-							<li style="list-style: none;">
+							<li>
 								<label>
-									<input type="radio" name="readMode" value="strip" style="margin-right: 5px;"
-										onclick="chAllComicMode('strip')">
+									<input class="radio" type="radio" name="readMode" value="strip" onclick="chAllComicMode('strip')">
 									Strip
 								</label>
 							</li>
-							<li style="list-style: none;">
+							<li>
 								<label>
-									<input type="radio" name="readMode" value="panel" style="margin-right: 5px;"
-										onclick="chAllComicMode('panel')">
+									<input class="radio" type="radio" name="readMode" value="panel" onclick="chAllComicMode('panel')">
 									Panel
 								</label>
 							</li>
