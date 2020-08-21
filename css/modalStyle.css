@@ -1,0 +1,58 @@
+body > div.modal#myModal > div.modal-dialog > div.modal-content > div.modal-body > div > ul > li {
+	list-style: none;
+}
+
+body > div.modal#myModal > div.modal-dialog > div.modal-content > div.modal-body > div > ul > li > label > input.radio {
+	margin-right: 5px;
+}
+
+body > div.modal#myModal2 > div.modal-dialog > div.modal-content > div.modal-body > div {
+	margin: 10px;
+}
+
+img.navigationImg {
+	width: auto;
+	height: auto;
+    max-width: 80%;
+}
+
+img.navigationPanelImg {
+	width: 5.8em; 
+	height: auto;
+}
+
+img.navigationPanelImg2 {
+	width: 5.755em; 
+	height: auto;
+}
+
+img.navigationPanelImg3 {
+	width: 5em; 
+	height: auto;
+}
+
+img.navigationPanelImg4 {
+	width: auto; 
+	height: 7.6em;
+}
+
+img.navigationPanelImg5 {
+	width: 12em; 
+	height: auto;
+}
+
+img.navigationPanelImg6 {
+	width: 8.5em; 
+	height: auto;
+}
+
+img.navigationPanelImg7 {
+	width: 6.6em; 
+	height: auto;
+}
+
+img.navigationStripImg {
+	width: auto; 
+	height: auto;
+    max-width: 80%;
+}

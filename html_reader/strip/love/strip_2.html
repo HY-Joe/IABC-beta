@@ -13,123 +13,17 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
   <!-- <script type="text/javascript" src="./java/loadMode.js"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/modalStyle.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/comicsStyle.css" />
  	<title>IABC</title>
 
  </head>
  <body>
-  <!-- <script type="text/javascript" src="./java/loadMode.js"></script> -->
- 	<script>
- 		function get_option(option){
- 			if (option == 'color'){
- 				if(document.getElementById('color').innerHTML.split('>')[1].split('<')[0] == "Color: ON")
- 					return 1;
- 				else
- 					return 0;
-
- 			}
- 			else if(option == "loc"){
- 				if(document.getElementById('location').innerHTML.split('>')[1].split('<')[0] == "Location: ON")
- 					return 1;
- 				else
- 					return 0;
- 			}
- 			else if(option == "exp"){
- 				if(document.getElementById('expression').innerHTML.split('>')[1].split('<')[0] == "Expression: ON")
- 					return 1;
- 				else
- 					return 0;
- 			}
- 			else if(option == "size"){
- 				if(document.getElementById('size').innerHTML.split('>')[1].split('<')[0] == "Size: ON")
- 					return 1;
- 				else
- 					return 0;
- 			}
-
- 		}
- 	</script>
-
   <script type="text/javascript">
     sessionStorage.setItem('strip2', 2);
   </script>
-
- 	<!-- <script type="text/javascript">
- 		var page = 1;
- 		function changeNextImg() {
- 			if (page <= 2){
- 				page += 1;
- 				if (page == 3) {
-                    page = 2;
- 					return;
-                }
- 				$('#comics_img').attr('data','./data/svg/strip/fox/FOX_CHILLINTALES_T17_Scrip_' + page + '.svg');
-                console.log(page);
- 			}
- 		}
-
- 		function changePrevImg() {
- 			if (page >= 1) {
- 				page -= 1;
- 				if (page == 0) {
-                    page = 1;
- 					return;
-                }
- 				$('#comics_img').attr('data','./data/svg/strip/fox/FOX_CHILLINTALES_T17_Scrip_' + page + '.svg');
-                console.log(page);
- 			}
- 		}
-
-         function changeNavImg(num) {
-            console.log('hello');
-            console.log(num);
-            page = num;
-            $('#comics_img').attr('data','./data/svg/strip/fox/FOX_CHILLINTALES_T17_Scrip_' + page + '.svg');
-
-        }
- 	</script> -->
- 	<!-- 스타일 지정 -->
- 	<style type="text/css">
-
- 		img{
- 			max-width: 80%;
- 			height: auto;
- 		}
-
- 		.thumbnail-wrapper{
- 			width: 350px;
- 		}
- 		.card-body{
- 			display: inline-block;
- 			margin-left:0px
- 		}
- 		.card{
- 			/*width: 150%;*/
-      width: 100%;
- 		}
- 		.col-md-8{
- 			width: 150%;
- 		}
- 		.row no-gutters{
- 			text-align: center;
- 		}
- 		.list{
- 			width:100%
- 		}
- 		#select{
- 			margin-left:30px
- 		}
-
-    .navbar-brand {
-      font-size: 1.2rem;
-    }
-
-    .row {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
- 	</style>
-
  	<!-- 네이게이션 바 -->
  	<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="../../../index.html"
@@ -146,7 +40,6 @@
                 class="bi bi-gear-fill"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                style="margin-top: 0.2em;"
               >
                 <path
                   fill-rule="evenodd"
@@ -171,18 +64,18 @@
           </div>
  								<div class="card-body">
  									<div>
-                    <button onclick="location.href='./strip_1.html'" title="Previous" style="background-color: rgba(255, 255, 255, 0); border: none;">
- 										<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                    <button class="moveBtn"  onclick="location.href='./strip_1.html'" title="Previous">
+ 										<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z"/>
 										</svg>
                     </button>
-                    <button onclick="location.href='./strip_3.html'" title="Next" style="background-color: rgba(255, 255, 255, 0); border: none;">
- 										<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                    <button class="moveBtn"  onclick="location.href='./strip_3.html'" title="Next">
+ 										<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										  <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
 										</svg>
                   </button>
                   <button title="Navigation" class="btn-example btn" data-toggle="modal" data-target="#myModal2">
-                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
                         <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
                       </svg>
@@ -212,59 +105,55 @@
                     <div>
               <p>Speaking rate</p>
               <ul>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="slow" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('slow')">
+                    <input class="radio" type="radio" name="speakingRate" value="slow" onclick="chSpeakingRate('slow')">
                     Slow
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="medium" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('medium')">
+                    <input class="radio" type="radio" name="speakingRate" value="medium" onclick="chSpeakingRate('medium')">
                     Medium
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('fast')">
+                    <input class="radio" type="radio" name="speakingRate" value="fast" onclick="chSpeakingRate('fast')">
                     Fast
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="x-fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('x-fast')">
+                    <input class="radio" type="radio" name="speakingRate" value="x-fast" onclick="chSpeakingRate('x-fast')">
                     Very fast
                   </label>
                 </li>
               </ul>
             </div>
-        <div>
+          <div>
             <p>Mode</p>
             <ul>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="readMode" value="page" style="margin-right: 5px;" onclick="chAllComicMode('page')">
-                    Page
-                  </label>
-                </li>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="readMode" value="strip" style="margin-right: 5px;" onclick="chAllComicMode('strip')">
-                    Strip
-                  </label>
-                </li>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="readMode" value="panel" style="margin-right: 5px;" onclick="chAllComicMode('panel')">
-                    Panel
-                  </label>
-            </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="readMode" value="page" onclick="chAllComicMode('page')">
+                  Page
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="readMode" value="strip" onclick="chAllComicMode('strip')">
+                  Strip
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="readMode" value="panel" onclick="chAllComicMode('panel')">
+                  Panel
+                </label>
+              </li>
             </ul>
-        </div>
+          </div>
         <div>
             <p>Automatic</p>
             <ul>
@@ -353,20 +242,20 @@
         <h4 class="modal-title" id="myModalLabel2">Strip</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
-      <div class="modal-body" style="">
-            <div style="margin: 10px;">
+     <div class="modal-body">
+            <div>
                 <center>
-                    <img alt="Move to the first strip" src="../../../data/image/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_01.jpg" style="width: auto; height: auto;" onclick="changeNavImg(1)">
+                    <img class="navigationStripImg" alt="Move to the first strip" src="../../../data/image/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_01.jpg" onclick="changeNavImg(1)">
                 </center> 
             </div>
-            <div style="margin: 10px;">
+            <div>
                 <center>
-                    <img alt="Move to the second strip" src="../../../data/image/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_02.jpg" style="width: auto; height: auto;" onclick="changeNavImg(2)">
+                    <img class="navigationStripImg" alt="Move to the second strip" src="../../../data/image/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_02.jpg" onclick="changeNavImg(2)">
                 </center>
             </div>
-            <div style="margin: 10px;">
+            <div>
                 <center>
-                    <img alt="Move to the third strip" src="../../../data/image/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_03.jpg" style="width: auto; height: auto;" onclick="changeNavImg(3)">
+                    <img class="navigationStripImg" alt="Move to the third strip" src="../../../data/image/strip/love/PIKE_BOYLOVEGIRLS_T41_Scrip_03.jpg" onclick="changeNavImg(3)">
                 </center>
             </div>
       </div>

@@ -1,0 +1,16 @@
+body > div.container > div.row > div.col-md-6 {
+	margin: 15px auto;
+}
+
+body > div.container > div.row > div.col-md-6 {
+	margin: 15px auto;
+}
+
+body > div.container > div.row > div.col-md-6 > div.card-body {
+	margin: 10px auto; 
+	padding: 0;
+}
+
+body > div.container > div.row > div.col-md-6 > div.card-title > h3 {
+	text-align: center;
+}
