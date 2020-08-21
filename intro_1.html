@@ -184,7 +184,7 @@
               </div>
             
                 <!-- <div class="card-body" id="1"> -->
-              <div class="col-md-6" id="1" style="margin: 15px 0;">
+              <div class="col-md-6" id="1" style="margin: 15px 20px; text-align: left;">
                   
                   <ul style="padding-inline-start:0;">
                     <h4>Title: Chilling Tales</h4>
@@ -197,21 +197,21 @@
                     <h5>Stennie</h5>
                     <li style="list-style: none; margin-bottom: 5px">Appearance : A man has brown hair, wearing a yellow shirt with a red cloak.</li>
                     <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="Stennie's voice" class="btn default" onclick="speakTextIntro(0, 'HELLO I AM STENNIE')"style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                      <button title="Stennie's voice" class="btn default" onclick="speakTextIntro(0, 'HELLO I AM STENNIE')"style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Play voice</button>
                     </div>
                     <h5>Stranger</h5>
                     <li style="list-style: none; margin-bottom: 5px">Appearance : A man is wearing blue long hooded cloak.</li>
                     <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="A Stranger's voice" class="btn default" onclick="speakTextIntro(1, 'HELLO I AM A STRANGER.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                      <button title="A Stranger's voice" class="btn default" onclick="speakTextIntro(1, 'HELLO I AM A STRANGER.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Play voice</button>
                     </div>
                     <h5>Dougal</h5>
                     <li style="list-style: none; margin-bottom: 5px">Appearance : A man has orange hair, wearing green hat and green dress.</li>
                     <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="Dougal's voice" class="btn default" onclick="speakTextIntro(2, 'HELLO I AM DOUGAL.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                      <button title="Dougal's voice" class="btn default" onclick="speakTextIntro(2, 'HELLO I AM DOUGAL.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Play voice</button>
                     </div>
                     <h5>Narrator</h5>
                     <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="Narrator's voice" class="btn default" onclick="speakTextIntro(3, 'HELLO I AM Narrator.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                      <button title="Narrator's voice" class="btn default" onclick="speakTextIntro(3, 'HELLO I AM Narrator.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Play voice</button>
                     </div>
                   </ul>
                   </div>
@@ -250,10 +250,8 @@
           </div>
           <div class="modal-body">
             <div>
-              <button onclick="location.href='./index.html'">Go to home</button>
-              <button onclick="location.href='./intro_1.html'">
-                Go to intoroduction
-              </button>
+              <button onclick="location.href='./index.html'">Go home</button>
+              <button onclick="location.href='./intro_1.html'">Go to intoroduction</button>
             </div>
             <div>
               <p>Speaking rate</p>
@@ -329,6 +327,16 @@
                 </li>
               </ul>
             </div>
+            <div>
+            <p>Automatic</p>
+            <ul>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle0" value="auto0"
+                  id="customSwitch0" onclick="readAutoKey(0, this)">
+                <label class="custom-control-label" for="customSwitch0">Automatic</label>
+              </div>
+            </ul>
+          </div>
             <div>
               <p>Elements</p>
               <ul>
