@@ -21,6 +21,7 @@
     </style>
      <!--panel1-->
     <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" version="1.0" id="panel">
+        <title>First panel</title>
         <polygon points="32,53 416,52 429,901 40,902 32,53" id="FOX_CHILLINTALES_T17_006_panel_0" 
             tabindex="0" onclick="setPanelData(3, 'Panel One','In a wood with trees.','STEENIE’s full body is at the center')">
             <metadata viewAngle="" uri="" shot="" area="" rank="1" fillingPcent=""/>
