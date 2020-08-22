@@ -73,8 +73,6 @@ function getPanelData() {
   getSession("index");
   indexData = getData;
   
-  // console.log("auto_pollyData.js >> getPanelData: indexData >> " + indexData);
-
   getSession("voice");
   voiceData = getData;
 
@@ -86,6 +84,8 @@ function getPanelData() {
 
   getSession("composition");
   compositionData = getData;
+
+  console.log(indexData+'...'+ voiceData+'...'+ numberData+'...'+ locationData+'...'+ compositionData);
   
   speakText(indexData, voiceData, numberData, locationData, compositionData);
 }
