@@ -87,7 +87,7 @@ function getPanelData() {
 
   console.log(indexData+'...'+ voiceData+'...'+ numberData+'...'+ locationData+'...'+ compositionData);
   
-  speakText(indexData, voiceData, numberData, locationData, compositionData);
+  speakTextPanel(indexData, voiceData, numberData, locationData, compositionData);
 }
 
 function setBalloonData(index, voice, value1) {
