@@ -1,0 +1,58 @@
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6 {
+	margin: 15px auto;
+}
+
+.thumbnail-wrapper {
+    width: 350px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6 > button.startButton {
+	width: 100px;
+	height: auto;
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
+	border-color: #333333;
+	border-radius: .4em;
+}	
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText {
+	margin: 15px 20px; text-align: left;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText > ul {
+	padding-inline-start:0;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText > ul > li {
+	list-style: none;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText > ul > li.subTitle {
+	margin: 10px 0;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText > ul > li.explain {
+	margin-bottom: 5px;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText > ul > div#textToSynth {
+	margin-bottom: 10px;
+	border-color: #333333;
+	border-radius: .4em;
+}
+
+div.list > div.row > div.card > div.row.no-gutters > div.col-md-6.introText > ul > div#textToSynth > button.btn.default {
+	width: 120px;
+	height: auto;
+	color: #fff; 
+	background-color: #000; 
+	padding: 5px;
+}

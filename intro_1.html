@@ -32,12 +32,14 @@
     ></script>
 
     <script type="text/javascript" src="./java/loadMode.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/introStyle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/modalStyle.css" />
     <title>IABC</title>
   </head>
 
   <body>
-    <script>
+<!--     <script>
       function get_option(option) {
         if (option == "color") {
           if (
@@ -77,47 +79,39 @@
           else return 0;
         }
       }
-    </script>
+    </script> -->
 
     
     <!-- 스타일 지정 -->
     <style type="text/css">
-      img {
-        max-width: 80%;
-        height: auto;
-      }
+      
 
-      .thumbnail-wrapper {
-        width: 350px;
-      }
+      
 
-      .card-body {
+      /*.card-body {
         display: inline-block;
         margin-left: 0px;
       }
+*/
+      
 
-      .card {
-        /*width: 150%;*/
-        width: 100%;
-      }
-
-      .col-md-8 {
+      /*.col-md-8 {
         width: 150%;
-      }
+      }*/
 
-      .row no-gutters {
+      /*.row no-gutters {
         text-align: center;
-      }
+      }*/
 
-      .list {
+      /*.list {
         width: 100%;
-      }
+      }*/
 
-      #select {
+      /*#select {
         margin-left: 30px;
-      }
+      }*/
 
-      .toggle.ios,
+      /*.toggle.ios,
       .toggle-on.ios,
       .toggle-off.ios {
         border-radius: 20rem;
@@ -125,16 +119,9 @@
 
       .toggle.ios .toggle-handle {
         border-radius: 20rem;
-      }
+      }*/
 
-      .navbar-brand {
-      font-size: 1.2rem;
-    }
-
-    .row {
-      margin-left: 0;
-      margin-right: 0;
-    }
+      
     </style>
 
     
@@ -154,8 +141,7 @@
                 viewBox="0 0 16 16"
                 class="bi bi-gear-fill"
                 fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                style="margin-top: 0.2em;"
+                xmlns="http://www.w3.org/2000/svg"                
               >
                 <path
                   fill-rule="evenodd"
@@ -173,45 +159,45 @@
         <div class="card">
           <div class="row no-gutters">
             <!-- <div class="card-title"> -->
-            <div class="col-md-6" style="margin: 15px 0;">
+            <div class="col-md-6"> <!-- style="margin: 15px auto;" -->
                   <div class="thumbnail-wrapper">
                     <h1>
                       <img alt="Comics image of Chilling Tales" src="./data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg">
                     </h1>
                   </div>
-                 <button id="startComic" onClick="startComic()" style="width: 100px; height: auto; color: #fff; background-color: #000; padding: 10px;">Start</button>
-                <button id="continues" onClick="continuesComic()" style="width: 100px; height: auto; color: #fff;background-color: #000; padding: 10px;">Continue</button>
+                 <button class="startButton" id="startComic" onClick="startComic()">Start</button>
+                <button class="startButton" id="continues" onClick="continuesComic()">Continue</button>
               </div>
             
                 <!-- <div class="card-body" id="1"> -->
-              <div class="col-md-6" id="1" style="margin: 15px 0;">
+              <div class="col-md-6 introText" id="1">
                   
-                  <ul style="padding-inline-start:0;">
+                  <ul>
                     <h4>Title: Chilling Tales</h4>
-                    <li style="list-style: none;">Genre : Horror, Suspense</li>
-                    <li style="list-style: none;">Rate : Violence</li>
-                    <li style="list-style: none;">Introduction: Stennie wanders through the woods and meets a man...</li>
+                    <li>Genre : Horror, Suspense</li>
+                    <li>Rate : Violence</li>
+                    <li>Introduction: Stennie wanders through the woods and meets a man...</li>
                   </ul>
-                  <ul style="padding-inline-start:0;">
-                    <li style="list-style: none; margin: 10px 0; font-size: 1.3em;"><strong>[Characters]</strong></li>
+                  <ul>
+                    <li class="subTitle">[Characters]</li>
                     <h5>Stennie</h5>
-                    <li style="list-style: none; margin-bottom: 5px">Appearance : A man has brown hair, wearing a yellow shirt with a red cloak.</li>
-                    <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="Stennie's voice" class="btn default" onclick="speakTextIntro(0, 'HELLO I AM STENNIE')"style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    <li class="explain">Appearance : A man has brown hair, wearing a yellow shirt with a red cloak.</li>
+                    <div id="textToSynth">
+                      <button title="Stennie's voice" class="btn default" onclick="speakTextIntro(0, 'HELLO I AM STENNIE')">Play voice</button>
                     </div>
                     <h5>Stranger</h5>
-                    <li style="list-style: none; margin-bottom: 5px">Appearance : A man is wearing blue long hooded cloak.</li>
-                    <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="A Stranger's voice" class="btn default" onclick="speakTextIntro(1, 'HELLO I AM A STRANGER.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    <li class="explain">Appearance : A man is wearing blue long hooded cloak.</li>
+                    <div id="textToSynth">
+                      <button title="A Stranger's voice" class="btn default" onclick="speakTextIntro(1, 'HELLO I AM A STRANGER.')">Play voice</button>
                     </div>
                     <h5>Dougal</h5>
-                    <li style="list-style: none; margin-bottom: 5px">Appearance : A man has orange hair, wearing green hat and green dress.</li>
-                    <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="Dougal's voice" class="btn default" onclick="speakTextIntro(2, 'HELLO I AM DOUGAL.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    <li class="explain">Appearance : A man has orange hair, wearing green hat and green dress.</li>
+                    <div id="textToSynth">
+                      <button title="Dougal's voice" class="btn default" onclick="speakTextIntro(2, 'HELLO I AM DOUGAL.')">Play voice</button>
                     </div>
                     <h5>Narrator</h5>
-                    <div id="textToSynth" style="margin-bottom: 10px;">
-                      <button title="Narrator's voice" class="btn default" onclick="speakTextIntro(3, 'HELLO I AM Narrator.')" style="width: 120px; height: auto; color: #fff; background-color: #000; padding: 5px;">Listen voice</button>
+                    <div id="textToSynth">
+                      <button title="Narrator's voice" class="btn default" onclick="speakTextIntro(3, 'HELLO I AM Narrator.')">Play voice</button>
                     </div>
                   </ul>
                   </div>
@@ -251,39 +237,33 @@
           </div>
           <div class="modal-body">
             <div>
-              <button onclick="location.href='./index.html'">Go to home</button>
-              <button onclick="location.href='./intro_1.html'">
-                Go to intoroduction
-              </button>
+              <button onclick="location.href='./index.html'">Go home</button>
+              <button onclick="location.href='./intro_1.html'">Go to intoroduction</button>
             </div>
             <div>
               <p>Speaking rate</p>
               <ul>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="slow" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('slow')">
+                    <input class="radio" type="radio" name="speakingRate" value="slow" onclick="chSpeakingRate('slow')">
                     Slow
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="medium" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('medium')">
+                    <input class="radio" type="radio" name="speakingRate" value="medium" onclick="chSpeakingRate('medium')">
                     Medium
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('fast')">
+                    <input class="radio" type="radio" name="speakingRate" value="fast" onclick="chSpeakingRate('fast')">
                     Fast
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="x-fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('x-fast')">
+                    <input class="radio" type="radio" name="speakingRate" value="x-fast" onclick="chSpeakingRate('x-fast')">
                     Very fast
                   </label>
                 </li>
@@ -292,37 +272,37 @@
             <div>
               <p>Mode</p>
               <ul>
-                <li style="list-style: none;">
+                <li>
                   <label>
                     <input
+                      class="radio"
                       type="radio"
                       name="readMode"
                       value="page"
-                      style="margin-right: 5px;"
                       onclick="chAllComicMode('page')"
                     />
                     Page
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
                     <input
+                      class="radio"
                       type="radio"
                       name="readMode"
                       value="strip"
-                      style="margin-right: 5px;"
                       onclick="chAllComicMode('strip')"
                     />
                     Strip
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
                     <input
+                      class="radio"
                       type="radio"
                       name="readMode"
                       value="panel"
-                      style="margin-right: 5px;"
                       onclick="chAllComicMode('panel')"
                     />
                     Panel
@@ -330,6 +310,16 @@
                 </li>
               </ul>
             </div>
+            <div>
+            <p>Automatic</p>
+            <ul>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle0" value="auto0"
+                  id="customSwitch0" onclick="readAutoKey(0, this)">
+                <label class="custom-control-label" for="customSwitch0">Automatic</label>
+              </div>
+            </ul>
+          </div>
             <div>
               <p>Elements</p>
               <ul>

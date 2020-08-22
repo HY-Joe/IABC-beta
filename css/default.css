@@ -1,0 +1,17 @@
+.navbar-brand {
+	font-size: 1.2rem;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body > nav.navbar > button.btn > svg {
+	margin-top: 0.2em;
+}
+
+.card {
+    width: 100%;
+}
+

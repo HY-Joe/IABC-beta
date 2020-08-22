@@ -22,13 +22,17 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- <script type="text/javascript" src="./java/toggleEvent.js"></script> -->
   <script type="text/javascript" src="../../../java/loadMode.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/modalStyle.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/comicsStyle.css" />
   <title>IABC</title>
 
 </head>
 
 <body>
 
-  <script>
+  <!-- <script>
     function get_option(option) {
       if (option == 'color') {
         if (document.getElementById('color').innerHTML.split('>')[1].split('<')[0] == "Color: ON")
@@ -57,9 +61,9 @@
       }
 
     }
-  </script>
+  </script> -->
   <!-- 스타일 지정 -->
-  <style type="text/css">
+  <!-- <style type="text/css">
     img {
       max-width: 80%;
       height: auto;
@@ -75,8 +79,8 @@
     }
 
     .card {
-      /*width: 150%;*/
-      /*width: auto;*/
+      width: 150%;
+      width: auto;
       width: 100%;
     }
 
@@ -103,7 +107,7 @@
       margin-left: 0;
       margin-right: 0;
     }
-  </style>
+  </style> -->
 
   <!-- 네이게이션 바 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -121,7 +125,6 @@
                 class="bi bi-gear-fill"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                style="margin-top: 0.2em;"
               >
                 <path
                   fill-rule="evenodd"
@@ -136,7 +139,7 @@
 
 
 
-    <div class="list" id="hell">
+    <div class="list">
       <div class="row">
         <div class="card">
           <!-- <div id="inputSvg" class="card-title"> -->
@@ -145,9 +148,9 @@
           </div>
           <div class="card-body">
             <div>
-              <button onclick="" title="Start page" style="background-color: rgba(255, 255, 255, 0); border: none;">
+              <button class="moveBtn" title="Start page">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z" />
                 </svg>    
@@ -159,16 +162,16 @@
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z" />
                 </svg>
               </button> -->
-              <button onclick="" title="End page" style="background-color: rgba(255, 255, 255, 0); border: none;">
+              <button class="moveBtn" onclick="" title="End page">  <!-- style="background-color: rgba(255, 255, 255, 0); border: none;" -->
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill"
-                  fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <!-- style="margin: 0 1.5em" -->
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z" />
                 </svg>
               </button>
               <button title="Navigation" class="btn-example btn" data-toggle="modal" data-target="#myModal2">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z" />
                   <path fill-rule="evenodd"
@@ -195,37 +198,33 @@
         </div>
         <div class="modal-body">
           <div>
-            <button onclick="location.href='../../../index.html'">Go to home</button>
+            <button onclick="location.href='../../../index.html'">Go home</button>
             <button onclick="location.href='../../../intro_1.html'">Go to intoroduction</button>
           </div>
                       <div>
               <p>Speaking rate</p>
               <ul>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="slow" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('slow')">
+                    <input class="radio" type="radio" name="speakingRate" value="slow" onclick="chSpeakingRate('slow')">
                     Slow
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="medium" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('medium')">
+                    <input class="radio" type="radio" name="speakingRate" value="medium" onclick="chSpeakingRate('medium')">
                     Medium
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('fast')">
+                    <input class="radio" type="radio" name="speakingRate" value="fast" onclick="chSpeakingRate('fast')">
                     Fast
                   </label>
                 </li>
-                <li style="list-style: none;">
+                <li>
                   <label>
-                    <input type="radio" name="speakingRate" value="x-fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('x-fast')">
+                    <input class="radio" type="radio" name="speakingRate" value="x-fast" onclick="chSpeakingRate('x-fast')">
                     Very fast
                   </label>
                 </li>
@@ -234,27 +233,34 @@
           <div>
             <p>Mode</p>
             <ul>
-              <li style="list-style: none;">
+              <li>
                 <label>
-                  <input type="radio" name="readMode" value="page" style="margin-right: 5px;"
-                    onclick="chAllComicMode('page')">
+                  <input class="radio" type="radio" name="readMode" value="page" onclick="chAllComicMode('page')">
                   Page
                 </label>
               </li>
-              <li style="list-style: none;">
+              <li>
                 <label>
-                  <input type="radio" name="readMode" value="strip" style="margin-right: 5px;"
-                    onclick="chAllComicMode('strip')">
+                  <input class="radio" type="radio" name="readMode" value="strip" onclick="chAllComicMode('strip')">
                   Strip
                 </label>
               </li>
-              <li style="list-style: none;">
+              <li>
                 <label>
-                  <input type="radio" name="readMode" value="panel" style="margin-right: 5px;"
-                    onclick="chAllComicMode('panel')">
+                  <input class="radio" type="radio" name="readMode" value="panel" onclick="chAllComicMode('panel')">
                   Panel
                 </label>
               </li>
+            </ul>
+          </div>
+          <div>
+            <p>Automatic</p>
+            <ul>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle0" value="auto0"
+                  id="customSwitch0" onclick="readAutoKey(0, this)">
+                <label class="custom-control-label" for="customSwitch0">Automatic</label>
+              </div>
             </ul>
           </div>
           <div>
@@ -340,16 +346,17 @@
   </div>
 
   <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" id="modal2" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title" id="myModalLabel2">Page</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
         </div>
-        <div class="modal-body" style="">
-          <center> <img alt="Move to the first page" src="../../../data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg" style="width: auto; height: auto;"
-              onclick="changeNavImg(1)"></center>
+        <div class="modal-body">
+          <center> 
+            <img class="navigationImg" alt="Move to the first page" src="../../../data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg"  onclick="changeNavImg(1)">
+            </center>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
