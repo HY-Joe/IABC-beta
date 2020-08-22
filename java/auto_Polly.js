@@ -128,6 +128,13 @@ function preAudio(index, num, text){
   });
 }
 
+function speakText(index, num, number, location, composition) {
+  //alert("hh")
+  var blank = ".... .... ....";
+  preAudio(index, num,number + blank + location + blank + composition);
+
+}
+
 function speakTextIntro(index, num, text) {
 
   var blank = ".... .... ....";
@@ -135,12 +142,6 @@ function speakTextIntro(index, num, text) {
 
 }
 
-function speakText(index, num, number, location, composition) {
-  //alert("hh")
-  var blank = ".... .... ....";
-  preAudio(index, num,number + blank + location + blank + composition);
-
-}
 function speakTextBalloon(index, num, script) {
 
   var blank = ".... .... ....";
