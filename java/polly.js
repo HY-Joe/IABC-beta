@@ -5,18 +5,6 @@ audiochannels = new Array();
 
 
 
-function collectUrl(url)
-{
-  channel_cnt = channel_cnt +1;
-  audiochannels[channel_cnt] = new Array();
-  audiochannels[channel_cnt]['channel'] = new Audio();
-  audiochannels[channel_cnt]['finished'] = -1;
-  audiochannels[channel_cnt]['channel'].src = url;
-
-  console.log('현재 channel 수 : ' + channel_cnt);
-
-}
-
 function playAudio(url) {
   //new Audio(url).play(); 
   
@@ -91,9 +79,8 @@ function preAudio(num, text){
     if (error) {
     } else {
       //auto mode가 아닐 경우
-      //playAudio(url);
-      //auto mode일 경우
-      collectUrl(url);
+      playAudio(url);
+
     }
   });
 }
@@ -106,6 +93,7 @@ function speakTextIntro(num, text) {
   preAudio(num,text);
 
 }
+
 
 function speakText(num, number, location, composition) {
 
