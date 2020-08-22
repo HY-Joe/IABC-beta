@@ -21,7 +21,7 @@
     </style>
      <svg contentScriptType="text/ecmascript" zoomAndPan="magnify" contentStyleType="text/css" class="Panel" preserveAspectRatio="xMidYMid meet" viewBox="820 1515 630 650" version="1.0" id="panel">
         <polygon points="836,1493 1426,1488 1431,2170 839,2180 836,1493" id="PIKE_BOYLOVEGIRLS_T41_012_panel_6"
-            tabindex="6" onclick="setPanelData(4, 'Panel Six','The place is in front of a window inside the house.','CYNTHY’s profile is on the center facing right.')">
+            tabindex="6" onclick="setPanelData(4, 'Panel Seven','The place is in front of a window inside the house.','CYNTHY’s profile is on the center facing right.')">
             <metadata viewAngle="" uri="" shot="" area="" rank="7" fillingPcent=""/>
         </polygon>
     </svg>

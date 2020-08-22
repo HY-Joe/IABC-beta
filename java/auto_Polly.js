@@ -1,12 +1,9 @@
 var channel_cnt = 0;
-
+var now_playing = -1;
                      // number of channels
 audiochannels = new Array();
 
-// var flag = sessionStorage.getItem("countIndex");
-// if (flag == null || flag == "undefined")
-//   sessionStorage.setItem("countIndex", 0);
-// console.log(Number(flag));
+
 
 function startingAuto() {
   var numbering = sessionStorage.getItem("auto_number");
@@ -18,18 +15,20 @@ function startingAuto() {
 
 function collectUrl(index, url)
 {
-  channel_cnt = channel_cnt +1;
+  //console.log('collectUrl 임'+channel_cnt);
 
+  channel_cnt = channel_cnt +1;
 
   audiochannels[index] = new Array();
   audiochannels[index]['channel'] = new Audio();
- // audiochannels[index]['finished'] = -1;
   audiochannels[index]['channel'].src = url;
-  audiochannels[i]['channel'].load();
   
 //console.log("auto_Polly.js >> collectUrl >> channel_cnt :: " + channel_cnt);
 
+  //console.log('collectUrl 임'+channel_cnt);
   var test = sessionStorage.getItem("auto_number");
+  
+  //처음 클릭을 위해서
   if (channel_cnt == Number(test))
     speakAll();
 
@@ -42,39 +41,30 @@ function speakAll()
   var startNumber = sessionStorage.getItem("auto_start");
   var endNumber = sessionStorage.getItem("auto_end");
 
-  // var count = sessionStorage.getItem("countIndex");
   // console.log("cnt :::  " + count);
 
-  console.log('speakAll()- 다 모였습니다'+channel_cnt);
+  console.log('speakAll() :: url 다 모였습니다'+channel_cnt);
   
-   // audiochannels[i]['channel'].play();
-   // console.log(i+'번째 url 오디오가 시작');
-  //  console.log(audiochannels[i]['channel'].ended);
-   // console.log(audiochannels[i]['channel'].currentTime);
-  //  console.log(audiochannels[i]['channel'].duration);
-    //while(audiochannels[i]['channel'].ended != true){console.log('빙글빙글');}
 
-  var channel_now = startNumber;
-  var audio = new Audio(audiochannels[channel_now]['channel'].src);
- 
+    var channel_now = startNumber;
+    var audio = new Audio(audiochannels[channel_now]['channel'].src);
+     
+    audio.play();
 
+    audio.addEventListener('ended',function()
+    {
+          channel_now++;
+          if(channel_now <= endNumber){
+              audio.src = audiochannels[channel_now]['channel'].src;
+              audio.play();
+          }
+          else{
+              now_playing = -1;        
+          }
+      });
 
-  audio.play();
+    console.log('end');
 
-
-  audio.addEventListener('ended',function()
-  {
-        channel_now++;
-        if(channel_now <= endNumber){
-            audio.src = audiochannels[channel_now]['channel'].src;
-            audio.play();
-        }
-        else{
-            
-        }
-    });
-
-  console.log('end');
 }
 
 

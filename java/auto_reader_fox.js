@@ -38,7 +38,9 @@ function fox_strip_2(){
 	speakAll(17, 16, 32);
 }
 
-function fox_panel_1(){
+function fox_panel_1()
+{
+	console.log(" >> fox panel 1 << ");
 	sessionStorage.setItem("auto_number", 4);
 	sessionStorage.setItem("auto_start", 1);
 	sessionStorage.setItem("auto_end", 4);
@@ -46,6 +48,7 @@ function fox_panel_1(){
 	speakAll(4, 1, 4);
 }
 function fox_panel_2(){
+	console.log(" >> fox panel 2 << ");
 	sessionStorage.setItem("auto_number", 6);
 	sessionStorage.setItem("auto_start", 5);
 	sessionStorage.setItem("auto_end", 10);
@@ -53,6 +56,7 @@ function fox_panel_2(){
 	speakAll(6, 5, 10);
 }
 function fox_panel_3(){
+	console.log(" >> fox panel 3 << ");
 	sessionStorage.setItem("auto_number", 5);
 	sessionStorage.setItem("auto_start", 11);
 	sessionStorage.setItem("auto_end", 15);	
@@ -60,6 +64,7 @@ function fox_panel_3(){
 	speakAll(5, 11, 15);
 }
 function fox_panel_4(){
+	console.log(" >> fox panel 4 << ");
 	sessionStorage.setItem("auto_number", 5);
 	sessionStorage.setItem("auto_start", 16);
 	sessionStorage.setItem("auto_end", 20);	
@@ -67,13 +72,15 @@ function fox_panel_4(){
 	speakAll(5, 16, 20);
 }
 function fox_panel_5(){
+	console.log(" >> fox panel 5 << ");
 	sessionStorage.setItem("auto_number", 5);
 	sessionStorage.setItem("auto_start", 21);
 	sessionStorage.setItem("auto_end", 25);	
 	fox_5();
 	speakAll(5, 21,25);
 }
-function fox_panel_1(){
+function fox_panel_6(){
+	console.log(" >> fox panel 1 << ");
 	sessionStorage.setItem("auto_number", 7);
 	sessionStorage.setItem("auto_start", 26);
 	sessionStorage.setItem("auto_end", 32);
