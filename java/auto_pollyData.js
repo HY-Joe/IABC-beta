@@ -33,15 +33,18 @@ function filteringData() {
   flag8 = getLocalData;
 }
 
-function setPanelData(voice, value1, value2, value3) {
+function setPanelData(index, voice, value1, value2, value3) {
   filteringData();
 
+  this.index = index;
   this.voice = voice;
   this.value1 = value1;
   this.value2 = value2;
   this.value3 = value3;
 
   var str =
+    this.index +
+    " : " +
     this.voice +
     " : " +
     this.value1 +
@@ -50,6 +53,8 @@ function setPanelData(voice, value1, value2, value3) {
     " : " +
     this.value3;
 
+
+  setSession("index", this.index);
   setSession("voice", this.voice);
 
   if (flag1 == "false") setSession("panelNumber", "");
@@ -65,6 +70,11 @@ function setPanelData(voice, value1, value2, value3) {
 }
 
 function getPanelData() {
+  getSession("index");
+  indexData = getData;
+  
+  // console.log("auto_pollyData.js >> getPanelData: indexData >> " + indexData);
+
   getSession("voice");
   voiceData = getData;
 
@@ -76,18 +86,20 @@ function getPanelData() {
 
   getSession("composition");
   compositionData = getData;
-
-  speakText(voiceData, numberData, locationData, compositionData);
+  
+  speakText(indexData, voiceData, numberData, locationData, compositionData);
 }
 
-function setBalloonData(voice, value1) {
+function setBalloonData(index, voice, value1) {
   filteringData();
 
+  this.index = index;
   this.voice = voice;
   this.value1 = value1;
 
   var str = this.voice + " : " + this.value1;
 
+  setSession("index", this.index);
   setSession("voice", this.voice);
 
   if (flag4 == "false") setSession("script", "");
@@ -97,18 +109,22 @@ function setBalloonData(voice, value1) {
 }
 
 function getBalloonData() {
+  getSession("index");
+  indexData = getData;
+  
   getSession("voice");
   voiceData = getData;
 
   getSession("script");
   scriptData = getData;
 
-  speakTextBalloon(voiceData, scriptData);
+  speakTextBalloon(indexData, voiceData, scriptData);
 }
 
-function setCharacterData(voice, value1, value2, value3, value4) {
+function setCharacterData(index, voice, value1, value2, value3, value4) {
   filteringData();
 
+  this.index = index;
   this.voice = voice;
   this.value1 = value1;
   this.value2 = value2;
@@ -116,6 +132,8 @@ function setCharacterData(voice, value1, value2, value3, value4) {
   this.value4 = value4;
 
   var str =
+    this.index + 
+    " : " +
     this.voice +
     " : " +
     this.value1 +
@@ -126,6 +144,9 @@ function setCharacterData(voice, value1, value2, value3, value4) {
     " : " +
     this.value4;
 
+  //  console.log(str);
+  
+  setSession("index", this.index); 
   setSession("voice", this.voice);
 
   if (flag5 == "false") setSession("name", "");
@@ -144,6 +165,13 @@ function setCharacterData(voice, value1, value2, value3, value4) {
 }
 
 function getCharacterData() {
+
+  getSession("index");
+  indexData = getData;
+  
+  getSession("index");
+  indexData = getData;
+
   getSession("voice");
   voiceData = getData;
 
@@ -160,6 +188,7 @@ function getCharacterData() {
   appearanceData = getData;
 
   speakTextCharacter(
+    indexData,
     voiceData,
     nameData,
     actionData,

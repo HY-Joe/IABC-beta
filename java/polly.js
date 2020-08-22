@@ -2,8 +2,20 @@
 var channel_now = 0;
 var channel_cnt = 0;                   // number of channels
 audiochannels = new Array();
- 
-//var x = document.getElementById("myAudio"); 
+
+
+
+function collectUrl(url)
+{
+  channel_cnt = channel_cnt +1;
+  audiochannels[channel_cnt] = new Array();
+  audiochannels[channel_cnt]['channel'] = new Audio();
+  audiochannels[channel_cnt]['finished'] = -1;
+  audiochannels[channel_cnt]['channel'].src = url;
+
+  console.log('현재 channel 수 : ' + channel_cnt);
+
+}
 
 function playAudio(url) {
   //new Audio(url).play(); 
@@ -15,24 +27,19 @@ function playAudio(url) {
 
   audiochannels[channel_cnt] = new Array();
   audiochannels[channel_cnt]['channel'] = new Audio();
-  audiochannels[channel_cnt]['finished'] = -1;
+  //audiochannels[channel_cnt]['finished'] = -1;
   
   
   if(channel_now > 0)
     audiochannels[channel_now]['channel'].pause();
-  
+
   audiochannels[channel_cnt]['channel'].src = url;
   audiochannels[channel_cnt]['channel'].load();
   audiochannels[channel_cnt]['channel'].play();
+  console.log(channel_now);
   channel_now = channel_cnt;
   
 }
-
-function pauseAudio() { 
-  //x.pause(); 
-} 
-
-
 
 function preAudio(num, text){
   
@@ -83,7 +90,10 @@ function preAudio(num, text){
   signer.getSynthesizeSpeechUrl(speechParams, function (error, url) {
     if (error) {
     } else {
-      playAudio(url);
+      //auto mode가 아닐 경우
+      //playAudio(url);
+      //auto mode일 경우
+      collectUrl(url);
     }
   });
 }
