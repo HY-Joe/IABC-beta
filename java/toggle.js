@@ -9,8 +9,6 @@ function reload() {
   location.href = location.href;
 }
 
-
-
 for (var i = 1; i <= 3; i++) {
   load = "elements" + i;
 
@@ -19,7 +17,6 @@ for (var i = 1; i <= 3; i++) {
 
   if (test == null || test == "undefined") {
     setItem(load, true);
-    // if (i == 3) reload();
   }
 
   if (i == 1) {
@@ -60,7 +57,6 @@ for (var i = 1; i <= 3; i++) {
 
   if (test == null || test == "undefined") {
     setItem(load, true);
-    // if (i == 3) reload();
   }
 
   if (i == 1) {
@@ -101,7 +97,6 @@ for (var i = 1; i < 2; i++) {
 
   if (test == null || test == "undefined") {
     setItem(load, true);
-    // if (i == 3) reload();
   }
 
   if (i == 1) {
@@ -130,7 +125,6 @@ for (var i = 1; i <= 4; i++) {
 
   if (test == null || test == "undefined") {
     setItem(load, true);
-    // if (i == 4) reload();
   }
 
   if (i == 1) {
@@ -172,31 +166,21 @@ function readCharacterFilter(num, value) {
 for (var i = 0; i < 1; i++) {
   load = "auto" + i;
 
-  console.log(load);
-
   getItem(load);
   var test = getData;
-  console.log(test  );
   if (test == null || test == "undefined") {
-    console.log("바보..");
     setItem(load, true);
     if (i == 0) reload();
   }
 
-  // if (i == 0) {
-    console.log(i);
-    if (test == "true") {
-      console.log("true");
-      $("input:checkbox[id='customSwitch0']").prop("checked", true);
-    } else if (test == "false") {
-      console.log("false");
-      $("input:checkbox[id='customSwitch0']").prop("checked", false);
-    }
-  // }
+  if (test == "true") {
+    $("input:checkbox[id='customSwitch0']").prop("checked", true);
+  } else if (test == "false") {
+    $("input:checkbox[id='customSwitch0']").prop("checked", false);
+  }
 }
 
 function readAutoKey(num, value) {
-  console.log(num);
   toggleKey = "auto" + num;
 
   nowChk = value.checked;

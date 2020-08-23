@@ -53,7 +53,6 @@ function setPanelData(index, voice, value1, value2, value3) {
     " : " +
     this.value3;
 
-
   setSession("index", this.index);
   setSession("voice", this.voice);
 
@@ -72,7 +71,7 @@ function setPanelData(index, voice, value1, value2, value3) {
 function getPanelData() {
   getSession("index");
   indexData = getData;
-  
+
   getSession("voice");
   voiceData = getData;
 
@@ -85,9 +84,13 @@ function getPanelData() {
   getSession("composition");
   compositionData = getData;
 
-  console.log(indexData+'...'+ voiceData+'...'+ numberData+'...'+ locationData+'...'+ compositionData);
-  
-  speakTextPanel(indexData, voiceData, numberData, locationData, compositionData);
+  speakTextPanel(
+    indexData,
+    voiceData,
+    numberData,
+    locationData,
+    compositionData
+  );
 }
 
 function setBalloonData(index, voice, value1) {
@@ -111,7 +114,7 @@ function setBalloonData(index, voice, value1) {
 function getBalloonData() {
   getSession("index");
   indexData = getData;
-  
+
   getSession("voice");
   voiceData = getData;
 
@@ -132,7 +135,7 @@ function setCharacterData(index, voice, value1, value2, value3, value4) {
   this.value4 = value4;
 
   var str =
-    this.index + 
+    this.index +
     " : " +
     this.voice +
     " : " +
@@ -144,9 +147,7 @@ function setCharacterData(index, voice, value1, value2, value3, value4) {
     " : " +
     this.value4;
 
-  //  console.log(str);
-  
-  setSession("index", this.index); 
+  setSession("index", this.index);
   setSession("voice", this.voice);
 
   if (flag5 == "false") setSession("name", "");
@@ -165,10 +166,9 @@ function setCharacterData(index, voice, value1, value2, value3, value4) {
 }
 
 function getCharacterData() {
-
   getSession("index");
   indexData = getData;
-  
+
   getSession("index");
   indexData = getData;
 

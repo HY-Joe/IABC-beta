@@ -20,120 +20,30 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
-  <!-- <script type="text/javascript" src="../../../java/loadMode.js"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/modalStyle.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/comicsStyle.css" />
   <title>IABC</title>
 
 </head>
 
 <body>
-  <script>
-    function get_option(option) {
-      if (option == 'color') {
-        if (document.getElementById('color').innerHTML.split('>')[1].split('<')[0] == "Color: ON")
-          return 1;
-        else
-          return 0;
-
-      }
-      else if (option == "loc") {
-        if (document.getElementById('location').innerHTML.split('>')[1].split('<')[0] == "Location: ON")
-          return 1;
-        else
-          return 0;
-      }
-      else if (option == "exp") {
-        if (document.getElementById('expression').innerHTML.split('>')[1].split('<')[0] == "Expression: ON")
-          return 1;
-        else
-          return 0;
-      }
-      else if (option == "size") {
-        if (document.getElementById('size').innerHTML.split('>')[1].split('<')[0] == "Size: ON")
-          return 1;
-        else
-          return 0;
-      }
-
-    }
-  </script>
-
   <script type="text/javascript">
     sessionStorage.setItem('panel2', 7);
   </script>
-
-  <!-- 스타일 지정 -->
-  <style type="text/css">
-    img {
-      max-width: 80%;
-      height: auto;
-    }
-
-    .thumbnail-wrapper {
-      width: 350px;
-    }
-
-    .card-body {
-      display: inline-block;
-      margin-left: 0px
-    }
-
-    .card {
-      /*width: 150%;*/
-      /*width: auto;*/
-      width: 100%;
-    }
-
-    .col-md-8 {
-      width: 150%;
-    }
-
-    .row no-gutters {
-      text-align: center;
-    }
-
-    .list {
-      width: 100%
-    }
-
-    #select {
-      margin-left: 30px
-    }
-
-    .navbar-brand {
-      font-size: 1.2rem;
-    }
-
-    .row {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  </style>
-
   <!-- 네이게이션 바 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="../../../index.html"
-        >IABC
-      </a>
-           <!--  <a class="nav-link" href="index.html"
-              style="color: #000;">Home<span class="sr-only">(current)</span></a
-            > -->
-            <button class="btn" data-toggle="modal" data-target="#myModal">
-              <svg
-                width="2em"
-                height="2em"
-                viewBox="0 0 16 16"
-                class="bi bi-gear-fill"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                style="margin-top: 0.2em;"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
-                />
-              </svg>
-            </button>
-    </nav>
+    <a class="navbar-brand" href="../../../index.html">IABC
+    </a>
+    <button class="btn" data-toggle="modal" data-target="#myModal">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z" />
+      </svg>
+    </button>
+  </nav>
 
   </div>
   <center>
@@ -145,32 +55,33 @@
 
         <div class="card">
           <div class="card-title">
-            <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg" onclick="love_panel_7()"></img>
+            <img class="autoImg" src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg"
+              onclick="love_panel_7()"></img>
           </div>
           <div class="card-body">
             <div>
-              <button onclick="location.href='./panel_6.html'" title="Previous" style="background-color: rgba(255, 255, 255, 0); border: none;">
-                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+              <button class="moveBtn" onclick="location.href='./panel_6.html'" title="Previous">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z" />
-                </svg>    
+                </svg>
               </button>
-              <button title="End panel" style="background-color: rgba(255, 255, 255, 0); border: none;">
+              <button class="moveBtn" title="End panel">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill"
-                  fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z" />
                 </svg>
-              <button title="Navigation" class="btn-example btn" data-toggle="modal" data-target="#myModal2">
-                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg" style="margin: 0 1.5em">
-                  <path fill-rule="evenodd"
-                    d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z" />
-                  <path fill-rule="evenodd"
-                    d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z" />
-                </svg>
-              </button>
+                <button title="Navigation" class="btn-example btn" data-toggle="modal" data-target="#myModal2">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z" />
+                    <path fill-rule="evenodd"
+                      d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z" />
+                  </svg>
+                </button>
             </div>
           </div>
         </div>
@@ -194,63 +105,68 @@
             <button onclick="location.href='../../../index.html'">Go to home</button>
             <button onclick="location.href='../../../intro_2.html'">Go to intoroduction</button>
           </div>
-                      <div>
-              <p>Speaking rate</p>
-              <ul>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="speakingRate" value="slow" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('slow')">
-                    Slow
-                  </label>
-                </li>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="speakingRate" value="medium" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('medium')">
-                    Medium
-                  </label>
-                </li>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="speakingRate" value="fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('fast')">
-                    Fast
-                  </label>
-                </li>
-                <li style="list-style: none;">
-                  <label>
-                    <input type="radio" name="speakingRate" value="x-fast" style="margin-right: 5px;"
-                      onclick="chSpeakingRate('x-fast')">
-                    Very fast
-                  </label>
-                </li>
-              </ul>
-            </div>
+          <div>
+            <p>Speaking rate</p>
+            <ul>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="slow" onclick="chSpeakingRate('slow')">
+                  Slow
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="medium"
+                    onclick="chSpeakingRate('medium')">
+                  Medium
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="fast" onclick="chSpeakingRate('fast')">
+                  Fast
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="x-fast"
+                    onclick="chSpeakingRate('x-fast')">
+                  Very fast
+                </label>
+              </li>
+            </ul>
+          </div>
           <div>
             <p>Mode</p>
             <ul>
-              <li style="list-style: none;">
+              <li>
                 <label>
-                  <input type="radio" name="readMode" value="page" style="margin-right: 5px;"
-                    onclick="chAllComicMode('page')">
+                  <input class="radio" type="radio" name="readMode" value="page" onclick="chAllComicMode('page')">
                   Page
                 </label>
               </li>
-              <li style="list-style: none;">
+              <li>
                 <label>
-                  <input type="radio" name="readMode" value="strip" style="margin-right: 5px;"
-                    onclick="chAllComicMode('strip')">
+                  <input class="radio" type="radio" name="readMode" value="strip" onclick="chAllComicMode('strip')">
                   Strip
                 </label>
               </li>
-              <li style="list-style: none;">
+              <li>
                 <label>
-                  <input type="radio" name="readMode" value="panel" style="margin-right: 5px;"
-                    onclick="chAllComicMode('panel')">
+                  <input class="radio" type="radio" name="readMode" value="panel" onclick="chAllComicMode('panel')">
                   Panel
                 </label>
               </li>
+            </ul>
+          </div>
+          <div>
+            <p>Automatic</p>
+            <ul>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle0" value="auto0" id="customSwitch0"
+                  onclick="readAutoKey(0, this)">
+                <label class="custom-control-label" for="customSwitch0">Automatic</label>
+              </div>
             </ul>
           </div>
           <div>
@@ -336,39 +252,47 @@
   </div>
 
   <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel2">Panel</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body" style="">
-            <div style="margin: 10px;">
-                <center>
-                    <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_01.jpg" style="width: 9em; height: auto;" onclick="changeNavImg(1)">
-          <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_02.jpg" style="width: 9em; height: auto;" onclick="changeNavImg(2)">
-          <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_03.jpg" style="width: 9em; height: auto;" onclick="changeNavImg(3)">
-                </center> 
-            </div>
-            <div style="margin: 10px;">
-                <center>
-                    <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_04.jpg" style="width: auto; height: 13.5em;" onclick="changeNavImg(4)">
-          <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_05.jpg" style="width: 21.5em; height: auto;" onclick="changeNavImg(5)">
-                </center>
-            </div>
-            <div style="margin: 10px;">
-                <center>
-                    <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_06.jpg" style="width: 15.5em; height: auto;" onclick="changeNavImg(6)">
-          <img src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg" style="width: 12em; height: auto;" onclick="changeNavImg(7)">
-                </center>
-            </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel2">Panel</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <center>
+              <img class="navigationPanelImg3" alt="Move to the first panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_01.jpg" onclick="changeNavImg(1)">
+              <img class="navigationPanelImg3" alt="Move to the second panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_02.jpg" onclick="changeNavImg(2)">
+              <img class="navigationPanelImg3" alt="Move to the third panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_03.jpg" onclick="changeNavImg(3)">
+            </center>
+          </div>
+          <div>
+            <center>
+              <img class="navigationPanelImg4" alt="Move to the fourth panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_04.jpg" onclick="changeNavImg(4)">
+              <img class="navigationPanelImg5" alt="Move to the fifth panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_05.jpg" onclick="changeNavImg(5)">
+            </center>
+          </div>
+          <div>
+            <center>
+              <img class="navigationPanelImg6" alt="Move to the sixth panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_06.jpg" onclick="changeNavImg(6)">
+              <img class="navigationPanelImg7" alt="Move to the seventh panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg" onclick="changeNavImg(7)">
+            </center>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -379,17 +303,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="../../../java/allMode.js"></script>
-
-  <!-- <script type="text/javascript" src="./java/inputObject.js"></script> -->
   <script type="text/javascript" src="../../../java/navigation.js"></script>
-  <!-- <script type="text/javascript" src="./java/prevPage.js"></script> -->
-  <!-- <script type="text/javascript" src="./java/nextPage.js"></script> -->
-
   <script type="text/javascript" src="../../../java/toggle.js"></script>
 
-    <script type="text/javascript" src="../../../java/auto_reader_love.js"></script>
- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
+  <script type="text/javascript" src="../../../java/auto_reader_love.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
   <script type="text/javascript" src="../../../java/auto_pollyData.js"></script>
   <script type="text/javascript" src="../../../java/auto_Polly.js"></script>
   <script type="text/javascript" src="../../../java/toggleEvent.js"></script>

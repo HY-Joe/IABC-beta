@@ -10,3 +10,20 @@ div.list > div.row > div.card > div.card-body > div > button.moveBtn > svg.bi {
 div.list > div.row > div.card > div.card-body > div > button.btn-example.btn > svg.bi {
 	margin: 0 1.5em;
 }
+
+img.autoImg {
+	width: auto; 
+	max-width: 80%; 
+	height: auto;
+}
+
+div#heightCard {
+	max-height: 60%;
+	min-height: 60%;
+}
+
+img.autoImg2 {
+	width: auto;
+	height: auto;
+	max-height: 80%;
+}
