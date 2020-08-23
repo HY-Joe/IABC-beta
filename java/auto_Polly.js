@@ -1,6 +1,10 @@
 var channel_cnt = 0;
 var now_playing = -1;
+var channel_now = 0;
+
+audio = new Audio();
 audiochannels = new Array();
+
 
 function startingAuto() {
   var numbering = sessionStorage.getItem("auto_number");
@@ -11,14 +15,16 @@ function startingAuto() {
 function collectUrl(index, url) {
   channel_cnt = channel_cnt + 1;
 
-  audiochannels[index] = new Array();
-  audiochannels[index]["channel"] = new Audio();
-  audiochannels[index]["channel"].src = url;
+  audiochannels[index] = url;
 
   var test = sessionStorage.getItem("auto_number");
 
   //처음 클릭을 위해서
-  if (channel_cnt == Number(test)) speakAll();
+  if (channel_cnt == Number(test))
+  {
+      console.log(now_playing + "..collectUrl");
+      speakAll();
+  } 
 }
 
 function speakAll() {
@@ -26,18 +32,25 @@ function speakAll() {
   var startNumber = sessionStorage.getItem("auto_start");
   var endNumber = sessionStorage.getItem("auto_end");
 
-  var channel_now = startNumber;
-  var audio = new Audio(audiochannels[channel_now]["channel"].src);
 
+  var channel_now = startNumber;
+
+
+  audio.src = audiochannels[channel_now];
   audio.play();
 
-  audio.addEventListener("ended", function () {
+  console.log(now_playing + "..now playing");
+
+   audio.addEventListener("ended", function () {
     channel_now++;
+    console.log("..."+channel_now);
     if (channel_now <= endNumber) {
-      audio.src = audiochannels[channel_now]["channel"].src;
-      audio.play();
+       audio.src = audiochannels[channel_now];
+       audio.play();
     } else {
       now_playing = -1;
+      console.log(now_playing+"..finished playing");
+  
     }
   });
 }

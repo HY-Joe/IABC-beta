@@ -10,6 +10,8 @@ function love_page_1() {
   love_5();
   love_6();
   love_7();
+
+  speakAll(40, 1, 40);
 }
 
 function love_strip_1() {
@@ -29,7 +31,7 @@ function love_strip_2() {
   love_4();
   love_5();
 
-  speakAll(11, 16, 26);
+speakAll(11, 16, 26);
 }
 function love_strip_3() {
   sessionStorage.setItem("auto_number", 14);
@@ -38,7 +40,7 @@ function love_strip_3() {
   love_6();
   love_7();
 
-  speakAll(14, 27, 40);
+speakAll(14, 27, 40);
 }
 
 function love_panel_1() {
@@ -46,14 +48,14 @@ function love_panel_1() {
   sessionStorage.setItem("auto_start", 1);
   sessionStorage.setItem("auto_end", 5);
   love_1();
-  speakAll(5, 1, 5);
+speakAll(5, 1, 5);
 }
 function love_panel_2() {
   sessionStorage.setItem("auto_number", 5);
   sessionStorage.setItem("auto_start", 6);
   sessionStorage.setItem("auto_end", 10);
   love_2();
-  speakAll(5, 6, 10);
+speakAll(5, 6, 10);
 }
 function love_panel_3() {
   sessionStorage.setItem("auto_number", 5);
@@ -67,28 +69,28 @@ function love_panel_4() {
   sessionStorage.setItem("auto_start", 16);
   sessionStorage.setItem("auto_end", 18);
   love_4();
-  speakAll(3, 16, 18);
+speakAll(3, 16, 18);
 }
 function love_panel_5() {
   sessionStorage.setItem("auto_number", 8);
   sessionStorage.setItem("auto_start", 19);
   sessionStorage.setItem("auto_end", 26);
   love_5();
-  speakAll(8, 19, 26);
+speakAll(8, 19, 26);
 }
 function love_panel_6() {
   sessionStorage.setItem("auto_number", 9);
   sessionStorage.setItem("auto_start", 27);
   sessionStorage.setItem("auto_end", 35);
   love_6();
-  speakAll(9, 27, 35);
+speakAll(9, 27, 35);
 }
 function love_panel_7() {
   sessionStorage.setItem("auto_number", 5);
   sessionStorage.setItem("auto_start", 36);
   sessionStorage.setItem("auto_end", 40);
   love_7();
-  speakAll(5, 36, 40);
+ speakAll(5, 36, 40);
 }
 
 function love_1() {

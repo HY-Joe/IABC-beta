@@ -9,6 +9,9 @@ function fox_page_1() {
   fox_4();
   fox_5();
   fox_6();
+
+
+  speakAll(32, 1, 32);
 }
 
 function fox_strip_1() {
