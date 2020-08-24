@@ -99,14 +99,13 @@ function love_1() {
     4,
     "Panel One",
     "The place is the front yard of a house and in front of a car.",
-    "CYNTHY’s profile body is on the left, and the CURT’s front body is on the right."
+    "CYNTHY is on the left, and the CURT is on the right."
   );
   setCharacterData(
     2,
     4,
     "CYNTHY",
     "She turns her head and speaks to the man.",
-    "Unknown",
     "A woman with black hair is wearing a long red dress."
   );
   setCharacterData(
@@ -130,7 +129,7 @@ function love_2() {
     4,
     "Panel Two",
     "The place is inside a yellow convertible car.",
-    "CYNTHY’s profile is on the left, and the CURT’s face is on the right."
+    "CYNTHY’s face is on the left, and the CURT’s face is on the right."
   );
   setCharacterData(
     7,
@@ -151,12 +150,12 @@ function love_2() {
   setBalloonData(
     9,
     5,
-    "I WAS IN A BAD MOOD, AND CURT SENSED IT IMMEDIATELY..."
+    "I WAS IN A BAD MOOD, AND CURT SENSED it IMMEDIATELY..."
   );
   setBalloonData(
     10,
     0,
-    "YOU’VE SEEMED SO UNHAPPY LATELY, CUNTHY! I WISH THERE WAS SOMETHING I COULD DO! WISH YOU’D LET ME TRY AND MAKE YOU HAPPY!"
+    "YOU’VE SEEMED SO UNHAPPY LATELY, CYNTHY! I WISH THERE WAS SOMETHING I COULD DO! WISH YOU’D LET ME TRY AND MAKE YOU HAPPY!"
   );
 }
 function love_3() {
@@ -165,7 +164,7 @@ function love_3() {
     4,
     "Panel Three",
     "The place is inside a yellow convertible car.",
-    "CYNTHY’s profile is on the right, and the CURT’s profile is on the left."
+    "CYNTHY’s face is on the right, and the CURT’s face is on the left."
   );
   setCharacterData(
     12,
@@ -200,11 +199,11 @@ function love_4() {
     "Yellow background",
     "CYNTHY’s head is on the left bottom."
   );
-  setCharacterData(17, 4, "CYNTHY", "Unknown", "She seems worried.");
+  setCharacterData(17, 4, "CYNTHY", "", "She seems worried.");
   setBalloonData(
     18,
     5,
-    "I LIKED CURT BUT I DIDN’T LOVE HIM, AND I KNEW THAT MARRYING HIM WOULD ONLY BE A SURRENDER TO MY PARENTS. I HAD TO LICK THIS PROBLEM MYSELF ... NOT GIVE IN TO IT! LATER THAT EVENING, WE DROPPED IN AT GLORIA’S. EVERYBODY GATHERED AT GLORIA’S.."
+    "I LIKED CURT BUT I DIDN’T LOVE HIM, AND I KNEW THAT MARRYING HIM WOULD ONLY BE A SURRENDER TO MY PARENTS. I HAD TO LICK THIS PROBLEM MYSELF ... NOT GIVE IN TO it! LATER THAT EVENING, WE DROPPED IN AT GLORIA’S. EVERYBODY GATHERED AT GLORIA’S.."
   );
 }
 function love_5() {
@@ -221,7 +220,7 @@ function love_5() {
     "CURT",
     "He is in conversation with the people.",
     "He is smirking.",
-    "A man with yellow hair  is wearing an orange suit with green tie."
+    "A man with yellow hair is wearing an orange suit with green tie."
   );
   setCharacterData(
     21,
@@ -253,7 +252,7 @@ function love_5() {
     2,
     "SPARKLING WIT... BRILLIANT CONVERSATION... PENETRATING THOUGHT... WHAT DID YOU EXPECT?"
   );
-  setBalloonData(26, 3, "HE MEANS IT’S THE USUAL DULL EVENING!");
+  setBalloonData(26, 3, "HE MEANS it’S THE USUAL DULL EVENING!");
 }
 function love_6() {
   setPanelData(
@@ -305,7 +304,7 @@ function love_6() {
   setBalloonData(
     35,
     5,
-    "DIT IT EVER OCCUR TO YOU THAT YOU’RE LUCKY TO GET JOBS?"
+    "DIT it EVER OCCUR TO YOU THAT YOU’RE LUCKY TO GET JOBS?"
   );
 }
 function love_7() {
@@ -314,7 +313,7 @@ function love_7() {
     4,
     "Panel Seven",
     "The place is in front of a window inside the house.",
-    "CYNTHY’s profile is on the center facing right."
+    "CYNTHY is on the center facing right."
   );
   setCharacterData(
     37,

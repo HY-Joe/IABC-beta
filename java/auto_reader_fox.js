@@ -79,18 +79,21 @@ function fox_panel_6() {
   speakAll(7, 26, 32);
 }
 
+function steenie_said() {
+  
+}
 function fox_1() {
   //1~4
   setPanelData(
     1,
-    3,
+    4,
     "Panel One",
     "In a wood with trees.",
     "STEENIE’s full body is at the center"
   );
   setCharacterData(
     2,
-    3,
+    4,
     "STEENIE",
     "He is walking in the wood while touching his forehead with his left hand.",
     "He seems like he has a headache.",
@@ -98,7 +101,7 @@ function fox_1() {
   );
   setBalloonData(
     3,
-    3,
+    4,
     "MY GRANDFATHER, STEENIE, FOR-TIFIED HIMSELF WITH BRANDY AND MAKE HIS WAY HOME THROUGH THE DARK WOODS OF HAUNTED PITMURKIE..."
   );
   setBalloonData(4, 0, "AYE! I AM LOST! MY HOME WILL BE TAKEN--IS ME!");
@@ -108,21 +111,21 @@ function fox_2() {
   //5~10
   setPanelData(
     5,
-    3,
+    4,
     "Panel Two",
     "In a wood with trees.",
     "STEENIE is on the left and A Stranger is on the right."
   );
   setCharacterData(
     6,
-    3,
+    4,
     "STEENIE",
     "He is asking a question to a man.",
-    "Unknown"
+    ""
   );
   setCharacterData(
     7,
-    3,
+    4,
     "A Stranger",
     "He stretches his right hand forward towards the man and answers his question.",
     "He is serious.",
@@ -130,7 +133,7 @@ function fox_2() {
   );
   setBalloonData(
     8,
-    3,
+    4,
     "SUDDENLY, FROM A DARK THICKET, A STRANGER STEPPED BEFORE HIM..."
   );
   setBalloonData(9, 0, "HUH! WHO ARE YOU?");
@@ -141,21 +144,21 @@ function fox_3() {
   //11~15
   setPanelData(
     11,
-    3,
+    4,
     "Panel Three",
     "In a wood with trees.",
     "STEENIE’s upper body  is on the left and A Stranger’s upper body  is on the right."
   );
   setCharacterData(
     12,
-    3,
+    4,
     "STEENIE",
     "He is talking to a man in front.",
     "He looks puzzled."
   );
   setCharacterData(
     13,
-    3,
+    4,
     "A Stranger",
     "He is talking to a man in front.",
     "He is serious."
@@ -172,59 +175,59 @@ function fox_4() {
   //16~20
   setPanelData(
     16,
-    3,
+    4,
     "Panel Four",
     "Black background with yellow light on a Stranger.",
     "STEENIE is on the left and A Stranger is on the right."
   );
   setCharacterData(
     17,
-    3,
+    4,
     "A Stranger",
     "He is talking to a man in front.",
     "He is laughing horribly."
   );
   setCharacterData(
     18,
-    3,
+    4,
     "STEENIE",
     "He is talking to a man in front.",
-    "Unknown"
+    ""
   );
   setBalloonData(
     19,
     0,
-    "I HAVE THE COURAGE TO GO TO THE GATES OF HELL, AND A STEPFARTHER, FOR THAT RECEIPT."
+    "I HAVE THE COURAGE TO GO TO THE GATES OF HELL, AND A STEP FARTHER, FOR THAT RECEIPT."
   );
-  setBalloonData(20, 1, "HA HA HA THEN COME WITH ME, STEENIE STEENSON!");
+  setBalloonData(20, 1, "HAHAHA THEN COME WITH ME, STEENIE STEENSON!");
 }
 
 function fox_5() {
   //21~25
   setPanelData(
     21,
-    3,
+    4,
     "Panel Five",
     "The place is in front of a castle gate.",
     "STTEENIE’s and a Stranger’s backs are in the center."
   );
   setCharacterData(
     22,
-    3,
+    4,
     "STEENIE",
     "He is walking alongside the man next to him.",
-    "Unknown"
+    ""
   );
   setCharacterData(
     23,
-    3,
+    4,
     "A Stranger",
     "He is walking alongside the man next to him.",
-    "Unknown"
+    ""
   );
   setBalloonData(
     24,
-    3,
+    4,
     "AND SO STEENIE WENT WITH THE MAN AND THEY SOON CAME TO THE DOOR OF A GRIM CASTLE..."
   );
   setBalloonData(
@@ -238,35 +241,35 @@ function fox_6() {
   //26~32
   setPanelData(
     26,
-    3,
+    4,
     "Panel Six",
     "The place is in front of a door.",
     "STEENIE’s back is on the left,  Stranger’s back is on the right, and DOUGAL’s front body is in the middle."
   );
   setCharacterData(
     27,
-    3,
+    4,
     "STEENIE",
     "He indicates the man with his index finger, talking to a man in front.",
-    "Unknown"
+    ""
   );
   setCharacterData(
     28,
-    3,
+    4,
     "DOUGAL",
     "He is talking to a man in front.",
     "He frowns and speaks seriously."
   );
   setCharacterData(
     29,
-    3,
+    4,
     "A Stranger",
     "He is standing next to STEENIE.",
-    "Unknown"
+    ""
   );
   setBalloonData(
     30,
-    3,
+    4,
     "THE DOOR OPENED AND THEY WERE GREETED BY NONE OTHER THAN DOUGAL..."
   );
   setBalloonData(31, 0, "DOUGAL MAC CALLUM, I THOUGHT YE BE DEAD!");
