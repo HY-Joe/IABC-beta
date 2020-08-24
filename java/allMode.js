@@ -109,7 +109,7 @@ function startComic() {
       } else if (modeName == "panel") {
         funcSetItem("panel1", 1);
         location.href =
-          "./html_auto_reader/panel/fox/" + readingMode + "_1.html";
+          "./html_auto_reader/panel/fox/" + readingMode + ".html";
       }
     } else if (comicNum == "2") {
       if (modeName == "page") {
@@ -123,7 +123,7 @@ function startComic() {
       } else if (modeName == "panel") {
         funcSetItem("panel2", 1);
         location.href =
-          "./html_auto_reader/panel/love/" + readingMode + "_1.html";
+          "./html_auto_reader/panel/love/" + readingMode + ".html";
       }
     }
   }
