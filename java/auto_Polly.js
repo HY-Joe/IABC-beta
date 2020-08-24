@@ -49,7 +49,16 @@ function speakAll() {
        audio.play();
     } else {
       now_playing = -1;
+<<<<<<< Updated upstream
       console.log(now_playing+"..finished playing");
+=======
+      channel_cnt++;
+      
+      var audio2 = new Audio();
+      audio2.src = '../data/sound/beepSound.mp3';
+      audio2.play();
+      console.log("..finished playing");
+>>>>>>> Stashed changes
   
     }
   });
