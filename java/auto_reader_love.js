@@ -257,7 +257,7 @@ function love_5() {
     "A woman with gold hair is wearing a green dress."
   );
   setBalloonData(31, 4, "Cynthy says");
-  setBalloonData(32, 5, "HI, KIDS! WHAT’S UP?");
+  setBalloonData(32, 5, "HI KIDS! WHAT’S UP?");
   setBalloonData(33, 4, "Gloria's husband says");
   setBalloonData(
     34,
@@ -314,7 +314,7 @@ function love_6() {
   setBalloonData(
     46,
     0,
-    "YEAH, ME, TOO! HE’LL TAKE ME ON AT THE BANK, BUT I THINK I’D RATHER WORK IN MY UNCLE’S PUBLISHING HOUSE!"
+    "YEAH, ME TOO! HE’LL TAKE ME ON AT THE BANK, BUT I THINK I’D RATHER WORK IN MY UNCLE’S PUBLISHING HOUSE!"
   );
   setBalloonData(47, 4, "Cynthy says");
   setBalloonData(
