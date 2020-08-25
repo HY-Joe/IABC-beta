@@ -151,8 +151,10 @@ function continuesComic() {
         location.href =
           "./html_reader/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
-          "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
+          "./html_reader/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -161,8 +163,10 @@ function continuesComic() {
         location.href =
           "./html_reader/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "./html_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
-          "./html_reader/panel/love/" + modeName + "_" + flag + ".html";
+          "./html_reader/panel/love/" + modeName + ".html";
     }
   } else if (autoFlag == "true") {
     if (comicNum == "1") {
@@ -173,8 +177,10 @@ function continuesComic() {
         location.href =
           "./html_auto_reader/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "./html_auto_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
-          "./html_auto_reader/panel/fox/" + modeName + "_" + flag + ".html";
+          "./html_auto_reader/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -183,8 +189,10 @@ function continuesComic() {
         location.href =
           "./html_auto_reader/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "./html_auto_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
-          "./html_auto_reader/panel/love/" + modeName + "_" + flag + ".html";
+          "./html_auto_reader/panel/love/" + modeName + ".html";
     }
   }
 }
@@ -211,8 +219,10 @@ function continuesComic2() {
         location.href =
           "../../../html_reader/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "../../../html_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
-          "../../../html_reader/panel/fox/" + modeName + "_" + flag + ".html";
+          "../../../html_reader/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -221,8 +231,10 @@ function continuesComic2() {
         location.href =
           "../../../html_reader/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "../../../html_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
-          "../../../html_reader/panel/love/" + modeName + "_" + flag + ".html";
+          "../../../html_reader/panel/love/" + modeName + ".html";
     }
   } else if (autoFlag == "true") {
     if (comicNum == "1") {
@@ -241,11 +253,15 @@ function continuesComic2() {
           flag +
           ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "../../../html_auto_reader/panel/fox/" +
+        //   modeName +
+        //   "_" +
+        //   flag +
+        //   ".html";
         location.href =
           "../../../html_auto_reader/panel/fox/" +
           modeName +
-          "_" +
-          flag +
           ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
@@ -263,11 +279,15 @@ function continuesComic2() {
           flag +
           ".html";
       else if (modeName == "panel")
+        // location.href =
+        //   "../../../html_auto_reader/panel/love/" +
+        //   modeName +
+        //   "_" +
+        //   flag +
+        //   ".html";
         location.href =
           "../../../html_auto_reader/panel/love/" +
           modeName +
-          "_" +
-          flag +
           ".html";
     }
   }
