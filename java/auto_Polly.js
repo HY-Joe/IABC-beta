@@ -125,23 +125,23 @@ function preAudio(index, num, text) {
 }
 
 function speakTextIntro(index, num, text) {
-  var blank = "....";
+  var blank = ".... .... ....";
   preAudio(index, num, text);
 }
 
 function speakTextPanel(index, num, number, location, composition) {
-  var blank = "....";
+  var blank = ".... .... ....";
   preAudio(index, num, number + blank + location + blank + composition);
 }
 
 function speakTextBalloon(index, num, script) {
-  var blank = "....";
+  var blank = ".... .... ....";
   preAudio(index, num, script);
 }
 function speakTextCharacter(index, num, name, action, emotion, appearance) {
   this.appearance = appearance;
   if (this.appearance == "undefined") this.appearance = "";
-  var blank = "....";
+  var blank = ".... .... ....";
   preAudio(
     index,
     num,
