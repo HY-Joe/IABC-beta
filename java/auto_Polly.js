@@ -35,6 +35,7 @@ function speakAll() {
 
   var channel_now = startNumber;
 
+  //new Audio('../data/sound/beepSound.mp3').play();
 
   audio.src = audiochannels[channel_now];
   audio.play();
@@ -42,24 +43,21 @@ function speakAll() {
   console.log(now_playing + "..now playing");
 
    audio.addEventListener("ended", function () {
-    channel_now++;
     console.log("..."+channel_now);
-    if (channel_now <= endNumber) {
+    if (channel_now < endNumber) 
+    {
+      channel_now++;
        audio.src = audiochannels[channel_now];
        audio.play();
-    } 
-//     else {
-//       now_playing = -1;
-// <<<<<<< Updated upstream
-//       console.log(now_playing+"..finished playing");
-// =======
-//       channel_cnt++;
-      
-//       var audio2 = new Audio();
-//       audio2.src = '../data/sound/beepSound.mp3';
-//       audio2.play();
-//       console.log("..finished playing");
-// >>>>>>> Stashed changes
+    } else 
+    {
+      console.log("audio");
+      now_playing = -1;
+      channel_cnt++;
+      var audio2 = new Audio();
+      audio2.src = '../data/sound/beepSound.mp3';
+      audio2.play();
+      console.log("..finished playing");
   
 //     }
   });
