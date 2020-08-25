@@ -59,7 +59,7 @@ function speakAll() {
       audio2.play();
       console.log("..finished playing");
   
-//     }
+    }
   });
 }
 
