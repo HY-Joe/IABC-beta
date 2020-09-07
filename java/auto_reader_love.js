@@ -1,3 +1,17 @@
+window.onload = function() {
+  sessionStorage.setItem("auto_number", 56);
+  sessionStorage.setItem("auto_start", 1);
+  sessionStorage.setItem("auto_end", 56);
+
+  love_1();
+  love_2();
+  love_3();
+  love_4();
+  love_5();
+  love_6();
+  love_7();
+}
+
 function love_page_1() {
   sessionStorage.setItem("auto_number", 56);
   sessionStorage.setItem("auto_start", 1);
@@ -47,49 +61,49 @@ function love_panel_1() {
   sessionStorage.setItem("auto_number", 7);
   sessionStorage.setItem("auto_start", 1);
   sessionStorage.setItem("auto_end", 7);
-  love_1();
+ // love_1();
 speakAll(7, 1, 7);
 }
 function love_panel_2() {
   sessionStorage.setItem("auto_number", 7);
   sessionStorage.setItem("auto_start", 8);
   sessionStorage.setItem("auto_end", 14);
-  love_2();
+//  love_2();
 speakAll(7, 8, 14);
 }
 function love_panel_3() {
   sessionStorage.setItem("auto_number", 7);
   sessionStorage.setItem("auto_start", 15);
   sessionStorage.setItem("auto_end", 21);
-  love_3();
+//  love_3();
   speakAll(7, 15, 21);
 }
 function love_panel_4() {
   sessionStorage.setItem("auto_number", 4);
   sessionStorage.setItem("auto_start", 22);
   sessionStorage.setItem("auto_end", 25);
-  love_4();
+//  love_4();
 speakAll(4, 22, 25);
 }
 function love_panel_5() {
   sessionStorage.setItem("auto_number", 11);
   sessionStorage.setItem("auto_start", 26);
   sessionStorage.setItem("auto_end", 36);
-  love_5();
+//  love_5();
 speakAll(11, 26, 36);
 }
 function love_panel_6() {
   sessionStorage.setItem("auto_number", 12);
   sessionStorage.setItem("auto_start", 37);
   sessionStorage.setItem("auto_end", 48);
-  love_6();
+//  love_6();
 speakAll(12, 37, 38);
 }
 function love_panel_7() {
   sessionStorage.setItem("auto_number", 8);
   sessionStorage.setItem("auto_start", 49);
   sessionStorage.setItem("auto_end", 56);
-  love_7();
+//  love_7();
  speakAll(8, 49, 56);
 }
 

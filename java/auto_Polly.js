@@ -13,8 +13,9 @@ function startingAuto() {
 }
 
 function collectUrl(index, url) {
-  channel_cnt = channel_cnt + 1;
 
+  console.log(index+" collectUrl...");
+  channel_cnt = channel_cnt + 1;
   audiochannels[index] = url;
 
   var test = sessionStorage.getItem("auto_number");
@@ -22,8 +23,7 @@ function collectUrl(index, url) {
   //처음 클릭을 위해서
   if (channel_cnt == Number(test))
   {
-      console.log(now_playing + "..collectUrl");
-      speakAll();
+      console.log("..collect All Url");
   } 
 }
 
@@ -32,32 +32,37 @@ function speakAll() {
   var startNumber = sessionStorage.getItem("auto_start");
   var endNumber = sessionStorage.getItem("auto_end");
 
+  console.log(startNumber+"~"+endNumber);
 
   var channel_now = startNumber;
 
   //new Audio('../data/sound/beepSound.mp3').play();
 
+  //만약 Url이 다 있다면?
+
+  //Url이 없다면?
+
   audio.src = audiochannels[channel_now];
   audio.play();
-
-  console.log(now_playing + "..now playing");
+  console.log(channel_now + "is playing...");
 
    audio.addEventListener("ended", function () {
-    console.log("..."+channel_now);
+
     if (channel_now < endNumber) 
     {
       channel_now++;
        audio.src = audiochannels[channel_now];
        audio.play();
+       console.log(channel_now+"is playing...");
     } else 
     {
-      console.log("audio");
-      now_playing = -1;
-      channel_cnt++;
-      var audio2 = new Audio();
-      audio2.src = '../data/sound/beepSound.mp3';
-      audio2.play();
-      console.log("..finished playing");
+      console.log("end");
+      //now_playing = -1;
+      //channel_cnt++;
+      //var audio2 = new Audio();
+      //audio2.src = '../data/sound/beepSound.mp3';
+      //audio2.play();
+      //console.log("..finished playing");
   
     }
   });
@@ -115,36 +120,31 @@ function preAudio(index, num, text) {
   signer.getSynthesizeSpeechUrl(speechParams, function (error, url) {
     if (error) {
     } else {
-      //auto mode가 아닐 경우
-      //playAudio(url);
-      //auto mode일 경우
-      var test = sessionStorage.getItem("auto_number");
-      if (channel_cnt != Number(test)) collectUrl(index, url);
+      console.log(index+"...go to collectUrl()");
+      collectUrl(index, url);
     }
   });
 }
 
 function speakTextIntro(index, num, text) {
-  var blank = ".... .... ....";
+  //var blank = "....";
   preAudio(index, num, text);
 }
 
 function speakTextPanel(index, num, number, location, composition) {
-  var blank = ".... .... ....";
-  preAudio(index, num, number + blank + location + blank + composition);
+  //var blank = "....";
+  //preAudio(index, num, number + blank + location + blank + composition);
+  preAudio(index, num, number + location + composition);
 }
 
 function speakTextBalloon(index, num, script) {
-  var blank = ".... .... ....";
+  //var blank = "....";
   preAudio(index, num, script);
 }
 function speakTextCharacter(index, num, name, action, emotion, appearance) {
   this.appearance = appearance;
   if (this.appearance == "undefined") this.appearance = "";
-  var blank = ".... .... ....";
-  preAudio(
-    index,
-    num,
-    name + blank + action + blank + emotion + blank + this.appearance
-  );
+  //var blank = "....";
+  //preAudio(index,num,name + blank + action + blank + emotion + blank + this.appearance);
+  preAudio(index,num,name + action + emotion + this.appearance);
 }

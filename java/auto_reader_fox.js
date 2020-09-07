@@ -1,3 +1,17 @@
+window.onload = function() {
+  sessionStorage.setItem("auto_number", 42);
+  sessionStorage.setItem("auto_start", 1);
+  sessionStorage.setItem("auto_end", 42);
+
+  fox_1();
+  fox_2();
+  fox_3();
+  fox_4();
+  fox_5();
+  fox_6();
+}
+
+
 function fox_page_1() {
   sessionStorage.setItem("auto_number", 42);
   sessionStorage.setItem("auto_start", 1);
@@ -11,7 +25,7 @@ function fox_page_1() {
   fox_6();
 
 
-  speakAll(42, 1, 42);
+  //speakAll(42, 1, 42);
 }
 
 function fox_strip_1() {
@@ -40,50 +54,54 @@ function fox_panel_1() {
   sessionStorage.setItem("auto_number", 5);
   sessionStorage.setItem("auto_start", 1);
   sessionStorage.setItem("auto_end", 5);
-  fox_1();
+  
+  console.log("fox_panel_1...");
+  //fox_1();
   speakAll(5, 1, 5);
 }
 function fox_panel_2() {
   sessionStorage.setItem("auto_number", 8);
   sessionStorage.setItem("auto_start", 6);
   sessionStorage.setItem("auto_end", 13);
-  fox_2();
+  
+  console.log("fox_panel_2...");
+  //fox_2();
   speakAll(8, 6, 13);
 }
 function fox_panel_3() {
   sessionStorage.setItem("auto_number", 7);
   sessionStorage.setItem("auto_start", 14);
   sessionStorage.setItem("auto_end", 20);
-  fox_3();
+  
+  console.log("fox_panel_3...");
+  //fox_3();
   speakAll(7, 14, 20);
 }
 function fox_panel_4() {
   sessionStorage.setItem("auto_number", 7);
   sessionStorage.setItem("auto_start", 21);
   sessionStorage.setItem("auto_end", 27);
-  fox_4();
+  //fox_4();
   speakAll(7, 21, 27);
 }
 function fox_panel_5() {
   sessionStorage.setItem("auto_number", 6);
   sessionStorage.setItem("auto_start", 28);
   sessionStorage.setItem("auto_end", 33);
-  fox_5();
+  //fox_5();
   speakAll(6, 28, 33);
 }
 function fox_panel_6() {
   sessionStorage.setItem("auto_number", 9);
   sessionStorage.setItem("auto_start", 34);
   sessionStorage.setItem("auto_end", 42);
-  fox_6();
+  //fox_6();
   speakAll(9, 34, 42);
 }
 
-function steenie_said() {
-  
-}
+
 function fox_1() {
-  //1~4
+  //1~5
   setPanelData(
     1,
     4,
@@ -109,7 +127,7 @@ function fox_1() {
 }
 
 function fox_2() {
-  //5~10
+  //6~13
   setPanelData(
     6,
     4,
@@ -144,7 +162,7 @@ function fox_2() {
 }
 
 function fox_3() {
-  //11~15
+  //13~20
   setPanelData(
     14,
     4,
@@ -180,7 +198,7 @@ function fox_3() {
 }
 
 function fox_4() {
-  //16~20
+  //21~27
   setPanelData(
     21,
     4,
