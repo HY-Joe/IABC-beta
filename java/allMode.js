@@ -109,7 +109,7 @@ function startComic() {
       } else if (modeName == "panel") {
         funcSetItem("panel1", 1);
         location.href =
-          "./html_auto_reader_2/panel/fox/" + readingMode + ".html";
+          "./html_auto_reader_2/panel/fox/" + readingMode + "_1.html";
       }
     } else if (comicNum == "2") {
       if (modeName == "page") {
@@ -123,7 +123,7 @@ function startComic() {
       } else if (modeName == "panel") {
         funcSetItem("panel2", 1);
         location.href =
-          "./html_auto_reader_2/panel/love/" + readingMode + ".html";
+          "./html_auto_reader_2/panel/love/" + readingMode + "_1.html";
       }
     }
   }
@@ -153,8 +153,7 @@ function continuesComic() {
       else if (modeName == "panel")
          location.href =
            "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
-        location.href =
-          "./html_reader/panel/fox/" + modeName + ".html";
+
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -165,8 +164,7 @@ function continuesComic() {
       else if (modeName == "panel")
          location.href =
            "./html_reader/panel/love/" + modeName + "_" + flag + ".html";
-        location.href =
-          "./html_reader/panel/love/" + modeName + ".html";
+
     }
   } else if (autoFlag == "true") {
     if (comicNum == "1") {
@@ -179,8 +177,7 @@ function continuesComic() {
       else if (modeName == "panel")
          location.href =
            "./html_auto_reader/panel/fox/" + modeName + "_" + flag + ".html";
-        location.href =
-          "./html_auto_reader_2/panel/fox/" + modeName + ".html";
+
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -191,8 +188,7 @@ function continuesComic() {
       else if (modeName == "panel")
          location.href =
            "./html_auto_reader/panel/love/" + modeName + "_" + flag + ".html";
-        location.href =
-          "./html_auto_reader_2/panel/love/" + modeName + ".html";
+
     }
   }
 }
@@ -221,8 +217,7 @@ function continuesComic2() {
       else if (modeName == "panel")
          location.href =
            "../../../html_reader/panel/fox/" + modeName + "_" + flag + ".html";
-        location.href =
-          "../../../html_reader/panel/fox/" + modeName + ".html";
+
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -233,8 +228,7 @@ function continuesComic2() {
       else if (modeName == "panel")
          location.href =
            "../../../html_reader/panel/love/" + modeName + "_" + flag + ".html";
-        location.href =
-          "../../../html_reader/panel/love/" + modeName + ".html";
+
     }
   } else if (autoFlag == "true") {
     if (comicNum == "1") {

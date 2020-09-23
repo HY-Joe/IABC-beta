@@ -20,7 +20,6 @@ function collectUrl(index, url) {
 
   var test = sessionStorage.getItem("auto_number");
 
-  //처음 클릭을 위해서
   if (channel_cnt == Number(test))
   {
       console.log("..collect All Url");
@@ -37,11 +36,10 @@ function speakAll() {
 
   var channel_now = startNumber;
 
-  //new Audio('../data/sound/beepSound.mp3').play();
+  new Audio('beepSound.mp3').play();
 
-  //만약 Url이 다 있다면?
-
-  //Url이 없다면?
+  //var audio2 = new Audio('../data/sound/beepSound.mp3');
+  //audio2.play();
 
   audio.src = audiochannels[channel_now];
   audio.play();
@@ -51,7 +49,7 @@ function speakAll() {
 
     if (channel_now < endNumber) 
     {
-      channel_now++;
+       channel_now++;
        audio.src = audiochannels[channel_now];
        audio.play();
        console.log(channel_now+"is playing...");
@@ -63,7 +61,9 @@ function speakAll() {
       //var audio2 = new Audio();
       //audio2.src = '../data/sound/beepSound.mp3';
       //audio2.play();
-      //console.log("..finished playing");
+      new Audio('../data/sound/beepSound.mp3').play();
+
+      console.log("..finished playing");
   
     }
   });
