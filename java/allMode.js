@@ -151,8 +151,8 @@ function continuesComic() {
         location.href =
           "./html_reader/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
+         location.href =
+           "./html_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
           "./html_reader/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
@@ -163,8 +163,8 @@ function continuesComic() {
         location.href =
           "./html_reader/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "./html_reader/panel/love/" + modeName + "_" + flag + ".html";
+         location.href =
+           "./html_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
           "./html_reader/panel/love/" + modeName + ".html";
     }
@@ -177,8 +177,8 @@ function continuesComic() {
         location.href =
           "./html_auto_reader_2/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "./html_auto_reader/panel/fox/" + modeName + "_" + flag + ".html";
+         location.href =
+           "./html_auto_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
           "./html_auto_reader_2/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
@@ -189,8 +189,8 @@ function continuesComic() {
         location.href =
           "./html_auto_reader_2/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "./html_auto_reader/panel/love/" + modeName + "_" + flag + ".html";
+         location.href =
+           "./html_auto_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
           "./html_auto_reader_2/panel/love/" + modeName + ".html";
     }
@@ -219,8 +219,8 @@ function continuesComic2() {
         location.href =
           "../../../html_reader/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "../../../html_reader/panel/fox/" + modeName + "_" + flag + ".html";
+         location.href =
+           "../../../html_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
           "../../../html_reader/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
@@ -231,8 +231,8 @@ function continuesComic2() {
         location.href =
           "../../../html_reader/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "../../../html_reader/panel/love/" + modeName + "_" + flag + ".html";
+         location.href =
+           "../../../html_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
           "../../../html_reader/panel/love/" + modeName + ".html";
     }
@@ -253,12 +253,12 @@ function continuesComic2() {
           flag +
           ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "../../../html_auto_reader_2/panel/fox/" +
-        //   modeName +
-        //   "_" +
-        //   flag +
-        //   ".html";
+         location.href =
+           "../../../html_auto_reader_2/panel/fox/" +
+           modeName +
+           "_" +
+           flag +
+           ".html";
         location.href =
           "../../../html_auto_reader_2/panel/fox/" +
           modeName +
@@ -279,12 +279,12 @@ function continuesComic2() {
           flag +
           ".html";
       else if (modeName == "panel")
-        // location.href =
-        //   "../../../html_auto_reader/panel/love/" +
-        //   modeName +
-        //   "_" +
-        //   flag +
-        //   ".html";
+         location.href =
+           "../../../html_auto_reader/panel/love/" +
+           modeName +
+           "_" +
+           flag +
+           ".html";
         location.href =
           "../../../html_auto_reader_2/panel/love/" +
           modeName +
