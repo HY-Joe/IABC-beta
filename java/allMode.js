@@ -101,29 +101,29 @@ function startComic() {
       if (modeName == "page") {
         funcSetItem("page1", 1);
         location.href =
-          "./html_auto_reader/page/fox/" + readingMode + "_1.html";
+          "./html_auto_reader_2/page/fox/" + readingMode + "_1.html";
       } else if (modeName == "strip") {
         funcSetItem("strip1", 1);
         location.href =
-          "./html_auto_reader/strip/fox/" + readingMode + "_1.html";
+          "./html_auto_reader_2/strip/fox/" + readingMode + "_1.html";
       } else if (modeName == "panel") {
         funcSetItem("panel1", 1);
         location.href =
-          "./html_auto_reader/panel/fox/" + readingMode + ".html";
+          "./html_auto_reader_2/panel/fox/" + readingMode + ".html";
       }
     } else if (comicNum == "2") {
       if (modeName == "page") {
         funcSetItem("page2", 1);
         location.href =
-          "./html_auto_reader/page/love/" + readingMode + "_1.html";
+          "./html_auto_reader_2/page/love/" + readingMode + "_1.html";
       } else if (modeName == "strip") {
         funcSetItem("strip2", 1);
         location.href =
-          "./html_auto_reader/strip/love/" + readingMode + "_1.html";
+          "./html_auto_reader_2/strip/love/" + readingMode + "_1.html";
       } else if (modeName == "panel") {
         funcSetItem("panel2", 1);
         location.href =
-          "./html_auto_reader/panel/love/" + readingMode + ".html";
+          "./html_auto_reader_2/panel/love/" + readingMode + ".html";
       }
     }
   }
@@ -172,27 +172,27 @@ function continuesComic() {
     if (comicNum == "1") {
       if (modeName == "page")
         location.href =
-          "./html_auto_reader/page/fox/" + modeName + "_" + flag + ".html";
+          "./html_auto_reader_2/page/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "strip")
         location.href =
-          "./html_auto_reader/strip/fox/" + modeName + "_" + flag + ".html";
+          "./html_auto_reader_2/strip/fox/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
         // location.href =
         //   "./html_auto_reader/panel/fox/" + modeName + "_" + flag + ".html";
         location.href =
-          "./html_auto_reader/panel/fox/" + modeName + ".html";
+          "./html_auto_reader_2/panel/fox/" + modeName + ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
-          "./html_auto_reader/page/love/" + modeName + "_" + flag + ".html";
+          "./html_auto_reader_2/page/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "strip")
         location.href =
-          "./html_auto_reader/strip/love/" + modeName + "_" + flag + ".html";
+          "./html_auto_reader_2/strip/love/" + modeName + "_" + flag + ".html";
       else if (modeName == "panel")
         // location.href =
         //   "./html_auto_reader/panel/love/" + modeName + "_" + flag + ".html";
         location.href =
-          "./html_auto_reader/panel/love/" + modeName + ".html";
+          "./html_auto_reader_2/panel/love/" + modeName + ".html";
     }
   }
 }
@@ -240,40 +240,40 @@ function continuesComic2() {
     if (comicNum == "1") {
       if (modeName == "page")
         location.href =
-          "../../../html_auto_reader/page/fox/" +
+          "../../../html_auto_reader_2/page/fox/" +
           modeName +
           "_" +
           flag +
           ".html";
       else if (modeName == "strip")
         location.href =
-          "../../../html_auto_reader/strip/fox/" +
+          "../../../html_auto_reader_2/strip/fox/" +
           modeName +
           "_" +
           flag +
           ".html";
       else if (modeName == "panel")
         // location.href =
-        //   "../../../html_auto_reader/panel/fox/" +
+        //   "../../../html_auto_reader_2/panel/fox/" +
         //   modeName +
         //   "_" +
         //   flag +
         //   ".html";
         location.href =
-          "../../../html_auto_reader/panel/fox/" +
+          "../../../html_auto_reader_2/panel/fox/" +
           modeName +
           ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
-          "../../../html_auto_reader/page/love/" +
+          "../../../html_auto_reader_2/page/love/" +
           modeName +
           "_" +
           flag +
           ".html";
       else if (modeName == "strip")
         location.href =
-          "../../../html_auto_reader/strip/love/" +
+          "../../../html_auto_reader_2/strip/love/" +
           modeName +
           "_" +
           flag +
@@ -286,7 +286,7 @@ function continuesComic2() {
         //   flag +
         //   ".html";
         location.href =
-          "../../../html_auto_reader/panel/love/" +
+          "../../../html_auto_reader_2/panel/love/" +
           modeName +
           ".html";
     }

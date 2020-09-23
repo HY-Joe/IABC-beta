@@ -24,17 +24,17 @@
   <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
   <link rel="stylesheet" type="text/css" href="../../../css/modalStyle.css" />
   <link rel="stylesheet" type="text/css" href="../../../css/comicsStyle.css" />
-  <title>AccessComics</title>
+  <title>IABC</title>
 
 </head>
 
 <body>
   <script type="text/javascript">
-    sessionStorage.setItem('panel1', 1);
+    sessionStorage.setItem('panel2', 3);
   </script>
   <!-- 네이게이션 바 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="../../../index.html">AccessComics
+    <a class="navbar-brand" href="../../../index.html">IABC
     </a>
     <button class="btn" data-toggle="modal" data-target="#myModal">
       <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor"
@@ -55,19 +55,19 @@
 
         <div class="card">
           <div class="card-title">
-            <img title="The first panel of Chilling tales." class="autoImg" src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_01.jpg"
-              onclick="fox_panel_1()"></img>
+            <img title="The third panel of Boy loves girls." class="autoImg" src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_03.jpg"
+              onclick="love_panel_3()"></img>
           </div>
           <div class="card-body">
             <div>
-              <button class="moveBtn" title="Start panel">
+              <button class="moveBtn" onclick="location.href='./panel_2.html'" title="Previous">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z" />
                 </svg>
               </button>
-              <button class="moveBtn" onclick="location.href='./panel_2.html'" title="Next">
+              <button class="moveBtn" onclick="location.href='./panel_4.html'" title="Next">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
@@ -103,7 +103,7 @@
         <div class="modal-body">
           <div>
             <button onclick="location.href='../../../index.html'">Go to home</button>
-            <button onclick="location.href='../../../intro_1.html'">Go to intoroduction</button>
+            <button onclick="location.href='../../../intro_2.html'">Go to intoroduction</button>
           </div>
           <div>
             <p>Speaking rate</p>
@@ -262,51 +262,58 @@
         <div class="modal-body">
           <div>
             <center>
-              <img class="navigationPanelImg" alt="Move to the first panel"
-                src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_01.jpg" onclick="changeNavImg(1)">
-              <img class="navigationPanelImg" alt="Move to the second panel"
-                src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_02.jpg" onclick="changeNavImg(2)">
-              <img class="navigationPanelImg" alt="Move to the third panel"
-                src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_03.jpg" onclick="changeNavImg(3)">
+              <img class="navigationPanelImg3" alt="Move to the first panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_01.jpg" onclick="changeNavImg(1)">
+              <img class="navigationPanelImg3" alt="Move to the second panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_02.jpg" onclick="changeNavImg(2)">
+              <img class="navigationPanelImg3" alt="Move to the third panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_03.jpg" onclick="changeNavImg(3)">
             </center>
-            <div>
-              <center>
-                <img class="navigationPanelImg2" alt="Move to the fourth panel"
-                  src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_04.jpg" onclick="changeNavImg(4)">
-                <img class="navigationPanelImg2" alt="Move to the fifth panel"
-                  src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_05.jpg" onclick="changeNavImg(5)">
-                <img class="navigationPanelImg2" alt="Move to the sixth panel"
-                  src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_06.jpg" onclick="changeNavImg(6)">
-              </center>
-            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div>
+            <center>
+              <img class="navigationPanelImg4" alt="Move to the fourth panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_04.jpg" onclick="changeNavImg(4)">
+              <img class="navigationPanelImg5" alt="Move to the fifth panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_05.jpg" onclick="changeNavImg(5)">
+            </center>
           </div>
+          <div>
+            <center>
+              <img class="navigationPanelImg6" alt="Move to the sixth panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_06.jpg" onclick="changeNavImg(6)">
+              <img class="navigationPanelImg7" alt="Move to the seventh panel"
+                src="../../../data/image/panel/love/PIKE_BOYLOVEGIRLS_T41_Panel_07.jpg" onclick="changeNavImg(7)">
+            </center>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../../../java/allMode.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="../../../java/navigation.js"></script>
+  <script type="text/javascript" src="../../../java/allMode.js"></script>
+  <script type="text/javascript" src="../../../java/navigation.js"></script>
+  <script type="text/javascript" src="../../../java/toggle.js"></script>
 
-    <script type="text/javascript" src="../../../java/toggle.js"></script>
 
-    <script type="text/javascript" src="../../../java/auto_reader_fox.js"></script>
-    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
-    <script type="text/javascript" src="../../../java/auto_pollyData.js"></script>
-    <script type="text/javascript" src="../../../java/auto_Polly.js"></script>
-    <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
+  <script type="text/javascript" src="../../../java/auto_reader_love_2.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
+  <script type="text/javascript" src="../../../java/auto_pollyData_2.js"></script>
+  <script type="text/javascript" src="../../../java/auto_Polly_2.js"></script>
+  <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
 </body>
 
 </html>

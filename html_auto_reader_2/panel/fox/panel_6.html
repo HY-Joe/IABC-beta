@@ -20,21 +20,22 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
+  <script type="text/javascript" src="../../../java/loadMode.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
   <link rel="stylesheet" type="text/css" href="../../../css/modalStyle.css" />
   <link rel="stylesheet" type="text/css" href="../../../css/comicsStyle.css" />
-  <title>AccessComics</title>
+  <title>IABC</title>
 
 </head>
 
 <body>
   <script type="text/javascript">
-    sessionStorage.setItem('panel1', 1);
+    sessionStorage.setItem('panel1', 6);
   </script>
   <!-- 네이게이션 바 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="../../../index.html">AccessComics
+    <a class="navbar-brand" href="../../../index.html">IABC
     </a>
     <button class="btn" data-toggle="modal" data-target="#myModal">
       <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor"
@@ -55,19 +56,19 @@
 
         <div class="card">
           <div class="card-title">
-            <img title="The first panel of Chilling tales." class="autoImg" src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_01.jpg"
-              onclick="fox_panel_1()"></img>
+            <img title="The sixth panel of Chilling tales." class="autoImg" src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_06.jpg"
+              onclick="fox_panel_6()"></img>
           </div>
           <div class="card-body">
             <div>
-              <button class="moveBtn" title="Start panel">
+              <button class="moveBtn" onclick="location.href='./panel_5.html'" title="Previous">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z" />
                 </svg>
               </button>
-              <button class="moveBtn" onclick="location.href='./panel_2.html'" title="Next">
+              <button class="moveBtn" title="Next" alt-text="End panel">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd"
@@ -302,10 +303,10 @@
 
     <script type="text/javascript" src="../../../java/toggle.js"></script>
 
-    <script type="text/javascript" src="../../../java/auto_reader_fox.js"></script>
+    <script type="text/javascript" src="../../../java/auto_reader_fox_2.js"></script>
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
-    <script type="text/javascript" src="../../../java/auto_pollyData.js"></script>
-    <script type="text/javascript" src="../../../java/auto_Polly.js"></script>
+    <script type="text/javascript" src="../../../java/auto_pollyData_2.js"></script>
+    <script type="text/javascript" src="../../../java/auto_Polly_2.js"></script>
     <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
 </body>
 
