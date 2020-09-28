@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
+  <script type="text/javascript" src="../../../java/loadMode.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../../css/default.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/modalStyle.css" />
+  <link rel="stylesheet" type="text/css" href="../../../css/comicsStyle.css" />
+  <title>IABC</title>
+
+</head>
+
+<body>
+  <script type="text/javascript">
+    sessionStorage.setItem('panel1', 4);
+  </script>
+  <!-- 네이게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../../../index.html">IABC
+    </a>
+    <button class="btn" data-toggle="modal" data-target="#myModal">
+      <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z" />
+      </svg>
+    </button>
+  </nav>
+
+  </div>
+  <center>
+
+
+
+    <div class="list">
+      <div class="row">
+
+        <div class="card">
+          <div class="card-title">
+            <img title="The fourth panel of Chilling tales." class="autoImg" src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_04.jpg"
+              onclick="fox_panel_4()"></img>
+          </div>
+          <div class="card-body">
+            <div>
+              <button class="moveBtn" onclick="location.href='./panel_3.html'" title="Previous">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.646 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L6.207 7.5H11a.5.5 0 0 1 0 1H6.207l2.147 2.146z" />
+                </svg>
+              </button>
+              <button class="moveBtn" onclick="location.href='./panel_5.html'" title="Next">
+                <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z" />
+                </svg>
+                <button title="Navigation" class="btn-example btn" data-toggle="modal" data-target="#myModal2">
+                  <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z" />
+                    <path fill-rule="evenodd"
+                      d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z" />
+                  </svg>
+                </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </center>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false"
+    data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Setting</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="continuesComic2()"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <button onclick="location.href='../../../index.html'">Go to home</button>
+            <button onclick="location.href='../../../intro_1.html'">Go to intoroduction</button>
+          </div>
+          <div>
+            <p>Speaking rate</p>
+            <ul>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="slow" onclick="chSpeakingRate('slow')">
+                  Slow
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="medium"
+                    onclick="chSpeakingRate('medium')">
+                  Medium
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="fast" onclick="chSpeakingRate('fast')">
+                  Fast
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="speakingRate" value="x-fast"
+                    onclick="chSpeakingRate('x-fast')">
+                  Very fast
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Mode</p>
+            <ul>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="readMode" value="page" onclick="chAllComicMode('page')">
+                  Page
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="readMode" value="strip" onclick="chAllComicMode('strip')">
+                  Strip
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input class="radio" type="radio" name="readMode" value="panel" onclick="chAllComicMode('panel')">
+                  Panel
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Automatic</p>
+            <ul>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle0" value="auto0" id="customSwitch0"
+                  onclick="readAutoKey(0, this)">
+                <label class="custom-control-label" for="customSwitch0">Automatic</label>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <p>Elements</p>
+            <ul>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle" value="elements1"
+                  id="customSwitch1" onclick="readToggleKey(1, this, 'panel')">
+                <label class="custom-control-label" for="customSwitch1">Panel</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle" value="elements2"
+                  id="customSwitch2" onclick="readToggleKey(2, this, 'balloon')">
+                <label class="custom-control-label" for="customSwitch2">Balloon</label>
+              </div>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" name="readToggle" value="elements3"
+                  id="customSwitch3" onclick="readToggleKey(3, this, 'character')">
+                <label class="custom-control-label" for="customSwitch3">Character</label>
+              </div>
+            </ul>
+          </div>
+          <div>
+            <p>Filtering</p>
+            <ul>
+              <li>
+                Panel
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle2" value="panelFilter0"
+                    id="customSwitch4" onclick="readPanelFilter(1, this)">
+                  <label class="custom-control-label" for="customSwitch4">Panel Number</label>
+                </div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle2" value="panelFilter1"
+                    id="customSwitch5" onclick="readPanelFilter(2, this)">
+                  <label class="custom-control-label" for="customSwitch5">Background</label>
+                </div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle2" value="panelFilter2"
+                    id="customSwitch6" onclick="readPanelFilter(3, this)">
+                  <label class="custom-control-label" for="customSwitch6">Composition</label>
+                </div>
+              </li>
+              <li>
+                Balloon
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle3" value="BalloonFilter1"
+                    id="customSwitch7" onclick="readBalloonFilter(1, this)">
+                  <label class="custom-control-label" for="customSwitch7">Script</label>
+                </div>
+              </li>
+              <li>
+                Character
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle" value="characterFilter1"
+                    id="customSwitch8" onclick="readCharacterFilter(1, this)">
+                  <label class="custom-control-label" for="customSwitch8">Name</label>
+                </div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle" value="haracterFilter2"
+                    id="customSwitch9" onclick="readCharacterFilter(2, this)">
+                  <label class="custom-control-label" for="customSwitch9">Action</label>
+                </div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle" value="characterFilter3"
+                    id="customSwitch10" onclick="readCharacterFilter(3, this)">
+                  <label class="custom-control-label" for="customSwitch10">Facial expression</label>
+                </div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" name="readToggle" value="characterFilter4"
+                    id="customSwitch11" onclick="readCharacterFilter(4, this)">
+                  <label class="custom-control-label" for="customSwitch11">Appearance</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="continuesComic2()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel2">Panel</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body" style="">
+          <div>
+            <center>
+              <img class="navigationPanelImg" alt="Move to the first panel"
+                src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_01.jpg" onclick="changeNavImg(1)">
+              <img class="navigationPanelImg" alt="Move to the second panel"
+                src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_02.jpg" onclick="changeNavImg(2)">
+              <img class="navigationPanelImg" alt="Move to the third panel"
+                src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_03.jpg" onclick="changeNavImg(3)">
+            </center>
+            <div>
+              <center>
+                <img class="navigationPanelImg2" alt="Move to the fourth panel"
+                  src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_04.jpg" onclick="changeNavImg(4)">
+                <img class="navigationPanelImg2" alt="Move to the fifth panel"
+                  src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_05.jpg" onclick="changeNavImg(5)">
+                <img class="navigationPanelImg2" alt="Move to the sixth panel"
+                  src="../../../data/image/panel/fox/FOX_CHILLINTALES_T17_Panel_06.jpg" onclick="changeNavImg(6)">
+              </center>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../../java/allMode.js"></script>
+
+    <script type="text/javascript" src="../../../java/navigation.js"></script>
+
+    <script type="text/javascript" src="../../../java/toggle.js"></script>
+
+    <script type="text/javascript" src="../../../java/auto_reader_fox_3.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
+    <script type="text/javascript" src="../../../java/auto_pollyData_3.js"></script>
+    <script type="text/javascript" src="../../../java/auto_Polly_3.js"></script>
+    <script type="text/javascript" src="../../../java/toggleEvent.js"></script>
+
+</body>
+
+</html>
