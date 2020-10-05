@@ -47,7 +47,7 @@
 				<div class="card-body">
 					<a href="./intro_1.html" onclick="setComicNum(1)">
 						<img src="./data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg"
-							alt="Chilling Tales 소개 페이지로 이동"
+							alt="If you double-tap, it will go to the introduction page about Chilling Tales"
 							class="card-img-top">
 					</a>
 				</div>
@@ -60,7 +60,7 @@
 				<div class="card-body">
 					<a href="./intro_2.html" onclick="setComicNum(2)">
 						<img src="./data/image/page/love/PIKE_BOYLOVEGIRLS_T41_012.jpg"
-							alt="Boy Loves Girls 소개 페이지로 이동"
+							alt="If you double-tap, it will go to the introduction page about Boy Loves Girls"
 							class="card-img-top">
 					</a>
 				</div>
@@ -73,21 +73,20 @@
 	</div>
 
 
-<!--세팅-->
+
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 		data-keyboard="false" data-backdrop="static">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel">설정</h4>
+					<h4 class="modal-title" id="myModalLabel">Setting</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"
 						onclick="location.reload()"><span aria-hidden="true">&times;</span></button>
 				</div>
 				<div class="modal-body">
 					<div>
-						<button onclick="location.href='./index.html'">홈 화면으로 이동</button>
+						<button onclick="location.href='./index.html'">Go home</button>
 					</div>
-					<!--
 					<div>
 						<p>Speaking rate</p>
 						<ul>
@@ -121,117 +120,116 @@
 							</li>
 						</ul>
 					</div>
-					-->
 					<div>
-						<p>읽기 모드</p>
+						<p>Mode</p>
 						<ul>
 							<li>
 								<label>
 									<input class="radio" type="radio" name="readMode" value="page"
 										onclick="chAllComicMode('page')">
-									한 장씩
+									Page
 								</label>
 							</li>
 							<li>
 								<label>
 									<input class="radio" type="radio" name="readMode" value="strip"
 										onclick="chAllComicMode('strip')">
-									한 줄씩
+									Strip
 								</label>
 							</li>
 							<li>
 								<label>
 									<input class="radio" type="radio" name="readMode" value="panel"
 										onclick="chAllComicMode('panel')">
-									한 칸씩
+									Panel
 								</label>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<p>자동읽기</p>
+						<p>Automatic</p>
 						<ul>
 							<div class="custom-control custom-switch">
 								<input type="checkbox" class="custom-control-input" name="readToggle0" value="auto0"
 									id="customSwitch0" onclick="readAutoKey(0, this)">
-								<label class="custom-control-label" for="customSwitch0">자동읽기</label>
+								<label class="custom-control-label" for="customSwitch0">Automatic</label>
 							</div>
 						</ul>
 					</div>
 					<div>
-						<p>요소</p>
+						<p>Elements</p>
 						<ul>
 							<div class="custom-control custom-switch">
 								<input type="checkbox" class="custom-control-input" name="readToggle" value="elements1"
 									id="customSwitch1" onclick="readToggleKey(1, this, 'panel')">
-								<label class="custom-control-label" for="customSwitch1">만화칸</label>
+								<label class="custom-control-label" for="customSwitch1">Panel</label>
 							</div>
 							<div class="custom-control custom-switch">
 								<input type="checkbox" class="custom-control-input" name="readToggle" value="elements2"
 									id="customSwitch2" onclick="readToggleKey(2, this, 'balloon')">
-								<label class="custom-control-label" for="customSwitch2">말풍선</label>
+								<label class="custom-control-label" for="customSwitch2">Balloon</label>
 							</div>
 							<div class="custom-control custom-switch">
 								<input type="checkbox" class="custom-control-input" name="readToggle" value="elements3"
 									id="customSwitch3" onclick="readToggleKey(3, this, 'character')">
-								<label class="custom-control-label" for="customSwitch3">캐릭터</label>
+								<label class="custom-control-label" for="customSwitch3">Character</label>
 							</div>
 						</ul>
 					</div>
 					<div>
-						<p>필터링</p>
+						<p>Filtering</p>
 						<ul>
 							<li>
-								만화칸
+								Panel
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle2"
 										value="panelFilter0" id="customSwitch4" onclick="readPanelFilter(1, this)">
-									<label class="custom-control-label" for="customSwitch4">몇번째 패널</label>
+									<label class="custom-control-label" for="customSwitch4">Panel Number</label>
 								</div>
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle2"
 										value="panelFilter1" id="customSwitch5" onclick="readPanelFilter(2, this)">
-									<label class="custom-control-label" for="customSwitch5">배경</label>
+									<label class="custom-control-label" for="customSwitch5">Background</label>
 								</div>
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle2"
 										value="panelFilter2" id="customSwitch6" onclick="readPanelFilter(3, this)">
-									<label class="custom-control-label" for="customSwitch6">구도와 배치</label>
+									<label class="custom-control-label" for="customSwitch6">Composition</label>
 								</div>
 							</li>
 							<li>
-								말풍선
+								Balloon
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle3"
 										value="BalloonFilter1" id="customSwitch7" onclick="readBalloonFilter(1, this)">
-									<label class="custom-control-label" for="customSwitch7">나레이션과 대사</label>
+									<label class="custom-control-label" for="customSwitch7">Script</label>
 								</div>
 							</li>
 							<li>
-								캐릭터
+								Character
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle"
 										value="characterFilter1" id="customSwitch8"
 										onclick="readCharacterFilter(1, this)">
-									<label class="custom-control-label" for="customSwitch8">이름</label>
-								</div>
-								<div class="custom-control custom-switch">
-									<input type="checkbox" class="custom-control-input" name="readToggle"
-										value="characterFilter4" id="customSwitch11"
-										onclick="readCharacterFilter(4, this)">
-									<label class="custom-control-label" for="customSwitch11">외모</label>
+									<label class="custom-control-label" for="customSwitch8">Name</label>
 								</div>
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle"
 										value="haracterFilter2" id="customSwitch9"
 										onclick="readCharacterFilter(2, this)">
-									<label class="custom-control-label" for="customSwitch9">행동</label>
+									<label class="custom-control-label" for="customSwitch9">Action</label>
 								</div>
 								<div class="custom-control custom-switch">
 									<input type="checkbox" class="custom-control-input" name="readToggle"
 										value="characterFilter3" id="customSwitch10"
 										onclick="readCharacterFilter(3, this)">
-									<label class="custom-control-label" for="customSwitch10">표정묘사</label>
+									<label class="custom-control-label" for="customSwitch10">Facial expression</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" name="readToggle"
+										value="characterFilter4" id="customSwitch11"
+										onclick="readCharacterFilter(4, this)">
+									<label class="custom-control-label" for="customSwitch11">Appearance</label>
 								</div>
 							</li>
 						</ul>
@@ -239,7 +237,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal"
-						onclick="location.reload()">닫기</button>
+						onclick="location.reload()">Close</button>
 				</div>
 			</div>
 		</div>

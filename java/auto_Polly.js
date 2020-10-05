@@ -50,20 +50,16 @@ function speakAll() {
 
     if (channel_now < endNumber) 
     {
-      channel_now++;
+       channel_now++;
        audio.src = audiochannels[channel_now];
        audio.play();
        console.log(channel_now+"is playing...");
     } else 
     {
       console.log("end");
-      //now_playing = -1;
-      //channel_cnt++;
       //var audio2 = new Audio();
       //audio2.src = '../data/sound/beepSound.mp3';
       //audio2.play();
-      //console.log("..finished playing");
-  
     }
   });
 }
