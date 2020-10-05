@@ -17,10 +17,7 @@ function readMode() {
   funcGetItem(keyName);
   chk = getData;
 
-  $("input:radio[name=readMode]:input[value=" + chk + "]").attr(
-    "checked",
-    true
-  );
+  $("input:radio[name=readMode]:input[value=" + chk + "]").attr("checked",true);
 }
 
 function readRate() {
@@ -253,10 +250,10 @@ function continuesComic2() {
            "_" +
            flag +
            ".html";
-        location.href =
-          "../../../html_auto_reader_3/panel/fox/" +
-          modeName +
-          ".html";
+        // location.href =
+        //   "../../../html_auto_reader_3/panel/fox/" +
+        //   modeName +
+        //   ".html";
     } else if (comicNum == "2") {
       if (modeName == "page")
         location.href =
@@ -279,10 +276,10 @@ function continuesComic2() {
            "_" +
            flag +
            ".html";
-        location.href =
-          "../../../html_auto_reader_3/panel/love/" +
-          modeName +
-          ".html";
+        // location.href =
+        //   "../../../html_auto_reader_3/panel/love/" +
+        //   modeName +
+        //   ".html";
     }
   }
 }
