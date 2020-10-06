@@ -127,6 +127,10 @@ function preAudio(index, num, text) {
   });
 }
 
+function speakIntro(src){
+    url = './data/mp3/partial/intro/'+src+'.mp3';
+    new Audio(src).play();
+}
 function speakTextIntro(index, num, text) {
   //var blank = "....";
   preAudio(index, num, text);
