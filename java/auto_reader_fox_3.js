@@ -34,6 +34,12 @@ window.onload = function() {
 
   getLocal("characterFilter4");
   flag8 = getLocalData;
+
+  console.log('새로운 만화 페이지');
+  //자동 재생
+  //'fox_'+'strip_'+1();
+  //fox_strip_1();
+  new Audio('../../../java/beepSound.mp3').play();
 }
 
 function setSession(key, value) {
@@ -150,7 +156,7 @@ function fox_panel_6() {
 
 function fox_1() {
 
-    sessionStorage.setItem("file_location", '/fox/fox_1/');
+ sessionStorage.setItem("file_location", '/fox/fox_1/');
 
 //Panel
   setMP3(1,

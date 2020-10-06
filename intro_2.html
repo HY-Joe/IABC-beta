@@ -68,31 +68,31 @@
                 <li class="explain">외모 : 검은 머리의 여자, 빨간 드레스를 입고 있다.</li>
                 <div id="textToSynth">
                   <button title="신디의 목소리" class="btn default"
-                    onclick="speakTextIntro(5, 'HELLO I AM CYNTHY.')">목소리 듣기</button>
+                    onclick="speakHello('audio_1_안녕하세요__신디입니다_')">목소리 듣기</button>
                 </div>
                 <h5>커트</h5>
                 <li class="explain">외모 : 노란 머리의 남자, 하얀 셔츠와 베이지 반바지를 입고있다.
                 </li>
                 <div id="textToSynth">
                   <button title="커트의 목소리" class="btn default"
-                    onclick="speakTextIntro(0, 'HELLO I AM CURT.')">목소리 듣기</button>
+                    onclick="speakHello('audio_3_안녕하세요___컬트입니다_')">목소리 듣기</button>
                 </div>
                 <h5>글로리아</h5>
                 <li class="explain">외모 : 노란 머리의 여자, 초록색 드레스를 입고있다.</li>
                 <div id="textToSynth">
                   <button title="글로리아의 목소리" class="btn default"
-                    onclick="speakTextIntro(3, 'HELLO I AM GLORIA.')">목소리 듣기</button>
+                    onclick="speakHello('audio_2_안녕하세요__글로리아입니다_')">목소리 듣기</button>
                 </div>
                 <h5>글로리아의 남편</h5>
                 <li class="explain">외모 : 갈색 머리의 남자, 회색 정장과 파란색 넥타이를 입고있다</li>
                 <div id="textToSynth">
                   <button title="글로리아 남편의 목소리" class="btn default"
-                    onclick="speakTextIntro(2, 'HELLO I AM GLORIA’s HUSBAND.')">목소리 듣기</button>
+                    onclick="speakHello('audio_5_안녕하세요__글로리아의_남편입니다_')">목소리 듣기</button>
                 </div>
                 <h5>나레이터</h5>
                 <div id="textToSynth">
                   <button title="Narrator's voice" class="btn default"
-                    onclick="speakTextIntro(4, 'HELLO I AM NARRATOR.')">목소리 듣기</button>
+                    onclick="speakHello('audio_0_안녕하세요__나레이터입니다_')">목소리 듣기</button>
                 </div>
               </ul>
               <button class="startButton" id="startComic" onClick="startComic()">처음부터 보기</button>
@@ -284,6 +284,7 @@
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
 </body>
 
+<script type="text/javascript" src="./java/auto_pollyData_3.js"></script>
 <script type="text/javascript" src="./java/polly.js"></script>
 <script type="text/javascript" src="./java/allMode.js"></script>
 <script type="text/javascript" src="./java/toggleEvent.js"></script>

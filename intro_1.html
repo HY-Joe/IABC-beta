@@ -68,24 +68,24 @@
                 <li class="explain">외모 : 갈색 머리의 남자, 노란 셔츠와 빨간 망토를 입었다.</li>
                 <div id="textToSynth">
                   <button title="스테니의 목소리" class="btn default"
-                    onclick="speakIntro('audio_7_안녕하세요__스티니입니다_')">목소리 듣기</button>
+                    onclick="speakHello('audio_7_안녕하세요__스티니입니다_')">목소리 듣기</button>
                 </div>
                 <h5>낯선 사람</h5>
                 <li class="explain">외모 : 모자가 달린 파란 망토를 걸친 한 남성이다.</li>
                 <div id="textToSynth">
                   <button title="낯선 사람의 목소리" class="btn default"
-                    onclick="speakIntro('audio_4_안녕하세요__낯선_사람입니다_')">목소리 듣기</button>
+                    onclick="speakHello('audio_0_안녕하세요__낯선사람입니다_')">목소리 듣기</button>
                 </div>
                 <h5>두갈</h5>
                 <li class="explain">외모 : 오렌지 머리의 남자, 초록 모자와 옷을 입었다.</li>
                 <div id="textToSynth">
                   <button title="두갈의 목소리" class="btn default"
-                    onclick="speakIntro('audio_6_안녕하세요___두갈입니다_')">목소리 듣기</button>
+                    onclick="speakHello('audio_6_안녕하세요___두갈입니다_')">목소리 듣기</button>
                 </div>
                 <h5>나레이터</h5>
                 <div id="textToSynth">
                   <button title="나레이터의 목소리" class="btn default"
-                    onclick="speakIntro('audio_0_안녕하세요__나레이터입니다_')">목소리 듣기</button>
+                    onclick="speakHello('audio_0_안녕하세요__나레이터입니다_')">목소리 듣기</button>
                 </div>
               </ul>
               <button class="startButton" id="startComic" onClick="startComic()">처음부터 보기</button>
@@ -276,6 +276,8 @@
 
   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.410.0.min.js"></script>
 </body>
+
+<script type="text/javascript" src="./java/auto_pollyData_3.js"></script>
 <script type="text/javascript" src="./java/polly.js"></script>
 <script type="text/javascript" src="./java/allMode.js"></script>
 <script type="text/javascript" src="./java/toggleEvent.js"></script>

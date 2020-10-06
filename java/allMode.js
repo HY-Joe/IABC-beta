@@ -12,7 +12,7 @@ function readMode() {
   funcGetItem(keyName);
 
   chk = getData;
-  if (chk == null || chk == "undefined") funcSetItem(keyName, "panel");
+  if (chk == null || chk == "undefined") funcSetItem(keyName, "strip");
 
   funcGetItem(keyName);
   chk = getData;

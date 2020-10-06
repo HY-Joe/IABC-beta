@@ -6,6 +6,13 @@ playchannel = new Array();
 var playchannel_index = 0;
 
 
+
+function speakHello(value){
+
+    url = './data/mp3/partial/intro/'+value+'.mp3';
+    new Audio(url).play();
+}
+
 function setMP3(index, flag, value)
 {
   
@@ -18,7 +25,9 @@ function setMP3(index, flag, value)
 
 
   channel_cnt = channel_cnt + 1;
+  //url = '../../../data/mp3/partial'+file_location+value+'.mp3';
   url = '../../../data/mp3/partial'+file_location+value+'.mp3';
+  //console.log(url+"...");
   audiochannels[index] = url;
 
   //
@@ -44,7 +53,7 @@ function speakAllMP3() {
 
   //console.log(startNumber+"~"+endNumber);
 
-
+  console.log('speak ALL MP3 file...');
   var index_now = 1;
   var channel_now = playchannel[index_now];
 
@@ -52,6 +61,7 @@ function speakAllMP3() {
   audio.src = audiochannels[channel_now];
   audio.play();
   console.log(channel_now + "is playing...");
+  console.log(audio.src+"...");
 
    audio.addEventListener("ended", function () {
 
