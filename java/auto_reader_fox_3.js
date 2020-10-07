@@ -9,6 +9,14 @@ var flag5, flag6, flag7, flag8;
 
 
 window.onload = function() {
+
+  // Register touch event handlers
+  document.body.addEventListener('touchstart', process_touchstart, false);
+  document.body.addEventListener('touchmove', process_touchmove, false);
+ // document.body.addEventListener('touchcancel', process_touchcancel, false);
+ // document.body.addEventListener('touchend', process_touchend, false);
+
+
   getLocal("panelFilter1");
   flag1 = getLocalData;
 
@@ -39,8 +47,46 @@ window.onload = function() {
   //자동 재생
   //'fox_'+'strip_'+1();
   //fox_strip_1();
-  new Audio('../../../java/beepSound.mp3').play();
+
+  //new Audio('../../../java/beepSound.mp3').play();
 }
+
+// touchstart handler
+function process_touchstart(ev) {
+  // Use the event's data to call out to the appropriate gesture handlers
+  switch (ev.touches.length) {
+    case 1: handle_one_touch(ev); break;
+    case 2: handle_two_touches(ev); break;
+    case 3: handle_three_touches(ev); break;
+    default: gesture_not_supported(ev); break;
+  }
+}
+
+// Create touchstart handler
+document.body.addEventListener('touchstart', function(ev) {
+  // Iterate through the touch points that were activated
+  // for this element and process each event 'target'
+  for (var i=0; i < ev.targetTouches.length; i++) {
+    process_target(ev.targetTouches[i].target);
+  }
+}, false);
+
+// touchmove handler
+function process_touchmove(ev) {
+  // Set call preventDefault()
+  ev.preventDefault();
+}
+
+document.body.addEventListener('touchmove', function(e) {
+   // Iterate through the list of touch points that changed
+   // since the last event and print each touch point's identifier.
+   for (var i=0; i < e.changedTouches.length; i++) {
+     console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
+     alert('touch move!');
+   }   
+}, false);
+
+
 
 function setSession(key, value) {
   this.key = key;

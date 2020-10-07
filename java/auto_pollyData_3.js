@@ -58,11 +58,13 @@ function speakAllMP3() {
   var channel_now = playchannel[index_now];
 
 
+
   audio.src = audiochannels[channel_now];
   audio.play();
   console.log(channel_now + "is playing...");
-  console.log(audio.src+"...");
+  //console.log(audio.src+"...");
 
+  
    audio.addEventListener("ended", function () {
 
     if (index_now < playchannel_index) 
