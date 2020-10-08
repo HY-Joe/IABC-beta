@@ -62,11 +62,11 @@ function process_touchstart(ev) {
     default: gesture_not_supported(ev); break;
   }
 }
-//function handle_one_touch(ev){alert('handle_one_touch!');}
-//function handle_two_touches(ev){alert('handle_two_touch!');}
-//function handle_three_touches(ev){alert('handle_three_touches');}
-//function handle_four_touches(ev){alert('handle_four_touches');}
-//function gesture_not_supported(ev){alert('gesture_not_supported');}
+function handle_one_touch(ev){alert('handle_one_touch!');}
+function handle_two_touches(ev){alert('handle_two_touch!');}
+function handle_three_touches(ev){alert('handle_three_touches');}
+function handle_four_touches(ev){alert('handle_four_touches');}
+function gesture_not_supported(ev){alert('gesture_not_supported');}
 
 // Create touchstart handler
 document.body.addEventListener('touchstart', function(ev) {
@@ -74,7 +74,7 @@ document.body.addEventListener('touchstart', function(ev) {
   // for this element and process each event 'target'
   for (var i=0; i < ev.targetTouches.length; i++) {
     process_target(ev.targetTouches[i].target);
-  //  alert('touch start!');
+    alert('touch start!');
   }
 }, false);
 
@@ -89,7 +89,7 @@ document.body.addEventListener('touchmove', function(e) {
    // since the last event and print each touch point's identifier.
    for (var i=0; i < e.changedTouches.length; i++) {
      console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
-    // alert("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier +'touch move!');
+     alert("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier +'touch move!');
    }   
 }, false);
 
@@ -98,7 +98,7 @@ document.body.addEventListener('touchcancel', function(e) {
    // since the last event and print each touch point's identifier.
    for (var i=0; i < e.changedTouches.length; i++) {
      console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
-   //  alert('touch cancel!');
+     alert('touch cancel!');
    }   
 }, false);
 
@@ -107,7 +107,7 @@ document.body.addEventListener('touchend', function(e) {
    // since the last event and print each touch point's identifier.
    for (var i=0; i < e.changedTouches.length; i++) {
      console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
-  //   alert('touch touched!');
+     alert('touch touched!');
    }   
 }, false);
 
