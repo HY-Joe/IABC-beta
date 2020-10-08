@@ -55,10 +55,10 @@ window.onload = function() {
 function process_touchstart(ev) {
   // Use the event's data to call out to the appropriate gesture handlers
   switch (ev.touches.length) {
-    case 1: handle_one_touch(ev); break;
-    case 2: handle_two_touches(ev); break;
-    case 3: handle_three_touches(ev); break;
-    default: gesture_not_supported(ev); break;
+    case 1: handle_one_touch(ev); alert('handle one touch!'); break;
+    case 2: handle_two_touches(ev); alert('handle two touch!'); break;
+    case 3: handle_three_touches(ev); alert('handle three touch!'); break;
+    default: gesture_not_supported(ev); alert('gesture not supported'); break;
   }
 }
 
@@ -68,6 +68,7 @@ document.body.addEventListener('touchstart', function(ev) {
   // for this element and process each event 'target'
   for (var i=0; i < ev.targetTouches.length; i++) {
     process_target(ev.targetTouches[i].target);
+    alert('touch start!');
   }
 }, false);
 
