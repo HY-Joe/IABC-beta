@@ -13,8 +13,8 @@ window.onload = function() {
   // Register touch event handlers
   document.body.addEventListener('touchstart', process_touchstart, false);
   document.body.addEventListener('touchmove', process_touchmove, false);
- // document.body.addEventListener('touchcancel', process_touchcancel, false);
- // document.body.addEventListener('touchend', process_touchend, false);
+  document.body.addEventListener('touchcancel', process_touchcancel, false);
+  document.body.addEventListener('touchend', process_touchend, false);
 
 
   getLocal("panelFilter1");
@@ -61,7 +61,6 @@ function process_touchstart(ev) {
     default: gesture_not_supported(ev); break;
   }
 }
-
 function handle_one_touch(ev){alert('handle one touch!');}
 function handle_two_touches(ev){alert('handle two touch!');}
 function handle_three_touches(ev){alert('handle_three_touches');}
@@ -88,7 +87,25 @@ document.body.addEventListener('touchmove', function(e) {
    // since the last event and print each touch point's identifier.
    for (var i=0; i < e.changedTouches.length; i++) {
      console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
-     alert('touch move!');
+     alert("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier +'touch move!');
+   }   
+}, false);
+
+document.body.addEventListener('touchcancel', function(e) {
+   // Iterate through the list of touch points that changed
+   // since the last event and print each touch point's identifier.
+   for (var i=0; i < e.changedTouches.length; i++) {
+     console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
+     alert('touch cancel!');
+   }   
+}, false);
+
+document.body.addEventListener('touchend', function(e) {
+   // Iterate through the list of touch points that changed
+   // since the last event and print each touch point's identifier.
+   for (var i=0; i < e.changedTouches.length; i++) {
+     console.log("changedTouches[" + i + "].identifier = " + e.changedTouches[i].identifier);
+     alert('touch touched!');
    }   
 }, false);
 
