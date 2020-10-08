@@ -55,12 +55,17 @@ window.onload = function() {
 function process_touchstart(ev) {
   // Use the event's data to call out to the appropriate gesture handlers
   switch (ev.touches.length) {
-    case 1: handle_one_touch(ev); alert('handle one touch!'); break;
-    case 2: handle_two_touches(ev); alert('handle two touch!'); break;
-    case 3: handle_three_touches(ev); alert('handle three touch!'); break;
-    default: gesture_not_supported(ev); alert('gesture not supported'); break;
+    case 1: handle_one_touch(ev); break;
+    case 2: handle_two_touches(ev); break;
+    case 3: handle_three_touches(ev); break;
+    default: gesture_not_supported(ev); break;
   }
 }
+
+function handle_one_touch(ev){alert('handle one touch!');}
+function handle_two_touches(ev){alert('handle two touch!');}
+function handle_three_touches(ev){alert('handle_three_touches');}
+function gesture_not_supported(ev){alert('gesture_not_supported');}
 
 // Create touchstart handler
 document.body.addEventListener('touchstart', function(ev) {
