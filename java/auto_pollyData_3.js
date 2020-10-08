@@ -1,16 +1,72 @@
 
 audiochannels = new Array();
 var channel_cnt = 0;
-//재생할 
 playchannel = new Array();
 var playchannel_index = 0;
 
+VOchannels = new Array();
+var VO_channel_cnt = 0;
+var VO_script ="";
+VO_playchannel = new Array();
+var VO_playchannel_index = 0;
 
 
 function speakHello(value){
 
     url = './data/mp3/partial/intro/'+value+'.mp3';
     new Audio(url).play();
+}
+
+
+function setVO(index, flag, value)
+{
+
+  this.value = value;
+  this.flag=flag;
+
+
+  VO_channel_cnt = VO_channel_cnt + 1;
+
+ // VOchannels[index] = this.value;
+
+  //
+  if(this.flag=='true'){
+    console.log(index +'...is TRUE');
+    VO_script += this.value+". ";
+    //VO_playchannel_index++;
+    //VO_playchannel[VO_playchannel_index] = index;
+  }
+    
+
+  var test = sessionStorage.getItem("auto_number");
+  if (VO_channel_cnt == Number(test))
+  {
+      console.log("..collect All VO script..."+VO_playchannel_index);
+      console.log(VO_script);
+      //speak(VO_script);
+      speakAllVO();
+  } 
+}
+
+function speakAllVO(text, opt_prop) 
+{
+  if (typeof SpeechSynthesisUtterance === "undefined" || typeof window.speechSynthesis === "undefined") {
+      alert("이 브라우저는 음성 합성을 지원하지 않습니다.");
+      return;
+  }
+            
+  window.speechSynthesis.cancel(); // 현재 읽고있다면 초기화
+
+  const prop = opt_prop || {};
+
+  const speechMsg = new SpeechSynthesisUtterance();
+  speechMsg.rate = prop.rate || 1; // 속도: 0.1 ~ 10      
+  speechMsg.pitch = prop.pitch || 1; // 음높이: 0 ~ 2
+  speechMsg.lang = prop.lang || "ko-KR";
+  speechMsg.text = VO_script;
+  
+  // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
+  window.speechSynthesis.speak(speechMsg);
 }
 
 function setMP3(index, flag, value)
@@ -26,7 +82,7 @@ function setMP3(index, flag, value)
 
   channel_cnt = channel_cnt + 1;
   //url = '../../../data/mp3/partial'+file_location+value+'.mp3';
-  url = '../../../data/mp3/partial'+file_location+value+'.mp3';
+  url = './data/mp3/partial'+file_location+value+'.mp3'; //intro용
   //console.log(url+"...");
   audiochannels[index] = url;
 
@@ -79,7 +135,8 @@ function speakAllMP3() {
     {
       console.log("end");
 
-      new Audio('../../../data/sound/beepSound.mp3').play();
+      //new Audio('../../../data/sound/beepSound.mp3').play();
+      new Audio('./data/sound/beepSound.mp3').play();
 
       console.log("..finished playing");
   
