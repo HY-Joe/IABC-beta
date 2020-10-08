@@ -28,7 +28,7 @@
 <body>
   <!-- 네이게이션 바 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">AccessComics
+    <a class="navbar-brand" href="index.html">AccessComics 643
     </a>
     <button class="btn" data-toggle="modal" data-target="#myModal">
       <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor"
@@ -88,6 +88,12 @@
                     onclick="speakHello('audio_0_안녕하세요__나레이터입니다_')">목소리 듣기</button>
                 </div>
               </ul>
+              
+
+              <button class="ttsButton" id="ttsSpeak" onClick="ttsComic()">기본 기계음으로 듣기</button>
+              <button class="VttsButton" id="VttsSpeak" onClick="fox_page_1()">다양한 기계음으로 듣기</button>
+
+
               <button class="startButton" id="startComic" onClick="startComic()">처음부터 보기</button>
               <button class="startButton" id="continues" onClick="continuesComic()">이어 보기</button>
             </div>
