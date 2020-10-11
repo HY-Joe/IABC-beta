@@ -27,3 +27,11 @@ img.autoImg2 {
 	height: auto;
 	max-height: 80%;
 }
+
+#list {
+	display: flex;
+}
+
+#list > img {
+	 order: 1;
+}
