@@ -50,12 +50,15 @@ function setVO(index, flag, value)
 
 function speakAllVO(text, opt_prop) 
 {
-  if (typeof SpeechSynthesisUtterance === "undefined" || typeof window.speechSynthesis === "undefined") {
+
+  var synth = window.speechSynthesis;
+
+  if (typeof SpeechSynthesisUtterance === "undefined" || typeof synth === "undefined") {
       alert("이 브라우저는 음성 합성을 지원하지 않습니다.");
       return;
   }
             
-  window.speechSynthesis.cancel(); // 현재 읽고있다면 초기화
+  synth.cancel(); // 현재 읽고있다면 초기화
 
   const prop = opt_prop || {};
 
@@ -66,7 +69,20 @@ function speakAllVO(text, opt_prop)
   speechMsg.text = VO_script;
   
   // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
-  window.speechSynthesis.speak(speechMsg);
+  synth.speak(speechMsg);
+
+  // Function to add event listener to table
+  var el = document.getElementById("VOttsSpeak");
+  el.addEventListener("click", function()
+  {
+    if(synth.paused == false){
+     synth.pause(); 
+    }
+      else{
+        synth.resume();
+      }
+  });
+
 }
 
 function setMP3(index, flag, value)
@@ -142,6 +158,9 @@ function speakAllMP3() {
   
     }
   });
+
+
+
 }
 
 
