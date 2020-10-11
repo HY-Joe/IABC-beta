@@ -53,6 +53,664 @@ function getLocal(key) {
   getLocalData = localStorage.getItem(this.key);
 }
 
+function VO_love_page_1() {
+  sessionStorage.setItem("auto_number", 128);
+  sessionStorage.setItem("auto_start", 1);
+  sessionStorage.setItem("auto_end", 128);
+
+  VO_love_1();
+  VO_love_2();
+  VO_love_3();
+  VO_love_4();
+  VO_love_5();
+  VO_love_6();
+  VO_love_7();
+}
+
+
+function VO_love_strip_1() {
+  sessionStorage.setItem("auto_number", 49);
+  sessionStorage.setItem("auto_start", 1);
+  sessionStorage.setItem("auto_end", 49);
+  VO_love_1();
+  VO_love_2();
+  VO_love_3();
+}
+function VO_love_strip_2() {
+  sessionStorage.setItem("auto_number", 41);
+  sessionStorage.setItem("auto_start", 50);
+  sessionStorage.setItem("auto_end", 90);
+  VO_love_4();
+  VO_love_5();
+}
+function VO_love_strip_3() {
+  sessionStorage.setItem("auto_number", 38);
+  sessionStorage.setItem("auto_start", 91);
+  sessionStorage.setItem("auto_end", 128);
+  VO_love_6();
+  VO_love_7();
+}
+
+
+function VO_love_panel_1() {
+  sessionStorage.setItem("auto_number", 17);
+  sessionStorage.setItem("auto_start", 1);
+  sessionStorage.setItem("auto_end", 17);
+  VO_love_1();
+}
+function VO_love_panel_2() {
+  sessionStorage.setItem("auto_number", 15);
+  sessionStorage.setItem("auto_start", 18);
+  sessionStorage.setItem("auto_end", 32);
+  VO_love_2();
+}
+function VO_love_panel_3() {
+  sessionStorage.setItem("auto_number", 17);
+  sessionStorage.setItem("auto_start", 33);
+  sessionStorage.setItem("auto_end", 49);
+  VO_love_3();
+}
+function VO_love_panel_4() {
+  sessionStorage.setItem("auto_number", 12);
+  sessionStorage.setItem("auto_start", 50);
+  sessionStorage.setItem("auto_end", 61);
+  VO_love_4();
+}
+function VO_love_panel_5() {
+  sessionStorage.setItem("auto_number", 29);
+  sessionStorage.setItem("auto_start", 62);
+  sessionStorage.setItem("auto_end", 90);
+  VO_love_5();
+}
+function VO_love_panel_6() {
+  sessionStorage.setItem("auto_number", 24);
+  sessionStorage.setItem("auto_start", 91);
+  sessionStorage.setItem("auto_end", 114);
+  VO_love_6();
+}
+function VO_love_panel_7() {
+  sessionStorage.setItem("auto_number", 14);
+  sessionStorage.setItem("auto_start", 115);
+  sessionStorage.setItem("auto_end", 128);
+  VO_love_7();
+}
+
+
+function VO_love_1() {
+    sessionStorage.setItem("file_location", '/love/love_1/');
+
+//Panel
+  setVO(1,
+    flag1,
+    '첫번째 칸'
+    );
+  setVO(2,
+    flag2,
+    "어느 집 마당 앞 자동차_앞_"
+    );
+  setVO(3,
+    flag3,
+    "audio_1_왼쪽에_신디의_옆모습이__오른쪽에_커트의_앞모습이_있~"
+    );
+//Character
+  setVO(4,
+    flag5,
+    "audio_2_신디_"
+    );
+  setVO(5,
+    flag8,
+    "audio_3_검은_단발머리의_신디는_빨간_원피스를_입었다_"
+    );
+  setVO(6,
+    flag6,
+    "audio_4_그녀는_고개를_돌려_커트에게_말한다_"
+    );
+  setVO(7,
+    flag5,
+    "audio_5_커트_"
+    );
+  setVO(8,
+    flag8,
+    "audio_6_노란_머리의_커트는_화이트_반팔_셔츠__베이지_반바지~"
+    );
+  setVO(9,
+    flag6,
+    "audio_7_그는_왼손에_테니스_라켓을_들고있다_"
+    );
+
+//Balloon
+  setVO(10,
+    flag4,
+    "audio_9_신디가_말한다_"
+  );
+  setVO(11,
+    flag4,
+    "audio_10_커트"
+  );
+  setVO(12, 
+    flag4,
+    "audio_11_어___"
+  );
+  setVO(13,
+    flag4,
+    "audio_12_우리가_테니스_하러가는걸_까먹었어_"
+  );
+  setVO(14,
+    flag4,
+    "audio_13_커트가_말한다_"
+  );
+  setVO(15,
+    flag4,
+    "audio_14_음___"
+  );  
+  setVO(16,
+    flag4,
+    "audio_15_자기야_괜찮아_"
+  );
+  setVO(17,
+    flag4,
+    "audio_16_우리_차라리_드라이브_하러_가자_"
+  );
+}
+function VO_love_2() {
+    sessionStorage.setItem("file_location", '/love/love_2/');
+
+//Panel
+  setVO(18,
+    flag1,
+    'audio_1_두번째_칸'
+    );
+  setVO(19,
+    flag2,
+    "audio_0_노란_오픈카_안_"
+    );
+  setVO(20,
+    flag3,
+    "audio_1_왼쪽에_신디의_얼굴이__오른쪽에_커트의_얼굴이_있다_"
+    );
+//Character
+  setVO(21,
+    flag5,
+    "audio_2_신디"
+    );
+  setVO(22,
+    flag6,
+    "audio_3_신디는_차문에_손을_올려__얼굴을_기대고_있다_"
+    );
+  setVO(23,
+    flag7,
+    "audio_4_그녀는_걱정이_가득한_표정이다_"
+    );
+  setVO(24,
+    flag5,
+    "audio_5_커트"
+    );
+  setVO(25,
+    flag6,
+    "audio_6_커트는_운전석에서_신디를_보고_있다_"
+    );
+  setVO(26,
+    flag7,
+    "audio_7_그는_걱정된_표정이다_"
+    );
+
+//Balloon
+  setVO(27,
+    flag4,
+    "audio_8_신디가_생각한다_"
+  );
+  setVO(28,
+    flag4,
+    "audio_9_나는_기분이_별로_좋지_않았다__그리고_커트는_이를_~"
+  );
+  setVO(29, 
+    flag4,
+    "audio_10_커트가_말한다_"
+  );
+  setVO(30,
+    flag4,
+    "audio_11_신디__요즘들어_많이_우울해_보여_"
+  );
+  setVO(31,
+    flag4,
+    "audio_12_내가_해줄수_있는게_있으면_좋겠어_"
+  );
+  setVO(32,
+    flag4,
+    "audio_13_내가_널_행복하게_만들수_있게_해줘_"
+  );  
+}
+function VO_love_3() {
+    sessionStorage.setItem("file_location", '/love/love_3/');
+
+//Panel
+  setVO(33,
+    flag1,
+    'audio_2_세번째_칸'
+    );
+  setVO(34,
+    flag2,
+    "audio_0_노란_오픈카_안_"
+    );
+  setVO(35,
+    flag3,
+    "audio_1_왼쪽에_커트가__오른쪽에_신디가__서로를_마주보고있다_"
+    );
+//Character
+  setVO(36,
+    flag6,
+    "audio_2_신디와_커트는_대화중이다_"
+    );
+  setVO(37,
+    flag5,
+    "audio_3_신디"
+    );
+  setVO(38,
+    flag7,
+    "audio_4_그녀는_걱정하는_표정이다_"
+    );
+  setVO(39,
+    flag5,
+    "audio_5_커트"
+    );
+  setVO(40,
+    flag7,
+    "audio_6_그는_걱정하는_표정이다_"
+    );
+
+//Balloon
+  setVO(41,
+    flag4,
+    "audio_7_신디가_생각한다_"
+  );
+  setVO(42,
+    flag4,
+    "audio_8_난_무엇이_다가올지_알고있었지만__그땐__"
+  );
+  setVO(43, 
+    flag4,
+    "audio_9_그에게_말해주기_싫었다_"
+  );
+  setVO(44,
+    flag4,
+    "audio_10_난_분위기를_바꾸려_했다_"
+  );
+  setVO(45,
+    flag4,
+    "audio_11_신디가_말한다_"
+  );
+  setVO(46,
+    flag4,
+    "audio_12_세상에__커트___"
+  );  
+  setVO(47,
+    flag4,
+    "audio_13_넌_나를_너무_많이_걱정하고_있어_"
+  );  
+  setVO(48,
+    flag4,
+    "audio_14_그러지마___"
+  );  
+  setVO(49,
+    flag4,
+    "audio_15_우리_수영하러_가자_"
+  );  
+}
+function VO_love_4() {    
+  sessionStorage.setItem("file_location", '/love/love_4/');
+
+//Panel
+  setVO(50,
+    flag1,
+    'audio_3_네번째_칸'
+    );
+  setVO(51,
+    flag2,
+    "audio_0_노란_배경_"
+    );
+  setVO(52,
+    flag3,
+    "audio_1_왼쪽_밑에_신디의_얼굴이_있다_"
+    );
+//Character
+  setVO(53,
+    flag5,
+    "audio_3_신디"
+    );
+  setVO(54,
+    flag7,
+    "audio_2_그녀는_고민이_많은_표정이다_"
+    );
+
+
+//Balloon
+  setVO(55,
+    flag4,
+    "audio_3_그녀는_생각한다_"
+  );
+  setVO(56,
+    flag4,
+    "audio_4_나는_커트를_좋아했지만__그를_사랑하지는_않았다_"
+  );
+  setVO(57, 
+    flag4,
+    "audio_5_그리고_그와_결혼하는것은_단지_부모님께_반항하는것이라~"
+  );
+  setVO(58,
+    flag4,
+    "audio_6_나는_이_문제를_혼자_이겨내야만_한다___"
+  );
+  setVO(59,
+    flag4,
+    "audio_7_포기하지_않고_"
+  );
+  setVO(60,
+    flag4,
+    "audio_8_그날_저녁__우리는_글로리아_집에_들렀다_"
+  );  
+  setVO(61,
+    flag4,
+    "audio_9_많은_사람들이_글로리아네에_모여있었다_"
+  );  
+}
+function VO_love_5() {
+  sessionStorage.setItem("file_location", '/love/love_5/');
+
+//Panel
+  setVO(62,
+    flag1,
+    'audio_4_다섯번째_칸'
+    );
+  setVO(63,
+    flag2,
+    "audio_0_파티가_열리고_있는_집_안_"
+    );
+  setVO(64,
+    flag3,
+    "audio_1_왼쪽에_커트와_신디가_서있고__가운데_글로리아의_남편~"
+    );
+//Character
+  setVO(65,
+    flag5,
+    "audio_2_신디"
+    );
+  setVO(66,
+    flag8,
+    "audio_3_검은_단발_머리의_신디는_노란_원피스를_입었다_"
+    );
+  setVO(67,
+    flag6,
+    "audio_4_그녀는_파란_코트를_왼손에_든채__사람들과_대화중이다_"
+    );
+  setVO(68,
+    flag7,
+    "audio_5_그녀는_웃고_있다_"
+    );
+    setVO(69,
+    flag5,
+    "audio_6_커트"
+    );
+  setVO(70,
+    flag8,
+    "audio_7_노란_머리의_커트는_갈색_정장에_초록_넥타이를_했다_"
+    );
+  setVO(71,
+    flag6,
+    "audio_8_그는_대화_중이다_"
+    );
+  setVO(72,
+    flag7,
+    "audio_9_그는_미소를_짓고_있다_"
+    );
+  setVO(73,
+    flag5,
+    "audio_10_글로리아의_남편"
+    );
+  setVO(74,
+    flag8,
+    "audio_11_갈색_머리의_글로리아의_남편은_회색_정장에_파란_넥타~"
+    );
+  setVO(75,
+    flag6,
+    "audio_12_그는_오른손에_와인잔을_들고_대화중이다_"
+    );
+  setVO(76,
+    flag7,
+    "audio_13_그의_눈썹은_올라가_있다_"
+    );
+    setVO(77,
+    flag5,
+    "audio_14_글로리아"
+    );
+  setVO(78,
+    flag8,
+    "audio_15_금발_머리의_글로리아는_초록_드레스를_입었다_"
+    );
+  setVO(79,
+    flag6,
+    "audio_16_그녀는_오른손에_담배를_들고_대화중이다_"
+    );
+  setVO(80,
+    flag7,
+    "audio_17_그녀는_대수롭지_않은_표정이다_"
+    );
+
+//Balloon
+  setVO(81,
+    flag4,
+    "audio_18_커트가_말한다_"
+  );
+  setVO(82,
+    flag4,
+    "audio_19_안녕_친구들_"
+  );
+  setVO(83, 
+    flag4,
+    "audio_20_무슨_일이야_"
+  );
+  setVO(84,
+    flag4,
+    "audio_21_글로리아의_남편이_말한다_"
+  );
+  setVO(85,
+    flag4,
+    "audio_22_반짝있는__위트있는___"
+  );
+  setVO(86,
+    flag4,
+    "audio_23_훌륭한_대화_"
+  );  
+  setVO(87,
+    flag4,
+    "audio_24_분별있는_생각___"
+  );  
+    setVO(88,
+    flag4,
+    "audio_25_어떤걸_기대했어__"
+  );
+  setVO(89,
+    flag4,
+    "audio_26_글로리아가_말한다_"
+  );
+  setVO(90,
+    flag4,
+    "audio_27_평범한_저녁이라는_뜻이야_"
+  );  
+}
+function VO_love_6() {
+  sessionStorage.setItem("file_location", '/love/love_6/');
+
+//Panel
+  setVO(91,
+    flag1,
+    'audio_5_여섯번째_칸'
+    );
+  setVO(92,
+    flag2,
+    "audio_0_파티가_열리고_있는_집_안_"
+    );
+  setVO(93,
+    flag3,
+    "audio_1_왼쪽에서_부터__글로리아의_남편__글로리아__커트가_~"
+    );
+
+//Character
+  setVO(94,
+    flag5,
+    "audio_10_글로리아의_남편"
+    );
+  setVO(95,
+    flag6,
+    "audio_3_글로리아의_남편글로리아의_남편은_소파에_팔을_올린채_~"
+    );
+  setVO(96,
+    flag7,
+    "audio_5_그는_걱정이_많고__풀이_죽은_표정이다_"
+    );
+  setVO(97,
+    flag5,
+    "audio_0_글로리아"
+    );
+  setVO(98,
+    flag6,
+    "audio_1_글로리아는_팔짱을_낀채_앉아있다_"
+    );
+  setVO(99,
+    flag7,
+    "audio_2_그녀는_못마땅한_표정이다_"
+    );
+  setVO(100,
+    flag5,
+    "audio_3_커트"
+    );
+  setVO(101,
+    flag6,
+    "audio_4_커트는_바닥을_보며_앉아있다_"
+    );
+  setVO(102,
+    flag7,
+    "audio_4_그는_공감하는_표정이다_"
+    );
+  setVO(103,
+    flag5,
+    "audio_6_신디"
+    );
+  setVO(104,
+    flag6,
+    "audio_7_신디는_앞_세사람과_말하고_있다_"
+    );
+  setVO(105,
+    flag7,
+    "audio_8_그녀는_화가난_표정이다_"
+    );
+
+
+
+//Balloon
+  setVO(106,
+    flag4,
+    "audio_11_대화는_목적없이_이어졌다___"
+  );
+  setVO(107,
+    flag4,
+    "audio_12_글로리아의_남편이_말한다_"
+  );
+  setVO(108, 
+    flag4,
+    "audio_13_우리_아버지께서_내게_뉴욕에_있는_광고일을_맡기셨어_"
+  );
+  setVO(109,
+    flag4,
+    "audio_14_커트가_말한다_"
+  );
+  setVO(110,
+    flag4,
+    "audio_15_맞아__나도_그래_"
+  );
+  setVO(111,
+    flag4,
+    "audio_16_우리_아버지도_나를_은행으로_데려가셨지___"
+  );  
+  setVO(112,
+    flag4,
+    "audio_17_나는_삼촌의_출판회사에서_일하고_싶은데___"
+  );  
+    setVO(113,
+    flag4,
+    "audio_18_신디가_말한다_"
+  );
+  setVO(114,
+    flag4,
+    "audio_19_너가_운이_좋아_그_일을_한다는_생각은_안해봤어__"
+  );
+}
+function VO_love_7() {
+  sessionStorage.setItem("file_location", '/love/love_7/');
+
+//Panel
+  setVO(115,
+    flag1,
+    'audio_6_페이지_마지막'
+    );
+  setVO(116,
+    flag2,
+    "audio_0_집안의_창문_앞_"
+    );
+  setVO(117,
+    flag3,
+    "audio_1_신디의_상체는_오른쪽을_향한채로_가운데에_있다_"
+    );
+
+//Character
+  setVO(118,
+    flag5,
+    "audio_2_신디"
+    );
+  setVO(119,
+    flag6,
+    "audio_3_그녀는_창문_밖을_바라보고_있다_"
+    );
+  setVO(120,
+    flag7,
+    "audio_4_그녀는_화가_많이_나_보인다_"
+    );
+
+
+
+//Balloon
+  setVO(121,
+    flag4,
+    "audio_5_커트가_말한다_"
+  );
+  setVO(122,
+    flag4,
+    "audio_6_운이_좋다고_"
+  );
+  setVO(123, 
+    flag4,
+    "audio_7_우리_아버지는_이_마을의_절반을_도울만큼_충분한_여력~"
+  );
+  setVO(124,
+    flag4,
+    "audio_8_내가_왜_일하기를_원해야해_"
+  );
+  setVO(125,
+    flag4,
+    "audio_9_신디가_말한다_"
+  );
+  setVO(126,
+    flag4,
+    "audio_10_너가_모른다면__난_말_안할래_"
+  );  
+  setVO(127,
+    flag4,
+    "audio_11_글로리아의_남편이_말한다_"
+  );  
+    setVO(128,
+    flag4,
+    "audio_12_너_지금_나한테_하는_말이야_"
+  );
+}
 
 function love_page_1() {
   sessionStorage.setItem("auto_number", 128);
