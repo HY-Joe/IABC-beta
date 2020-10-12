@@ -40,71 +40,9 @@
   </nav>
 
   <!--본문-->
-  <!-- 선택한 만화 전채 소개 -->
   <center>
-    <div class="list">
-      <div class="row">
-        <div class="card">
-          <div class="row no-gutters">
-            <div class="col-md-6">
-              <div class="thumbnail-wrapper">
-                <h1>
-                  <img alt="Comics image of Chilling Tales" src="./data/image/page/fox/FOX_CHILLINTALES_T17_006.jpg">
-                </h1>
-              </div>
-            </div>
-
-            <div class="col-md-6 introText" id="1">
-
-              <ul>
-                <h4>제목: Chilling Tales</h4>
-                <li>장르 : 공포, 서스펜스</li>
-                <li>등급 : 폭력</li>
-                <li>도입부: 산 속에서 Stennie는 돌아다니다가 낯선 사람을 만나게 되는데...</li>
-              </ul>
-              <ul>
-                <li class="subTitle">[캐릭터]</li>
-                <h5>스테니</h5>
-                <li class="explain">외모 : 갈색 머리의 남자, 노란 셔츠와 빨간 망토를 입었다.</li>
-                <div id="textToSynth">
-                  <button title="스테니의 목소리" class="btn default"
-                    onclick="speakHello('audio_7_안녕하세요__스티니입니다_')">목소리 듣기</button>
-                </div>
-                <h5>낯선 사람</h5>
-                <li class="explain">외모 : 모자가 달린 파란 망토를 걸친 한 남성이다.</li>
-                <div id="textToSynth">
-                  <button title="낯선 사람의 목소리" class="btn default"
-                    onclick="speakHello('audio_0_안녕하세요__낯선사람입니다_')">목소리 듣기</button>
-                </div>
-                <h5>두갈</h5>
-                <li class="explain">외모 : 오렌지 머리의 남자, 초록 모자와 옷을 입었다.</li>
-                <div id="textToSynth">
-                  <button title="두갈의 목소리" class="btn default"
-                    onclick="speakHello('audio_6_안녕하세요___두갈입니다_')">목소리 듣기</button>
-                </div>
-                <h5>나레이터</h5>
-                <div id="textToSynth">
-                  <button title="나레이터의 목소리" class="btn default"
-                    onclick="speakHello('audio_0_안녕하세요__나레이터입니다_')">목소리 듣기</button>
-                </div>
-              </ul>
-              
-
-              <button class="startButton" id="VOttsSpeak" onClick="VO_fox_page_1()">기본 기계음으로 듣기</button>
-              <button class="startButton" id="VttsSpeak" onClick="fox_page_1()">다양한 기계음으로 듣기</button>
-             
-              <button class="startButton" id="VOScript"  onclick="moveTo()">만화스크립트로 읽기</button>
-
-              <button class="startButton" id="startComic" onClick="startComic()">처음부터 보기</button>
-              <button class="startButton" id="continues" onClick="continuesComic()">이어 보기</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    </div>
+    <button class="startButton" id="" onClick="Script_fox_page_1()">시작버튼</button>
+    <div id='result'></div>
   </center>
 
 

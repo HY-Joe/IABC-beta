@@ -132,6 +132,26 @@ function getLocal(key) {
   getLocalData = localStorage.getItem(this.key);
 }
 
+function Script_fox_page_1() {
+
+ // location.href = "script_1.html";
+
+  console.log('VO_fox_page_1()...');
+  sessionStorage.setItem("auto_number", 79);
+  sessionStorage.setItem("auto_start", 1);
+  sessionStorage.setItem("auto_end", 79);
+  
+  sessionStorage.setItem("script_flag", true);
+
+  VO_fox_1();
+  VO_fox_2();
+  VO_fox_3();
+  VO_fox_4();
+  VO_fox_5();
+  VO_fox_6();
+
+}
+
 
 function VO_fox_page_1() {
 
@@ -139,6 +159,8 @@ function VO_fox_page_1() {
   sessionStorage.setItem("auto_number", 79);
   sessionStorage.setItem("auto_start", 1);
   sessionStorage.setItem("auto_end", 79);
+
+  sessionStorage.setItem("script_flag", false);
 
   VO_fox_1();
   VO_fox_2();
@@ -229,7 +251,7 @@ function VO_fox_panel_6() {
 
 function VO_fox_1() {
 
- sessionStorage.setItem("file_location", '/fox/fox_1/');
+ sessionStorage.setItem("file_location", './data/mp3/partial/fox/fox_1/');
 
 //Panel
   setVO(1,
@@ -292,7 +314,7 @@ function VO_fox_1() {
 }
 
 function VO_fox_2() {
-    sessionStorage.setItem("file_location", '/fox/fox_2/');
+    sessionStorage.setItem("file_location",'./data/mp3/partial/fox/fox_2/');
   //Panel
   setVO(14,
     flag1,
@@ -353,7 +375,7 @@ function VO_fox_2() {
 }
 
 function VO_fox_3() {
-    sessionStorage.setItem("file_location", '/fox/fox_3/');
+    sessionStorage.setItem("file_location", './data/mp3/partial/fox/fox_3/');
   //panel
   setVO(30,
     flag1,
@@ -413,7 +435,7 @@ function VO_fox_3() {
 }
 
 function VO_fox_4() {
-    sessionStorage.setItem("file_location", '/fox/fox_4/');
+    sessionStorage.setItem("file_location", './data/mp3/partial/fox/fox_4/');
   //panel
   setVO(45,
     flag1,
@@ -466,7 +488,7 @@ function VO_fox_4() {
 }
 
 function VO_fox_5() {
-    sessionStorage.setItem("file_location", '/fox/fox_5/');
+    sessionStorage.setItem("file_location", './data/mp3/partial/fox/fox_5/');
     //panel
   setVO(56,
     flag1,
@@ -507,7 +529,7 @@ function VO_fox_5() {
 }
 
 function VO_fox_6() {
-    sessionStorage.setItem("file_location", '/fox/fox_6/');
+    sessionStorage.setItem("file_location", './data/mp3/partial/fox/fox_6/');
       //panel
   setVO(65,
     flag1,
@@ -662,7 +684,7 @@ function fox_panel_6() {
 
 function fox_1() {
 
- sessionStorage.setItem("file_location", '/fox/fox_1/');
+ sessionStorage.setItem("file_location",'../../../data/mp3/partial/fox/fox_1/');
 
 //Panel
   setMP3(1,
@@ -725,7 +747,7 @@ function fox_1() {
 }
 
 function fox_2() {
-    sessionStorage.setItem("file_location", '/fox/fox_2/');
+    sessionStorage.setItem("file_location", '../../../data/mp3/partial/fox/fox_2/');
   //Panel
   setMP3(14,
     flag1,
@@ -786,7 +808,7 @@ function fox_2() {
 }
 
 function fox_3() {
-    sessionStorage.setItem("file_location", '/fox/fox_3/');
+    sessionStorage.setItem("file_location", '../../../data/mp3/partial/fox/fox_3/');
   //panel
   setMP3(30,
     flag1,
@@ -846,7 +868,7 @@ function fox_3() {
 }
 
 function fox_4() {
-    sessionStorage.setItem("file_location", '/fox/fox_4/');
+    sessionStorage.setItem("file_location", '../../../data/mp3/partial/fox/fox_4/');
   //panel
   setMP3(45,
     flag1,
@@ -899,7 +921,7 @@ function fox_4() {
 }
 
 function fox_5() {
-    sessionStorage.setItem("file_location", '/fox/fox_5/');
+    sessionStorage.setItem("file_location", '../../../data/mp3/partial/fox/fox_5/');
     //panel
   setMP3(56,
     flag1,
@@ -940,7 +962,7 @@ function fox_5() {
 }
 
 function fox_6() {
-    sessionStorage.setItem("file_location", '/fox/fox_6/');
+    sessionStorage.setItem("file_location", '../../../data/mp3/partial/fox/fox_6/');
       //panel
   setMP3(65,
     flag1,

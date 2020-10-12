@@ -14,16 +14,19 @@ function startingAuto() {
 
 function collectUrl(index, url) {
 
+
   console.log(index+" collectUrl...");
   channel_cnt = channel_cnt + 1;
   audiochannels[index] = url;
 
   var test = sessionStorage.getItem("auto_number");
+  var script_flag = sessionStorage.getItem("script");
 
   if (channel_cnt == Number(test))
   {
       console.log("..collect All Url");
-      speakAll();
+      if(script_flag == true);
+      else{speakAll();}
   } 
 }
 

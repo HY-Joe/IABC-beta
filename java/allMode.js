@@ -56,6 +56,14 @@ function chAllComicMode(value) {
   readMode();
 }
 
+function moveTo(){
+
+   location.href = "script_1.html";
+}
+function moveTo2(){
+
+   location.href = "script_2.html";
+}
 function startComic() {
   getAutoPlayFlag();
 

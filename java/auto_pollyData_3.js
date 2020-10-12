@@ -11,6 +11,11 @@ VO_playchannel = new Array();
 var VO_playchannel_index = 0;
 
 
+function printScript(){
+    document.getElementById("result").innerText = VO_script;
+    console.log(VO_script);
+}
+
 function speakHello(value){
 
     url = './data/mp3/partial/intro/'+value+'.mp3';
@@ -39,12 +44,21 @@ function setVO(index, flag, value)
     
 
   var test = sessionStorage.getItem("auto_number");
+  var script_flag = sessionStorage.getItem("script_flag");
+  console.log(script_flag+"...?");
+
   if (VO_channel_cnt == Number(test))
   {
       console.log("..collect All VO script..."+VO_playchannel_index);
       console.log(VO_script);
-      //speak(VO_script);
-      speakAllVO();
+      if(script_flag == 'true'){ 
+        console.log(script_flag+"true");
+        printScript(); 
+      }
+      else {
+        console.log(script_flag+"false");
+        speakAllVO();
+      }
   } 
 }
 
@@ -98,7 +112,8 @@ function setMP3(index, flag, value)
 
   channel_cnt = channel_cnt + 1;
   //url = '../../../data/mp3/partial'+file_location+value+'.mp3';
-  url = './data/mp3/partial'+file_location+value+'.mp3'; //intro용
+  
+  url = file_location+value+'.mp3'; //intro용
   //console.log(url+"...");
   audiochannels[index] = url;
 
